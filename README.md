@@ -1,4 +1,4 @@
-          ﻿![Parkomania](https://github.com/ooad-2016-2017/Hepek/blob/master/logo.png)
+﻿![Parkomania](https://github.com/ooad-2016-2017/Hepek/blob/master/logo.png)
 
 # Hepek
 
