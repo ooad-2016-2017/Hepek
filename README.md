@@ -6,7 +6,7 @@
 
 ### Clanovi tima:
 
-	* Subašic Admir
+	* Subašić Admir
 	* Šubara Zlatko
 
 ### Opis teme
