@@ -61,26 +61,26 @@ parking mjesta. Jednostavnim klikom korisnik rezerviše parking mjesto.
 Nakon odabira željenog parkinga, korisniku se na mobilnom uredaju prikazuje najkraća putanja do parking mjesta preko GPS uređaja.
 Korisnik također može da odabere neku alternativnu putanju.
 
-#### Omogućavanje korištenja servisa sistema
+#### Modeliranje parkinga i ažuriranje
 
+Gradski parking je dužan da modelira i grafički prikaže sve svoje parkinge onako kako zaista izgledaju, te da označi mjesta koja su rezervisana (zauzeta), slobodna te rezervisana za invalide.
+
+#### Omogućavanje korištenja servisa sistema
 
 Sistem Parkomania je SaaS, dakle korisnik ovog sistema neće brinuti o tehničkom održavanju sistema, 
 budući da će sistem biti centralno hostan kod kreatora, gdje će samo kreatori imati pristup korištenoj tehnologiji.
 
-#### Modeliranje parkinga i ažuriranje
-
-Gradski parking je dužan da modelira i grafički prikaže sve svoje parkinge onako kako zaista izgledaju, te da označi mjesta koja su rezervisana (zauzeta), slobodna te rezervisana za invalide.
 
 ### Funkcionalnosti
 
 ---
 
 * Mogućnost prijave u sistem
-* Pregled svih parking mjesta na karti na udaljenosti od 7km 
+* Pregled svih parking mjesta na karti na željenoj udaljenosti
 * Pregled detaljnih informacija o odabranom parkingu (grafički prikaz parkinga sa realnim dimenzijama svih parking mjesta,kapacitet parkinga,broj slobodnih mjesta, i sl.)	
 * Mogućnost GPS navođenja do parkinga(uz odabir željene rute)
 * Mogućnost rezervacije parking mjesta(ukoliko je korisnik prijavljen) 
-* Mogućnost Modeliranja i ažuriranja svih parkinga od strane gradskog parkinga
+* Mogućnost modeliranja i ažuriranja svih parkinga od strane gradskih parkinga, odnosno njihovih vlasnika
 
 
 ### Akteri
