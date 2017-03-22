@@ -1,10 +1,10 @@
-<p align="center">
-  <img src ="https://github.com/ooad-2016-2017/Hepek/blob/master/logo.png"/>
-</p>
-
 # Hepek
 
 ## Parkomania
+
+<p align="center">
+  <img src ="https://github.com/ooad-2016-2017/Hepek/blob/master/logo.png"/>
+</p>
 
 ### Clanovi tima:
 
