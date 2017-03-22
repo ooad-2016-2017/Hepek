@@ -67,6 +67,10 @@ Korisnik također može da odabere neku alternativnu putanju.
 Sistem Parkomania je SaaS, dakle korisnik ovog sistema neće brinuti o tehničkom održavanju sistema, 
 budući da će sistem biti centralno hostan kod kreatora, gdje će samo kreatori imati pristup korištenoj tehnologiji.
 
+#### Modeliranje parkinga i ažuriranje
+
+Gradski parking je dužan da modelira i grafički prikaže sve svoje parkinge onako kako zaista izgledaju, te da označi mjesta koja su rezervisana (zauzeta), slobodna te rezervisana za invalide.
+
 ### Funkcionalnosti
 
 ---
@@ -76,14 +80,15 @@ budući da će sistem biti centralno hostan kod kreatora, gdje će samo kreatori
 * Pregled detaljnih informacija o odabranom parkingu (grafički prikaz parkinga sa realnim dimenzijama svih parking mjesta,kapacitet parkinga,broj slobodnih mjesta, i sl.)	
 * Mogućnost GPS navođenja do parkinga(uz odabir željene rute)
 * Mogućnost rezervacije parking mjesta(ukoliko je korisnik prijavljen) 
+* Mogućnost Modeliranja i ažuriranja svih parkinga od strane gradskog parkinga
 
 
 ### Akteri
 
 ---
 
-* **Globalni administratori** -(asubasic2, zsubara1) su ujedno i kreatori aplikacije i njeni vlasnici, te imaju punu kontrolu nad aplikacijom i njenim održavanjem.
-* **Korisnik usluga** - je osoba koja ima mogućnost logina, odabira, rezervacije, i GPS navođenje do parking mjesta.
+* **Globalni administratori** su ujedno i kreatori aplikacije i njeni vlasnici, te imaju punu kontrolu nad aplikacijom i njenim održavanjem.
+* **Korisnik usluga** je osoba koja ima mogućnost logina, odabira, rezervacije, i GPS navođenja do parking mjesta.
 * **Gradski parking** - firma koja pruža sve relevantne podatke o svim parking mjestima na lokaciji koju odabere korisnik.
 
 
