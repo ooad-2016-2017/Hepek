@@ -56,7 +56,7 @@ radno vrijeme, cijena, i slicno.
 #### Rezervacija parking mjesta
 
 Nakon što je korisnik odabrao željeni parking i ukoliko je registrovan, odnosno prijavljen na sistem, ima opciju rezervisanja
-parking mjesta. Jednostavnim klikom korisnik rezerviše parking mjesto.
+parking mjesta. Rezervacija traje 30 minuta. Jednostavnim klikom korisnik rezerviše parking mjesto.
 
 #### GPS navođenje
 
