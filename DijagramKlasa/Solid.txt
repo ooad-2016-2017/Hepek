@@ -1,0 +1,16 @@
+			Analiza SOLID principa za dijagram klasa 
+
+1. Princip pojedinaène odgovornosti
+Princip pojedinaène odgovornosti nije zadovoljen. Klasa admin je preoptereæena. Ona vodi brigu o adminima, korisnicima i parkinzima. Najbolje bi bilo da se ove 3 operacije razdvoje u pojedinaène klase. Na taj naèin bi imali samo jedan razlog za promjenu klase.
+
+2.Otvoreno zatvoren princip
+Što se tièe ovog principa za dijagram klasa, ispoštovan je. Za sve klase našeg projekta možemo vršiti nadogradnju, dok se ne dozvoljavaju modifikiacije.
+
+3.Liskov princip zamjene 
+Liskov princip zatvorenosti možemo posmatrati za jedino nasljeðivanje koje posjedujemo, a to je Account. Oèigledno je da sve naslijeðene klase posjeduju atribute i operacije vezane samo za sebe. Ukoliko bi ih zamijenili ih sa baznom klasom ne bi imali nikakvih problema.
+
+4. Princip inverzije ovisnosti
+Vezano za ovaj princip možemo reæi da je Account apstraktna klasa i da ne zavisi od svojih podklasa. Na ovaj naèin princip inverzije ovisnosti nije narušen.
+
+5.Princip izoliranja interfejsa
+Ovaj princip možemo posmatrati samo za jedan interfejs, a to je GPSNavigation. Odmah možemo vidjeti da user i gost ne moraju naslijediti metodu Navigate ako je neæe upotrebljavati. Èime je princip zadovoljen.
