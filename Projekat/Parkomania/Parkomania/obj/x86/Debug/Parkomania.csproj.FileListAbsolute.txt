@@ -397,3 +397,13 @@ C:\Users\Admir\Repozitorij\Projekat\Parkomania\Parkomania\obj\x86\Debug\qualifie
 C:\Users\Admir\Repozitorij\Projekat\Parkomania\Parkomania\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\Admir\Repozitorij\Projekat\Parkomania\Parkomania\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Admir\Repozitorij\Projekat\Parkomania\Parkomania\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Admir\Repozitorij\Projekat\Parkomania\Parkomania\bin\x86\Debug\GlavnaForma.xbf
+C:\Users\Admir\Repozitorij\Projekat\Parkomania\Parkomania\obj\x86\Debug\GlavnaForma.g.i.cs
+C:\Users\Admir\Repozitorij\Projekat\Parkomania\Parkomania\obj\x86\Debug\GlavnaForma.g.cs
+C:\Users\Admir\Repozitorij\Projekat\Parkomania\Parkomania\obj\x86\Debug\GlavnaForma.xaml
+C:\Users\Admir\Repozitorij\Projekat\Parkomania\Parkomania\obj\x86\Debug\GlavnaForma.xbf
+C:\Users\Admir\Repozitorij\Projekat\Parkomania\Parkomania\bin\x86\Debug\GlavnaFormaLogin.xbf
+C:\Users\Admir\Repozitorij\Projekat\Parkomania\Parkomania\obj\x86\Debug\GlavnaFormaLogin.g.i.cs
+C:\Users\Admir\Repozitorij\Projekat\Parkomania\Parkomania\obj\x86\Debug\GlavnaFormaLogin.g.cs
+C:\Users\Admir\Repozitorij\Projekat\Parkomania\Parkomania\obj\x86\Debug\GlavnaFormaLogin.xaml
+C:\Users\Admir\Repozitorij\Projekat\Parkomania\Parkomania\obj\x86\Debug\GlavnaFormaLogin.xbf

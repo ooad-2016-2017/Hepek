@@ -29,19 +29,19 @@
             </Grid.RenderTransform>
             <Button x:Name="button" Content="Confirm" HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Center" RenderTransformOrigin="0.303,0.303" Grid.Row="7" Grid.Column="2"/>
             <Button x:Name="button1" Content="Cancel" HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Center" Grid.Row="7" Grid.ColumnSpan="2"/>
-            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="textBlock" Margin="72,0,0,0" TextWrapping="Wrap" Grid.Row="1">
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="textBlock" Margin="42,0,0,0" TextWrapping="Wrap" Grid.Row="1">
                 <Run Text="  "/>
                 <Run Text="First Name: "/>
             </TextBlock>
-            <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Center" Margin="33,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" SelectionChanged="textBlock_Copy3_SelectionChanged" RenderTransformOrigin="0.84,0.541" Grid.Row="5" Text="Confirm Password:"/>
-            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="textBlock_Copy2" Margin="91,0,0,0" TextWrapping="Wrap" Text="Password:" RenderTransformOrigin="0.729,1.005" Grid.Row="4"/>
-            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="textBlock_Copy1" Margin="109,0,0,0" TextWrapping="Wrap" Text="E-Mail:" SelectionChanged="textBlock_Copy1_SelectionChanged" RenderTransformOrigin="0.889,0.6" Grid.Row="3"/>
-            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="textBlock_Copy" Margin="82,0,0,0" TextWrapping="Wrap" Text="Last Name:" Grid.Row="2"/>
-            <TextBox  VerticalAlignment= "Stretch" x:Name="textime" Grid.Column="1" Margin="10.19,2.73,0.405,3.103" Grid.Row="1" TextWrapping="Wrap" Text=""/>
-            <TextBox VerticalAlignment="Stretch" x:Name="textprezime" Margin="10.19,2.897,0.405,2.936" TextWrapping="Wrap" Text="" Grid.Column="1" Grid.Row="2"/>
-            <TextBox VerticalAlignment="Stretch" x:Name="textmail" Margin="10.19,3.064,0.405,2.768" TextWrapping="Wrap" Text="" Grid.Column="1" Grid.Row="3"/>
-            <PasswordBox VerticalAlignment="Stretch" x:Name="password" Grid.Column="1" Margin="10.19,3.232,0.405,2.601" Grid.Row="4"/>
-            <PasswordBox  VerticalAlignment="Stretch" x:Name="passwordpotvrdi" Margin="10.19,3.399,0.405,3.434" Grid.Column="1" Grid.Row="5"/>
+            <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Center" Margin="3,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" SelectionChanged="textBlock_Copy3_SelectionChanged" RenderTransformOrigin="0.84,0.541" Grid.Row="5" Text="Confirm Password:"/>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="textBlock_Copy2" Margin="61,0,0,0" TextWrapping="Wrap" Text="Password:" RenderTransformOrigin="0.729,1.005" Grid.Row="4"/>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="textBlock_Copy1" Margin="79,0,0,0" TextWrapping="Wrap" Text="E-Mail:" SelectionChanged="textBlock_Copy1_SelectionChanged" RenderTransformOrigin="0.889,0.6" Grid.Row="3"/>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="textBlock_Copy" Margin="52,0,0,0" TextWrapping="Wrap" Text="Last Name:" Grid.Row="2"/>
+            <TextBox  VerticalAlignment= "Center" x:Name="textime" Grid.Column="1" Margin="10.19,2.73,0.405,3.103" Grid.Row="1" TextWrapping="Wrap" Text=""/>
+            <TextBox VerticalAlignment="Center" x:Name="textprezime" Margin="10.19,2.897,0.405,2.936" TextWrapping="Wrap" Text="" Grid.Column="1" Grid.Row="2"/>
+            <TextBox VerticalAlignment="Center" x:Name="textmail" Margin="10.19,3.064,0.405,2.768" TextWrapping="Wrap" Text="" Grid.Column="1" Grid.Row="3"/>
+            <PasswordBox VerticalAlignment="Center" x:Name="password" Grid.Column="1" Margin="10.19,3.232,0.405,2.601" Grid.Row="4"/>
+            <PasswordBox  VerticalAlignment="Center" x:Name="passwordpotvrdi" Margin="10.19,3.399,0.405,3.434" Grid.Column="1" Grid.Row="5"/>
             <ScrollViewer Grid.Column="2" Margin="10,0.73,10,0.434" Grid.RowSpan="5" Grid.Row="1">
                 <RichTextBlock Height="Auto" Width="Auto" Margin="10,0,10,0">
                     <Paragraph>

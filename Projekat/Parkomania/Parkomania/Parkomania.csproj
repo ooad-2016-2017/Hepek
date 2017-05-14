@@ -98,6 +98,12 @@
     <Compile Include="ForgotPassword.xaml.cs">
       <DependentUpon>ForgotPassword.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GlavnaForma.xaml.cs">
+      <DependentUpon>GlavnaForma.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GlavnaFormaLogin.xaml.cs">
+      <DependentUpon>GlavnaFormaLogin.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LoginForma.xaml.cs">
       <DependentUpon>LoginForma.xaml</DependentUpon>
     </Compile>
@@ -128,6 +134,14 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="ForgotPassword.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GlavnaForma.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GlavnaFormaLogin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

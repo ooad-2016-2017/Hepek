@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\Admir\Repozitorij\Projekat\Parkomania\Parkomania\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-05-14T00:37:08.990</Modified>
+      <Modified>2017-05-14T13:50:35.496</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Admir\Repozitorij\Projekat\Parkomania\Parkomania\bin\x86\Debug\Parkomania.exe">
       <PackagePath>entrypoint\Parkomania.exe</PackagePath>
-      <Modified>2017-05-14T00:37:07.647</Modified>
+      <Modified>2017-05-14T13:50:33.557</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admir\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -488,7 +488,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admir\Repozitorij\Projekat\Parkomania\Parkomania\bin\x86\Debug\Parkomania.xr.xml">
       <PackagePath>Parkomania.xr.xml</PackagePath>
-      <Modified>2017-05-14T00:29:58.790</Modified>
+      <Modified>2017-05-14T13:48:41.314</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -497,11 +497,11 @@
     <AppxPackagedFile Include="C:\Users\Admir\Repozitorij\Projekat\Parkomania\Parkomania\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-05-14T00:37:08.617</Modified>
+      <Modified>2017-05-14T13:50:35.205</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Admir\Repozitorij\Projekat\Parkomania\Parkomania\bin\x86\Debug\Core\Parkomania.exe">
       <PackagePath>Parkomania.exe</PackagePath>
-      <Modified>2017-05-14T00:37:08.967</Modified>
+      <Modified>2017-05-14T13:50:35.488</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
