@@ -42,7 +42,7 @@ namespace Parkomania
               () =>
               {
                   newAppView = ApplicationView.GetForCurrentView();
-                  Window.Current.Content = new ForgotPassword();
+                  Window.Current.Content = new LoginForma();
                   Window.Current.Activate();
               });
 

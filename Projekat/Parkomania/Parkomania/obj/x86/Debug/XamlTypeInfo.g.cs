@@ -132,17 +132,19 @@ namespace Parkomania.Parkomania_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[4];
+            _typeNameTable = new string[5];
             _typeNameTable[0] = "Parkomania.ForgotPassword";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
-            _typeNameTable[3] = "Parkomania.MainPage";
+            _typeNameTable[3] = "Parkomania.LoginForma";
+            _typeNameTable[4] = "Parkomania.MainPage";
 
-            _typeTable = new global::System.Type[4];
+            _typeTable = new global::System.Type[5];
             _typeTable[0] = typeof(global::Parkomania.ForgotPassword);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
-            _typeTable[3] = typeof(global::Parkomania.MainPage);
+            _typeTable[3] = typeof(global::Parkomania.LoginForma);
+            _typeTable[4] = typeof(global::Parkomania.MainPage);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -178,7 +180,8 @@ namespace Parkomania.Parkomania_XamlTypeInfo
         }
 
         private object Activate_0_ForgotPassword() { return new global::Parkomania.ForgotPassword(); }
-        private object Activate_3_MainPage() { return new global::Parkomania.MainPage(); }
+        private object Activate_3_LoginForma() { return new global::Parkomania.LoginForma(); }
+        private object Activate_4_MainPage() { return new global::Parkomania.MainPage(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -205,9 +208,16 @@ namespace Parkomania.Parkomania_XamlTypeInfo
                 xamlType = new global::Parkomania.Parkomania_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 3:   //  Parkomania.MainPage
+            case 3:   //  Parkomania.LoginForma
                 userType = new global::Parkomania.Parkomania_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_3_MainPage;
+                userType.Activator = Activate_3_LoginForma;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 4:   //  Parkomania.MainPage
+                userType = new global::Parkomania.Parkomania_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_4_MainPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
