@@ -42,7 +42,7 @@ namespace Parkomania
               () =>
               {
                   newAppView = ApplicationView.GetForCurrentView();
-                  Window.Current.Content = new ParkingKontrola();
+                  Window.Current.Content = new Welcome();
                   Window.Current.Activate();
               });
 
