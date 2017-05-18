@@ -9,7 +9,7 @@ namespace Parkomania.Model
     class User : Account
     {
         public Location location;
-        public User()
+        public User(int id, string fn, string ln, string em, string pass) : base(id, fn, ln, em, pass)
         {
 
         }

@@ -1,0 +1,31 @@
+﻿using Microsoft.Data.Entity;
+using Microsoft.Data.Sqlite;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Windows.Storage;
+
+namespace Parkomania.dbContext
+{
+    class Parking: DbContext
+    {
+        public DbSet<Model.Parking> parking { get; set; }
+        public Parking()
+        {
+
+        }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            string putanjaBaze = "Ooadbaza.db";
+            try
+            {
+                putanjaBaze = Path.Combine(ApplicationData.Current.LocalFolder.Path,putanjaBaze);
+            }
+            catch (InvalidOperationException) { }
+            optionsBuilder.UseSqlite($"Data source={putanjaBaze}");
+        }
+    }
+}

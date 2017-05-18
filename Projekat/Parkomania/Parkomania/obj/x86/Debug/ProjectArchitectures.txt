@@ -1,1 +1,1 @@
-C:\Users\zlayaa\Desktop\Te\Projekat\Parkomania\Parkomania\Parkomania.csproj;x86
+C:\Users\User\Documents\Projekat\Parkomania\Parkomania\Parkomania.csproj;x86

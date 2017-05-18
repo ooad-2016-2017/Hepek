@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,12 +9,14 @@ namespace Parkomania.Model
 {
     class Parking
     {
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int id { get; set; }
         public int Accid;
         public string Name;
         public string City;
         public string Country;
         public Location pLocation;
-        public double Price;
+        public float Price;
         public DateTime startTime;
         public DateTime endTime;
         public int Capacity;

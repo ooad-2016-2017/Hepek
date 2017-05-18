@@ -101,6 +101,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="dbContext\Parking.cs" />
     <Compile Include="ForgotPassword.xaml.cs">
       <DependentUpon>ForgotPassword.xaml</DependentUpon>
     </Compile>
@@ -116,6 +117,25 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20170518215655_InitialMigration.cs" />
+    <Compile Include="Migrations\20170518215655_InitialMigration.designer.cs">
+      <DependentUpon>20170518215655_InitialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\ParkingModelSnapshot.cs" />
+    <Compile Include="Model\Account.cs" />
+    <Compile Include="Model\Admin.cs" />
+    <Compile Include="Model\GPSNavigation.cs" />
+    <Compile Include="Model\Guest.cs" />
+    <Compile Include="Model\IAdmin.cs" />
+    <Compile Include="Model\Inbox.cs" />
+    <Compile Include="Model\Information.cs" />
+    <Compile Include="Model\IParking.cs" />
+    <Compile Include="Model\IUser.cs" />
+    <Compile Include="Model\Location.cs" />
+    <Compile Include="Model\Parking.cs" />
+    <Compile Include="Model\ParkingManager.cs" />
+    <Compile Include="Model\ParkingModel.cs" />
+    <Compile Include="Model\User.cs" />
     <Compile Include="ParkingForm.xaml.cs">
       <DependentUpon>ParkingForm.xaml</DependentUpon>
     </Compile>
@@ -129,6 +149,10 @@
       <DependentUpon>Profil.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\GuestModel.cs" />
+    <Compile Include="ViewModel\ParkingViewModel.cs" />
+    <Compile Include="ViewModel\System.cs" />
+    <Compile Include="ViewModel\UserModel.cs" />
     <Compile Include="Welcome.xaml.cs">
       <DependentUpon>Welcome.xaml</DependentUpon>
     </Compile>
@@ -204,6 +228,7 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

@@ -9,11 +9,13 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
-            <RowDefinition Height="188*" />
-            <RowDefinition Height="353*"/>
-            <RowDefinition Height="540*" />
+            <RowDefinition  />
+            <RowDefinition />
+            <RowDefinition  />
+            <RowDefinition  />
+            <RowDefinition  />
         </Grid.RowDefinitions>
-        <Pivot Title="Admins" Grid.RowSpan="3">
+        <Pivot Title="Admins" Grid.RowSpan="5">
             <PivotItem Header="Admins">
                 <Grid>
                     <Grid.RowDefinitions>
@@ -89,6 +91,6 @@
                 </Grid>
             </PivotItem>
         </Pivot>
-        <local:Profil HorizontalAlignment="Right" VerticalAlignment="Top" Margin="5" Grid.Row="0" />
+        <local:Profil HorizontalAlignment="Right" VerticalAlignment="Top" Margin="0,5,5,0" Grid.Row="0"  />
     </Grid>
 </Page>

@@ -8,6 +8,10 @@ namespace Parkomania.Model
 {
     class ParkingManager : Account
     {
+        public ParkingManager(int id, string fn, string ln, string em, string pass) : base(id, fn, ln, em, pass)
+        {
+
+        }
         public Parking myParking;
         public void sendMessage(string txt)
         {
