@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Parkomania.Model
 {
-    class Parking
+    public class Parking
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
@@ -15,17 +15,17 @@ namespace Parkomania.Model
         public string Name;
         public string City;
         public string Country;
-        public Location pLocation;
+        public int pLocation;
         public float Price;
-        public DateTime startTime;
-        public DateTime endTime;
+        public int startTime;
+        public int endTime;
         public int Capacity;
         public int freePlaces;
         public ParkingModel Model;
         public List<Information> Infos;
         public List<bool> Reserved;
 
-        public Parking(int a, string n, string city, string country, Location pl, double price, DateTime st, DateTime et, int capacity, int freep, ParkingModel m)
+        public Parking(int a, string n, string city, string country, int pl, float price, int st, int et, int capacity, int freep, ParkingModel m)
         {
             Accid = a;
             Name = n;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Parkomania.Model
 {
-    class ParkingModel
+    public class ParkingModel
     {
         public double Length;
         public double Width;

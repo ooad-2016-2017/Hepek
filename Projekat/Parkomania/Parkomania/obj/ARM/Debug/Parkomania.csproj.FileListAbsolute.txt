@@ -272,3 +272,4 @@ C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\ARM\Debug\qualifiers.
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\ARM\Debug\qualifiers.txt.intermediate
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\ARM\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\ARM\Debug\ProjectArchitectures.txt
+C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\ARM\Debug\Parkomania.csprojResolveAssemblyReference.cache

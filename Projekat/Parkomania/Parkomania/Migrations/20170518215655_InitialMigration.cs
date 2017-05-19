@@ -28,17 +28,31 @@ namespace ParkomaniaMigrations
                     idReserved = table.Column(type: "INTEGER", nullable: false)
 
                     
-                },
+             },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Parking", x => x.id);
-                    //FK dodati 
+                    table.ForeignKey("FK_Location", y => y.locationId,"Location","id","");
                 });
+            migration.CreateTable(
+               name: "Location",
+               columns: table => new
+               {
+                   id = table.Column(type: "INTEGER", nullable: false),
+                    // .Annotation("Sqlite:Autoincrement", true)
+                    x = table.Column(type: "REAL", nullable: false),
+                   y = table.Column(type: "REAL", nullable: false)
+               },
+               constraints: table =>
+               {
+                   table.PrimaryKey("PK_Location", x => x.id);
+               });
         }
 
         public override void Down(MigrationBuilder migration)
         {
             migration.DropTable("Parking");
+            migration.DropTable("Location");
         }
     }
 }

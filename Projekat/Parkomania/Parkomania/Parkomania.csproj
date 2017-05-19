@@ -101,6 +101,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="dbContext\Location.cs" />
     <Compile Include="dbContext\Parking.cs" />
     <Compile Include="ForgotPassword.xaml.cs">
       <DependentUpon>ForgotPassword.xaml</DependentUpon>
@@ -121,6 +122,7 @@
     <Compile Include="Migrations\20170518215655_InitialMigration.designer.cs">
       <DependentUpon>20170518215655_InitialMigration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\LocationModelSnapshot.cs" />
     <Compile Include="Migrations\ParkingModelSnapshot.cs" />
     <Compile Include="Model\Account.cs" />
     <Compile Include="Model\Admin.cs" />
@@ -145,6 +147,7 @@
     <Compile Include="ParkingRegister.xaml.cs">
       <DependentUpon>ParkingRegister.xaml</DependentUpon>
     </Compile>
+    <Compile Include="PictureConverter.cs" />
     <Compile Include="Profil.xaml.cs">
       <DependentUpon>Profil.xaml</DependentUpon>
     </Compile>

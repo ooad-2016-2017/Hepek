@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Parkomania.Model
 {
-    class Information
+    public class Information
     {
         public DateTime cameAt;
         public DateTime leftAt;

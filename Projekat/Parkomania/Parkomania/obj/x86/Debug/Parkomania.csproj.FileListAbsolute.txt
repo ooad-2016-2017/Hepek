@@ -1021,7 +1021,6 @@ C:\Users\User\Documents\Projekat\Parkomania\Parkomania\bin\x86\Debug\System.Xml.
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\bin\x86\Debug\System.Xml.XDocument.dll
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\bin\x86\Debug\System.Xml.XmlDocument.dll
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\bin\x86\Debug\System.Xml.XmlSerializer.dll
-C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\Parkomania.csprojResolveAssemblyReference.cache
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\App.g.i.cs
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\App.g.cs
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\AddEdit.g.i.cs

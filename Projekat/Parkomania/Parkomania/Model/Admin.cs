@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Parkomania.Model
 {
-    class Admin : Account
+    public class Admin : Account
     {
         public List<Message> Inbox;
         public Admin(int id, string fn, string ln, string em, string pass): base(id,fn,ln,em,pass)

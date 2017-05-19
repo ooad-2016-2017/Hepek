@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Parkomania.Model
 {
-    class ParkingManager : Account
+    public class ParkingManager : Account
     {
         public ParkingManager(int id, string fn, string ln, string em, string pass) : base(id, fn, ln, em, pass)
         {

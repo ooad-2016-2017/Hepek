@@ -119,6 +119,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Children" />
+      <RootEvent Name="MapTapped" />
     </RootType>
     <RootType FullName="Parkomania.GlavnaForma" />
     <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">

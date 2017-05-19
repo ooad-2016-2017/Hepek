@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Parkomania.Model
 {
-    class Message
+    public class Message
     {
         public string text;
         public string from;

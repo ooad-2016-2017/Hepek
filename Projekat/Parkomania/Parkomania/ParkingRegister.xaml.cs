@@ -23,10 +23,41 @@ namespace Parkomania
     /// </summary>
     public sealed partial class ParkingRegister : Page
     {
+        double x, y;
         public ParkingRegister()
-        {
+        { 
             this.InitializeComponent();
 
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            using (var db = new dbContext.Parking())
+            {
+                using (var db2 = new dbContext.Location())
+                {
+                    Model.ParkingModel model = new Model.ParkingModel(100, 100);
+                    var contact = new Model.Parking(1, textparkingime.Text, textpargrad.Text, comboboxpardrzava.SelectedItem.ToString(), 2, float.Parse(textparprice.Text), Int32.Parse(textparstart.Text), Int32.Parse(textparend.Text), Int32.Parse(textparkap.Text), Int32.Parse(textparfreep.Text), model);
+                    db.parking.Add(contact);
+                    //SaveChanges obavezno da se reflektuju izmjene u bazi, tek tada dolazi do komunikacije sa bazom
+                    db.SaveChanges();
+                    //reset polja za unos
+                    textparkingime.Text = string.Empty;
+                    textpargrad.Text = string.Empty;
+                    textparend.Text = string.Empty;
+                    textparkap.Text = string.Empty;
+                    textparfreep.Text = string.Empty;
+                    //refresh liste restorana
+                    ViewModel.System.parkings.Add(contact);
+                }
+            }
+        }
+
+        private void MapControl_MapTapped(Windows.UI.Xaml.Controls.Maps.MapControl sender, Windows.UI.Xaml.Controls.Maps.MapInputEventArgs args)
+        {
+            var tappedGeoPosition = args.Location.Position;
+            x = tappedGeoPosition.Longitude;
+            y = tappedGeoPosition.Latitude;
         }
     }
 }

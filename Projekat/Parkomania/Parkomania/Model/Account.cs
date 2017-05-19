@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Parkomania.Model
 {
-    class Account
+    public class Account
     {
         public int Id;
         public string FirstName;

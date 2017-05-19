@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Parkomania.ViewModel
 {
-    class System
+    public static class System
     {
-        public List<Model.Parking> parkings;
-        public List<Model.User> users;
-        public List<Model.Admin> admins;
-        public System()
+        public static List<Model.Parking> parkings;
+        public static List<Model.User> users;
+        public static List<Model.Admin> admins;
+        static System()
         {
             parkings = new List<Model.Parking>();
             users = new List<Model.User>();
