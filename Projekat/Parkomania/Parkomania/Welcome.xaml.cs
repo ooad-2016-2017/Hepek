@@ -25,6 +25,8 @@ namespace Parkomania
         public Welcome()
         {
             this.InitializeComponent();
+            DataContext = new ViewModel.GuestModel();
+            NavigationCacheMode = NavigationCacheMode.Required;
         }
     }
 }

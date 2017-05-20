@@ -43,6 +43,47 @@ namespace ParkomaniaMigrations
                 b.Property<float>("Y");
                 b.Key("id");
             });
+            //----
+            builder.Entity("Parkomania.Model.Account", b =>
+            {
+                b.Property<int>("id").ValueGeneratedOnAdd();
+                b.Property<string>("firstname");
+                b.Property<string>("lastname");
+                b.Property<string>("email");
+                b.Property<string>("password");
+                b.Property<string>("acctype");
+                b.Key("id");
+            });
+            //----
+            builder.Entity("Parkomania.Model.ParkingModel", b =>
+            {
+                b.Property<int>("id").ValueGeneratedOnAdd();
+                b.Property<string>("places");
+                b.Key("id");
+            });
+            //----
+            builder.Entity("Parkomania.Model.User", b =>
+            {
+                b.Property<int>("id").ValueGeneratedOnAdd();
+                b.Property<int>("locationid");
+                b.Key("id");
+            });
+            //----
+            builder.Entity("Parkomania.Model.Inbox", b =>
+            {
+                b.Property<int>("id").ValueGeneratedOnAdd();
+                b.Property<string>("message");
+                b.Property<string>("from");
+                b.Property<string>("time");
+                b.Key("id");
+            });
+            //----
+            builder.Entity("Parkomania.Model.ParkingManager", b =>
+            {
+                b.Property<int>("id").ValueGeneratedOnAdd();
+                b.Property<int>("parkingid");
+                b.Key("id");
+            });
         }
     }
 }

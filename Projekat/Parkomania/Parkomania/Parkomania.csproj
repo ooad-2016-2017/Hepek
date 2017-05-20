@@ -151,8 +151,10 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\GuestModel.cs" />
+    <Compile Include="ViewModel\NavigationService.cs" />
     <Compile Include="ViewModel\ParkingViewModel.cs" />
     <Compile Include="ViewModel\System.cs" />
+    <Compile Include="ViewModel\test.cs" />
     <Compile Include="ViewModel\UserModel.cs" />
     <Compile Include="Welcome.xaml.cs">
       <DependentUpon>Welcome.xaml</DependentUpon>

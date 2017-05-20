@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="LoginGosta" />
+  </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
       <RootProperty Name="RequestedTheme" />
@@ -76,6 +79,7 @@
       <RootProperty Name="RequestedTheme" />
       <RootProperty Name="Background" />
       <RootProperty Name="FontSize" />
+      <RootProperty Name="Command" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Parkomania.AddEdit" />
@@ -169,7 +173,6 @@
       <RootProperty Name="Text" />
     </RootType>
     <RootType FullName="Parkomania.LoginForma" />
-    <RootType FullName="Parkomania.MainPage" />
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
@@ -203,6 +206,9 @@
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Parkomania.ParkingRegister" />
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+    </RootType>
     <RootType FullName="Parkomania.Welcome" />
   </Roots.RootTypes>
 </Roots>

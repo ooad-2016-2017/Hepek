@@ -10,7 +10,7 @@ namespace Parkomania.Model
     public class Account
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int id;
+        public int id { get; set; }
         public string FirstName;
         public string LastName;
         public string Email;

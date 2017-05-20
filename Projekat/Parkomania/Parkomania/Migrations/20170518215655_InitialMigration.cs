@@ -57,7 +57,8 @@ namespace ParkomaniaMigrations
                    firstname = table.Column(type: "TEXT", nullable: false),
                    lastname = table.Column(type: "TEXT", nullable: false),
                    email = table.Column(type: "TEXT", nullable: false),
-                   password = table.Column(type: "TEXT", nullable: false)
+                   password = table.Column(type: "TEXT", nullable: false),
+                   acctype = table.Column(type: "TEXT", nullable: false)
                },
                constraints: table =>
                {
@@ -70,12 +71,54 @@ namespace ParkomaniaMigrations
               {
                   id = table.Column(type: "INTEGER", nullable: false),
                    // .Annotation("Sqlite:Autoincrement", true)
-                  places = table.Column(type: "TEXT", nullable: false),
+                  places = table.Column(type: "TEXT", nullable: false), 
               },
               constraints: table =>
               {
                   table.PrimaryKey("PK_pmodel", x => x.id);
               });
+            //----------
+            migration.CreateTable(
+               name: "User",
+               columns: table => new
+               {
+                   id = table.Column(type: "INTEGER", nullable: false),
+                  // .Annotation("Sqlite:Autoincrement", true)
+                  locationid = table.Column(type: "INTEGER", nullable: false)
+               },
+               constraints: table =>
+               {
+                   table.PrimaryKey("PK_user", x => x.id);
+               });
+            //-------
+            migration.CreateTable(
+               name: "Inbox",
+               columns: table => new
+               {
+                   id = table.Column(type: "INTEGER", nullable: false),
+                   // .Annotation("Sqlite:Autoincrement", true)
+                   message = table.Column(type: "TEXT", nullable: false),
+                   from = table.Column(type: "TEXT", nullable: false),
+                   time = table.Column(type: "TEXT", nullable: false)
+               },
+               constraints: table =>
+               {
+                   table.PrimaryKey("PK_inbox", x => x.id);
+               });
+            //-------
+            migration.CreateTable(
+               name: "ParkingManager",
+               columns: table => new
+               {
+                   id = table.Column(type: "INTEGER", nullable: false),
+                   // .Annotation("Sqlite:Autoincrement", true)
+                   parkingid = table.Column(type: "INTEGER", nullable: false)
+               },
+               constraints: table =>
+               {
+                   table.PrimaryKey("PK_parkingManager", x => x.id);
+               });
+
         }
 
         public override void Down(MigrationBuilder migration)

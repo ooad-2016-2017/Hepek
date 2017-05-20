@@ -34,7 +34,7 @@ namespace Parkomania
         {
             using (var db = new dbContext.Parking())
             {
-                using (var db2 = new dbContext.Location())
+                using (var db2 = new dbContext.Parking())
                 {
                     Model.ParkingModel model = new Model.ParkingModel(100, 100);
                     var contact = new Model.Parking(1, textparkingime.Text, textpargrad.Text, comboboxpardrzava.SelectedItem.ToString(), 2, float.Parse(textparprice.Text), Int32.Parse(textparstart.Text), Int32.Parse(textparend.Text), Int32.Parse(textparkap.Text), Int32.Parse(textparfreep.Text), model);

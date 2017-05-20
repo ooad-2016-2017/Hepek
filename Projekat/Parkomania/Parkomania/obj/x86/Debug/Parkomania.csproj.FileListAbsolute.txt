@@ -885,7 +885,6 @@ C:\Users\User\Documents\Projekat\Parkomania\Parkomania\bin\x86\Debug\ForgotPassw
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\bin\x86\Debug\GlavnaForma.xbf
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\bin\x86\Debug\GlavnaFormaLogin.xbf
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\bin\x86\Debug\LoginForma.xbf
-C:\Users\User\Documents\Projekat\Parkomania\Parkomania\bin\x86\Debug\MainPage.xbf
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\bin\x86\Debug\ParkingForm.xbf
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\bin\x86\Debug\ParkingKontrola.xbf
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\bin\x86\Debug\ParkingRegister.xbf
@@ -1035,8 +1034,6 @@ C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\GlavnaForma
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\GlavnaFormaLogin.g.cs
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\LoginForma.g.i.cs
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\LoginForma.g.cs
-C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\MainPage.g.i.cs
-C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\MainPage.g.cs
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\ParkingForm.g.i.cs
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\ParkingForm.g.cs
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\ParkingKontrola.g.i.cs
@@ -1054,7 +1051,6 @@ C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\ForgotPassw
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\GlavnaForma.xaml
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\GlavnaFormaLogin.xaml
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\LoginForma.xaml
-C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\MainPage.xaml
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\ParkingForm.xaml
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\ParkingKontrola.xaml
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\ParkingRegister.xaml
@@ -1067,7 +1063,6 @@ C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\ForgotPassw
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\GlavnaForma.xbf
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\GlavnaFormaLogin.xbf
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\LoginForma.xbf
-C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\MainPage.xbf
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\ParkingForm.xbf
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\ParkingKontrola.xbf
 C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\ParkingRegister.xbf
@@ -1430,3 +1425,9 @@ C:\Users\zlayaa\Desktop\Parkomania\Parkomania\obj\x86\Debug\qualifiers.txt
 C:\Users\zlayaa\Desktop\Parkomania\Parkomania\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\zlayaa\Desktop\Parkomania\Parkomania\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\zlayaa\Desktop\Parkomania\Parkomania\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\Parkomania.csprojResolveAssemblyReference.cache
+C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\PModelxaml.g.i.cs
+C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\PModelxaml.g.cs
+C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\PModelxaml.xaml
+C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\PModelxaml.xbf
+C:\Users\User\Documents\Projekat\Parkomania\Parkomania\bin\x86\Debug\PModelxaml.xbf

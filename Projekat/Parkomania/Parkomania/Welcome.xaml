@@ -30,7 +30,7 @@
         <Button x:Name="button" Content="Want to register a parking? Contact us!" HorizontalAlignment="Stretch" Margin="10,5,10,5" Grid.Row="10" VerticalAlignment="Stretch" Grid.ColumnSpan="3" Background="#33F61010"/>
         <Button x:Name="button1" Content="Don't have account yet? Sign up now!" HorizontalAlignment="Stretch" Margin="10,5,10,5" Grid.Row="9" VerticalAlignment="Stretch" Grid.ColumnSpan="3" Background="#331BF10D"/>
         <Button x:Name="button2" Content="Forgot password?" HorizontalAlignment="Stretch" Margin="10,5,10,5" Grid.Row="8" VerticalAlignment="Stretch" Grid.ColumnSpan="3" Background="#330FD7EB"/>
-        <Button x:Name="button3" Content="Login as a Guest" HorizontalAlignment="Stretch" Margin="10,5,10,5" Grid.Row="7" VerticalAlignment="Stretch" Grid.ColumnSpan="2"/>
+        <Button x:Name="button3" Content="Login as a Guest" HorizontalAlignment="Stretch" Margin="10,5,10,5" Grid.Row="7" VerticalAlignment="Stretch" Grid.ColumnSpan="2" Command="{Binding Path=LoginGosta}" />
         <Button x:Name="button4" Content="Login" Grid.Column="2" HorizontalAlignment="Stretch" Margin="10,5,10,5" Grid.Row="7" VerticalAlignment="Stretch"/>
         <CheckBox x:Name="checkBox" Content="Remember me" HorizontalAlignment="Left" Margin="10,0,0,0" Grid.Row="6" VerticalAlignment="Center" Grid.Column="1"/>
         <TextBox x:Name="textBox1" HorizontalAlignment="Stretch" Margin="10,0,10,0" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.Column="1"/>
