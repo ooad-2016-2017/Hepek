@@ -101,7 +101,6 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="dbContext\Location.cs" />
     <Compile Include="dbContext\Parking.cs" />
     <Compile Include="ForgotPassword.xaml.cs">
       <DependentUpon>ForgotPassword.xaml</DependentUpon>
@@ -115,14 +114,10 @@
     <Compile Include="LoginForma.xaml.cs">
       <DependentUpon>LoginForma.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\20170518215655_InitialMigration.cs" />
     <Compile Include="Migrations\20170518215655_InitialMigration.designer.cs">
       <DependentUpon>20170518215655_InitialMigration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\LocationModelSnapshot.cs" />
     <Compile Include="Migrations\ParkingModelSnapshot.cs" />
     <Compile Include="Model\Account.cs" />
     <Compile Include="Model\Admin.cs" />
@@ -148,6 +143,9 @@
       <DependentUpon>ParkingRegister.xaml</DependentUpon>
     </Compile>
     <Compile Include="PictureConverter.cs" />
+    <Compile Include="PModelxaml.xaml.cs">
+      <DependentUpon>PModelxaml.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Profil.xaml.cs">
       <DependentUpon>Profil.xaml</DependentUpon>
     </Compile>
@@ -167,6 +165,7 @@
     <None Include="Parkomania_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\logo.png" />
     <Content Include="Assets\parking.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
@@ -206,10 +205,6 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="ParkingForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -221,6 +216,10 @@
     <Page Include="ParkingRegister.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PModelxaml.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Profil.xaml">
       <Generator>MSBuild:Compile</Generator>

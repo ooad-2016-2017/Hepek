@@ -47,12 +47,43 @@ namespace ParkomaniaMigrations
                {
                    table.PrimaryKey("PK_Location", x => x.id);
                });
+            //------
+            migration.CreateTable(
+               name: "Account",
+               columns: table => new
+               {
+                   id = table.Column(type: "INTEGER", nullable: false),
+                   // .Annotation("Sqlite:Autoincrement", true)
+                   firstname = table.Column(type: "TEXT", nullable: false),
+                   lastname = table.Column(type: "TEXT", nullable: false),
+                   email = table.Column(type: "TEXT", nullable: false),
+                   password = table.Column(type: "TEXT", nullable: false)
+               },
+               constraints: table =>
+               {
+                   table.PrimaryKey("PK_acc", x => x.id);
+               });
+            //-------------------------
+            migration.CreateTable(
+              name: "ParkingModel",
+              columns: table => new
+              {
+                  id = table.Column(type: "INTEGER", nullable: false),
+                   // .Annotation("Sqlite:Autoincrement", true)
+                  places = table.Column(type: "TEXT", nullable: false),
+              },
+              constraints: table =>
+              {
+                  table.PrimaryKey("PK_pmodel", x => x.id);
+              });
         }
 
         public override void Down(MigrationBuilder migration)
         {
             migration.DropTable("Parking");
             migration.DropTable("Location");
+            migration.DropTable("Account");
+            migration.DropTable("ParkingModel");
         }
     }
 }

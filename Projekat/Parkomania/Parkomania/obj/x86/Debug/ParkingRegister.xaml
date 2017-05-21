@@ -20,15 +20,24 @@
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
                         <RowDefinition  />
-                        <RowDefinition  />
-                        <RowDefinition  />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition   />
+                        <RowDefinition/>
+                        <RowDefinition />
                     </Grid.RowDefinitions>
-                    <TextBlock x:ConnectionId='9' x:Name="textBlock" HorizontalAlignment="Right" Margin="0,0,0,0" TextWrapping="Wrap" Text="Parking name:" VerticalAlignment="Center" Grid.ColumnSpan="1"/>
-                    <TextBlock x:ConnectionId='10' x:Name="textBlock1" HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="Capacity:" VerticalAlignment="Center" Grid.Row="1"/>
-                    <TextBlock x:ConnectionId='11' x:Name="textBlock2" HorizontalAlignment="Right" Margin="10" TextWrapping="Wrap" Text="Parking layout" VerticalAlignment="Top" Grid.Row="2"/>
-                    <TextBox x:ConnectionId='12' x:Name="textBox" MinWidth="150" HorizontalAlignment="Stretch" Margin="10,0,0,0" Grid.Row="0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.Column="1" />
-                    <TextBox x:ConnectionId='13' x:Name="textBox1" MinWidth="150" HorizontalAlignment="Stretch" Margin="10,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.Column="1"/>
-                    <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="3" Grid.ColumnSpan="2" VerticalAlignment="Top"/>
+                    <TextBlock x:ConnectionId='10' x:Name="textBlock" HorizontalAlignment="Right" Margin="0,10,10,0" TextWrapping="Wrap" Text="Parking name:" VerticalAlignment="Center" />
+                    <TextBlock x:ConnectionId='11' x:Name="textBlock1" HorizontalAlignment="Right" Margin="0,10,10,0" TextWrapping="Wrap" Text="Capacity:" VerticalAlignment="Center" Grid.Row="3"/>
+                    <TextBlock x:ConnectionId='12' x:Name="textBlock6" HorizontalAlignment="Right" Margin="0,10,10,0" TextWrapping="Wrap" Text="Price:" VerticalAlignment="Center" Grid.Row="4" />
+                    <TextBlock x:ConnectionId='13' x:Name="textBlock7" HorizontalAlignment="Right" Margin="0,10,10,0" TextWrapping="Wrap" Text="Start time:" VerticalAlignment="Center" Grid.Row="1"/>
+                    <TextBlock x:ConnectionId='14' x:Name="textBlocl8" HorizontalAlignment="Right" Margin="0,10,10,0" TextWrapping="Wrap" Text="End time:" VerticalAlignment="Center" Grid.Row="2"/>
+                    <TextBlock x:ConnectionId='15' x:Name="textBlocl10" HorizontalAlignment="Right" Margin="0,10,10,0" TextWrapping="Wrap" Text="Free places:" VerticalAlignment="Center" Grid.Row="5"/>
+                    <TextBox x:ConnectionId='16' x:Name="textparkingime" MinWidth="150" HorizontalAlignment="Stretch" Margin="0,10,10,0" Grid.Row="0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.Column="1" />
+                    <TextBox x:ConnectionId='17' x:Name="textparkap" MinWidth="150" HorizontalAlignment="Stretch" Margin="0,10,10,0" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.Column="1"/>
+                    <TextBox x:ConnectionId='18' x:Name="textparprice" MinWidth="150" HorizontalAlignment="Stretch" Margin="0,10,10,0" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.Column="1" />
+                    <TextBox x:ConnectionId='19' x:Name="textparstart" MinWidth="150" HorizontalAlignment="Stretch" Margin="0,10,10,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.Column="1"/>
+                    <TextBox x:ConnectionId='20' x:Name="textparend" MinWidth="150" HorizontalAlignment="Stretch" Margin="0,10,10,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.Column="1" />
+                    <TextBox x:ConnectionId='21' x:Name="textparfreep" MinWidth="150" HorizontalAlignment="Stretch" Margin="0,10,10,0" Grid.Row="5" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.Column="1"/>
                 </Grid>
             </PivotItem>
             <PivotItem Header="Location">
@@ -44,18 +53,25 @@
                         <RowDefinition  />
                         <RowDefinition  />
                     </Grid.RowDefinitions>
-                    <TextBlock x:ConnectionId='1' x:Name="textBlock3" HorizontalAlignment="Right" Margin="0,0,0,0" TextWrapping="Wrap" Text="Country:" VerticalAlignment="Center" Grid.ColumnSpan="1"/>
-                    <TextBlock x:ConnectionId='2' x:Name="textBlock4" HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="City:" VerticalAlignment="Center" Grid.Row="1"/>
-                    <TextBox x:ConnectionId='3' x:Name="textBox3" MinWidth="150" HorizontalAlignment="Stretch" Margin="10,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.Column="1"/>
+                    <TextBlock x:ConnectionId='1' x:Name="textBlock4" HorizontalAlignment="Right" Margin="0,0,0,0" TextWrapping="Wrap" Text="Country:" VerticalAlignment="Center" Grid.ColumnSpan="1"/>
+                    <TextBlock x:ConnectionId='2' x:Name="textBlock3" HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="City:" VerticalAlignment="Center" Grid.Row="1"/>
+                    <TextBox x:ConnectionId='3' x:Name="textpargrad" MinWidth="150" HorizontalAlignment="Stretch" Margin="10,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.Column="1"/>
                     <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="2" Margin="10" Grid.ColumnSpan="2" VerticalAlignment="Top"/>
                     <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="3" Margin="10" Grid.ColumnSpan="2" VerticalAlignment="Bottom"/>
-                    <ComboBox x:ConnectionId='4' x:Name="comboBox" MinWidth="150" HorizontalAlignment="Stretch" Margin="10,0,0,0" Grid.Row="0"  VerticalAlignment="Center" Grid.Column="1" >
-                        <ComboBoxItem x:ConnectionId='6'  x:Name="i1" Content="Bosnia and Herzegovina"/>
-                        <ComboBoxItem x:ConnectionId='7'  x:Name="i2" Content="Croatia"/>
-                        <ComboBoxItem x:ConnectionId='8'  x:Name="i3" Content="Serbia"/>
+                    <ComboBox x:ConnectionId='4' x:Name="comboboxpardrzava" MinWidth="150" HorizontalAlignment="Stretch" Margin="10,0,0,0" Grid.Row="0"  VerticalAlignment="Center" Grid.Column="1" >
+                        <ComboBoxItem x:ConnectionId='7'  x:Name="i1" Content="Bosnia and Herzegovina"/>
+                        <ComboBoxItem x:ConnectionId='8'  x:Name="i2" Content="Croatia"/>
+                        <ComboBoxItem x:ConnectionId='9'  x:Name="i3" Content="Serbia"/>
                     </ComboBox>
-                    <Maps:MapControl Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="2" VerticalAlignment="Center" Grid.RowSpan="2"/>
-                    <Button x:ConnectionId='5' x:Name="button" Content="Register" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="4" VerticalAlignment="Center"/>
+                    <Maps:MapControl x:ConnectionId='5' Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="2" VerticalAlignment="Center" Grid.RowSpan="2"                                 />
+                    <Button x:ConnectionId='6' x:Name="button" Content="Register" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="4" VerticalAlignment="Center"                     />
+                </Grid>
+            </PivotItem>
+            <PivotItem Header="Parking layout">
+                <Grid>
+                    <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="6" Grid.ColumnSpan="2" VerticalAlignment="Top"/>
+                    <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="6" Grid.ColumnSpan="2" VerticalAlignment="Bottom"/>
+                    <local:PModelxaml />
                 </Grid>
             </PivotItem>
         </Pivot>

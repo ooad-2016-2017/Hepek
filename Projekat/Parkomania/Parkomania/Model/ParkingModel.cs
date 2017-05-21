@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -8,27 +9,14 @@ namespace Parkomania.Model
 {
     public class ParkingModel
     {
-        public double Length;
-        public double Width;
-        public List<Tuple<int, Location>> Locations;
-        public List<bool> Free;
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int id;
+        public List<bool> places;
         public int brojParkingMjesta;
         public ParkingModel(double l, double w)
         {
-            Length = l;
-            Width = w;
-            Locations = new List<Tuple<int, Location>>();
-            Free = new List<bool>();
+            places = new List<bool>();
             brojParkingMjesta = 0;
-        }
-        public void addLocation(Location l)
-        {
-            Locations.Add(new Tuple<int, Location>(brojParkingMjesta++, l));
-            Free.Add(true);
-        } 
-        public bool isFree(int i)
-        {
-            return Free[i];
         }
     }
 }

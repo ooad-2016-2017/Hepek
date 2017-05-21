@@ -13,6 +13,8 @@ namespace Parkomania.dbContext
     class Parking: DbContext
     {
         public DbSet<Model.Parking> parking { get; set; }
+        public DbSet<Model.Location> location { get; set; }
+        public DbSet<Model.Account> account { get; set; }
         public Parking()
         {
 
