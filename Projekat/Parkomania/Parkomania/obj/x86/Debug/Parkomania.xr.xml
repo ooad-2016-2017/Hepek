@@ -1,20 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="search" />
+    <RootPropertyPathName Name="sendcode" />
+    <RootPropertyPathName Name="entercode" />
+    <RootPropertyPathName Name="emailforgotpass" />
+    <RootPropertyPathName Name="send" />
+    <RootPropertyPathName Name="cancel" />
+    <RootPropertyPathName Name="searchparkingguest" />
     <RootPropertyPathName Name="findme" />
     <RootPropertyPathName Name="exit" />
+    <RootPropertyPathName Name="search" />
     <RootPropertyPathName Name="CheckBoxIsChecked" />
     <RootPropertyPathName Name="pasw" />
     <RootPropertyPathName Name="Email" />
     <RootPropertyPathName Name="lastname" />
     <RootPropertyPathName Name="firstname" />
     <RootPropertyPathName Name="confirm" />
+    <RootPropertyPathName Name="addparking" />
+    <RootPropertyPathName Name="city" />
+    <RootPropertyPathName Name="freep" />
+    <RootPropertyPathName Name="etime" />
+    <RootPropertyPathName Name="stime" />
+    <RootPropertyPathName Name="price" />
+    <RootPropertyPathName Name="capacity" />
+    <RootPropertyPathName Name="pname" />
     <RootPropertyPathName Name="pass" />
     <RootPropertyPathName Name="email" />
     <RootPropertyPathName Name="Login" />
     <RootPropertyPathName Name="LoginGosta" />
+    <RootPropertyPathName Name="forgotpass" />
     <RootPropertyPathName Name="register" />
+    <RootPropertyPathName Name="regParking" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -22,28 +38,19 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="Content" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="MinHeight" />
-      <RootProperty Name="MaxHeight" />
-      <RootProperty Name="MinWidth" />
-      <RootProperty Name="MaxWidth" />
-      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="Children" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="BorderBrush" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="UseLayoutRounding" />
       <RootProperty Name="RenderTransform" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
       <RootMethod Name="GetRow" />
@@ -66,8 +73,8 @@
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Text" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Inlines" />
+      <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Width" />
       <RootEvent Name="SelectionChanged" />
     </RootType>
@@ -77,8 +84,8 @@
       <RootProperty Name="TextWrapping" />
       <RootProperty Name="Text" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Width" />
       <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
       <RootProperty Name="MinWidth" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
@@ -86,12 +93,11 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="Width" />
-      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="Command" />
       <RootProperty Name="RequestedTheme" />
       <RootProperty Name="Background" />
-      <RootProperty Name="Command" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="Width" />
       <RootProperty Name="FontSize" />
       <RootEvent Name="Click" />
     </RootType>
@@ -127,12 +133,16 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Text" />
       <RootProperty Name="PlaceholderText" />
       <RootProperty Name="Items" />
-      <RootProperty Name="Text" />
     </RootType>
     <RootType FullName="System.String" />
     <RootType FullName="Parkomania.Admin" />
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+      <RootProperty Name="Mode" />
+    </RootType>
     <RootType FullName="Parkomania.ForgotPassword" />
     <RootType FullName="Windows.UI.Xaml.Controls.Maps.MapControl">
       <RootProperty Name="HorizontalAlignment" />
@@ -154,10 +164,6 @@
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
       <RootProperty Name="Icon" />
       <RootProperty Name="Label" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="Path" />
-      <RootProperty Name="Mode" />
     </RootType>
     <RootType FullName="Parkomania.GlavnaFormaLogin" />
     <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">

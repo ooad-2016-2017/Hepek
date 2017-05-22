@@ -27,6 +27,10 @@ namespace Parkomania.ViewModel
         public ICommand register { get; set; }
         public ICommand confirm { get; set; }
         public ICommand regParking { get; set; }
+        public ICommand forgotpass { get; set; }
+        public ICommand cancel { get; set; }
+        public ICommand send { get; set; }
+        public ICommand sendcode { get; set; }
         //welcome
         private string _email;
         private string _password;
@@ -120,6 +124,33 @@ namespace Parkomania.ViewModel
                 }
             }
         }
+        //forgot password
+        public string emailfp;
+        public string ecfp;
+        public string emailforgotpass
+        {
+            get { return emailfp; }
+            set
+            {
+                emailfp = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(emailforgotpass)));
+                }
+            }
+        }
+        public string entercode
+        {
+            get { return ecfp; }
+            set
+            {
+                ecfp = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(entercode)));
+                }
+            }
+        }
 
         public System()
         {
@@ -128,16 +159,37 @@ namespace Parkomania.ViewModel
                 //parkings = db.parking.ToList<Model.Parking>();
                 //users = db.user.ToList<Model.User>();
                 //admins = db.admin.ToList<Model.Admin>();
-                acc = db.account.ToList<Model.Account>();
+                //acc = db.account.ToList<Model.Account>();
             }
             LoginGosta = new RelayCommand<object>(openGuestForm, check);
             Login = new RelayCommand<object>(openLoginForm, check);
             register = new RelayCommand<object>(openReg, check);
             confirm = new RelayCommand<object>(addUser, check);
             regParking = new RelayCommand<object>(openRegParking, check);
+            forgotpass = new RelayCommand<object>(forgotpassform, check);
+            cancel = new RelayCommand<object>(Cancel, check);
+            send = new RelayCommand<object>(Send, check);
+            sendcode = new RelayCommand<object>(SendCode, check);
             NavigationService = new NavigationService();
-        }
 
+        }
+        //Forgot password
+        public void Send(object parametar)
+        {
+
+        }
+        public void SendCode(object parametar)
+        {
+
+        }
+        public void Cancel(object parametar)
+        {
+            this.NavigationService.GoBack();
+        }
+        public void forgotpassform(object parametar)
+        {
+            NavigationService.Navigate(typeof(ForgotPassword), this);
+        }
         public void openGuestForm(object parametar)
         {
             email = "";

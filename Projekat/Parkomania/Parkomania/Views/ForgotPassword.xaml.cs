@@ -25,11 +25,9 @@ namespace Parkomania
         public ForgotPassword()
         {
             this.InitializeComponent();
+            this.DataContext = new ViewModel.System();
+            NavigationCacheMode = NavigationCacheMode.Required;
         }
 
-        private void textBlock_SelectionChanged(object sender, RoutedEventArgs e)
-        {
-
-        }
     }
 }
