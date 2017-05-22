@@ -1,5 +1,4 @@
-﻿using KompShopMVVM.KompShop.Helper;
-using Parkomania.Helper;
+﻿using Parkomania.Helper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,13 +7,16 @@ using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
 
 namespace Parkomania.ViewModel
 {
     public class System : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler PropertyChanged;
-      
+        public NavigationService NavigationService { get; set; }
+
         public static List<Model.Parking> parkings;
         public static List<Model.User> users;
         public static List<Model.Admin> admins;
@@ -24,6 +26,7 @@ namespace Parkomania.ViewModel
         public ICommand Login { get; set; }
         public ICommand register { get; set; }
         public ICommand confirm { get; set; }
+        public ICommand regParking { get; set; }
         //welcome
         private string _email;
         private string _password;
@@ -131,10 +134,14 @@ namespace Parkomania.ViewModel
             Login = new RelayCommand<object>(openLoginForm, check);
             register = new RelayCommand<object>(openReg, check);
             confirm = new RelayCommand<object>(addUser, check);
+            regParking = new RelayCommand<object>(openRegParking, check);
+            NavigationService = new NavigationService();
         }
 
         public void openGuestForm(object parametar)
         {
+            email = "";
+            pass = "";
             NavigationService.Navigate(typeof(GlavnaForma), new GuestModel(this));
         }
         public bool check(object parametar)
@@ -146,6 +153,8 @@ namespace Parkomania.ViewModel
             foreach (Model.Account a in acc)
                 if (a.email == _email && a.password == MD5.ComputeMD5(_password))
                 {
+                    email = "";
+                    pass = "";
                     if (a.acctype == "admin")
                         NavigationService.Navigate(typeof(Admin), this);
                     else if (a.acctype == "user")
@@ -186,6 +195,12 @@ namespace Parkomania.ViewModel
                 pasw = string.Empty;
                 cb = false;
             }
+        }
+        public void openRegParking(object parametar)
+        {
+            email = "";
+            pass = "";
+            NavigationService.Navigate(typeof(ParkingRegister), this);
         }
     }
 }

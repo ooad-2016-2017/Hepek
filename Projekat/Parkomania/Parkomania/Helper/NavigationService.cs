@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
-namespace KompShopMVVM.KompShop.Helper
+namespace Parkomania.Helper
 {
     public class NavigationService 
     {

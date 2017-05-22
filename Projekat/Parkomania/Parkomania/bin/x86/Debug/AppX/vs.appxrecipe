@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\Users\zlayaa\Desktop\Parkomania\Parkomania\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-05-22T06:58:18.541</Modified>
+      <Modified>2017-05-22T08:47:43.288</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\zlayaa\Desktop\Parkomania\Parkomania\bin\x86\Debug\Parkomania.exe">
       <PackagePath>entrypoint\Parkomania.exe</PackagePath>
-      <Modified>2017-05-22T06:58:17.634</Modified>
+      <Modified>2017-05-22T08:47:42.762</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\zlayaa\.nuget\packages\CommonServiceLocator\1.3.0\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll">
       <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
@@ -592,7 +592,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\zlayaa\Desktop\Parkomania\Parkomania\bin\x86\Debug\Parkomania.xr.xml">
       <PackagePath>Parkomania.xr.xml</PackagePath>
-      <Modified>2017-05-22T06:09:51.865</Modified>
+      <Modified>2017-05-22T08:38:57.252</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -601,11 +601,11 @@
     <AppxPackagedFile Include="C:\Users\zlayaa\Desktop\Parkomania\Parkomania\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-05-22T06:20:23.458</Modified>
+      <Modified>2017-05-22T08:46:14.415</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\zlayaa\Desktop\Parkomania\Parkomania\bin\x86\Debug\Core\Parkomania.exe">
       <PackagePath>Parkomania.exe</PackagePath>
-      <Modified>2017-05-22T06:58:18.528</Modified>
+      <Modified>2017-05-22T08:47:43.282</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

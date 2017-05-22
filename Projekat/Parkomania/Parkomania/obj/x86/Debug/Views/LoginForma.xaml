@@ -28,20 +28,19 @@
                 <CompositeTransform Rotation="0.145"/>
             </Grid.RenderTransform>
             <Button x:ConnectionId='1' Command="{Binding Path=confirm}" x:Name="button" Content="Confirm" HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Center" RenderTransformOrigin="0.303,0.303" Grid.Row="7" Grid.Column="2"/>
-            <Button x:ConnectionId='2' x:Name="button1" Content="Cancel" HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Center" Grid.Row="7" Grid.ColumnSpan="2"/>
-            <TextBlock x:ConnectionId='3' VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="textBlock" Margin="42,0,0,0" TextWrapping="Wrap" Grid.Row="1">
+            <TextBlock x:ConnectionId='2' VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="textBlock" Margin="42,0,0,0" TextWrapping="Wrap" Grid.Row="1">
                 <Run Text="  "/>
                 <Run Text="First Name: "/>
             </TextBlock>
-            <TextBlock x:ConnectionId='4' x:Name="textBlock_Copy3" HorizontalAlignment="Center" Margin="3,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center"  RenderTransformOrigin="0.84,0.541" Grid.Row="5" Text="Confirm Password:"/>
-            <TextBlock x:ConnectionId='5' VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="textBlock_Copy2" Margin="61,0,0,0" TextWrapping="Wrap" Text="Password:" RenderTransformOrigin="0.729,1.005" Grid.Row="4"/>
-            <TextBlock x:ConnectionId='6' VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="textBlock_Copy1" Margin="79,0,0,0" TextWrapping="Wrap" Text="E-Mail:"  RenderTransformOrigin="0.889,0.6" Grid.Row="3"/>
-            <TextBlock x:ConnectionId='7' VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="textBlock_Copy" Margin="52,0,0,0" TextWrapping="Wrap" Text="Last Name:" Grid.Row="2"/>
-            <TextBox x:ConnectionId='8'  VerticalAlignment= "Center" x:Name="textime" Grid.Column="1" Margin="10.19,2.73,0.405,3.103" Grid.Row="1" TextWrapping="Wrap" Text="{Binding Path=firstname, Mode=TwoWay}"/>
-            <TextBox x:ConnectionId='9' VerticalAlignment="Center" x:Name="textprezime" Margin="10.19,2.897,0.405,2.936" TextWrapping="Wrap" Text="{Binding Path=lastname, Mode=TwoWay}" Grid.Column="1" Grid.Row="2"/>
-            <TextBox x:ConnectionId='10' VerticalAlignment="Center" x:Name="textmail" Margin="10.19,3.064,0.405,2.768" TextWrapping="Wrap" Text="{Binding Path=Email, Mode=TwoWay}" Grid.Column="1" Grid.Row="3"/>
-            <PasswordBox x:ConnectionId='11' Password="{Binding Path=pasw, Mode=TwoWay}" VerticalAlignment="Center" x:Name="password" Grid.Column="1" Margin="10.19,3.232,0.405,2.601" Grid.Row="4"/>
-            <PasswordBox x:ConnectionId='12'  VerticalAlignment="Center" x:Name="passwordpotvrdi" Margin="10.19,3.399,0.405,3.434" Grid.Column="1" Grid.Row="5"/>
+            <TextBlock x:ConnectionId='3' x:Name="textBlock_Copy3" HorizontalAlignment="Center" Margin="3,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center"  RenderTransformOrigin="0.84,0.541" Grid.Row="5" Text="Confirm Password:"/>
+            <TextBlock x:ConnectionId='4' VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="textBlock_Copy2" Margin="61,0,0,0" TextWrapping="Wrap" Text="Password:" RenderTransformOrigin="0.729,1.005" Grid.Row="4"/>
+            <TextBlock x:ConnectionId='5' VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="textBlock_Copy1" Margin="79,0,0,0" TextWrapping="Wrap" Text="E-Mail:"  RenderTransformOrigin="0.889,0.6" Grid.Row="3"/>
+            <TextBlock x:ConnectionId='6' VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="textBlock_Copy" Margin="52,0,0,0" TextWrapping="Wrap" Text="Last Name:" Grid.Row="2"/>
+            <TextBox x:ConnectionId='7'  VerticalAlignment= "Center" x:Name="textime" Grid.Column="1" Margin="10.19,2.73,0.405,3.103" Grid.Row="1" TextWrapping="Wrap" Text="{Binding Path=firstname, Mode=TwoWay}"/>
+            <TextBox x:ConnectionId='8' VerticalAlignment="Center" x:Name="textprezime" Margin="10.19,2.897,0.405,2.936" TextWrapping="Wrap" Text="{Binding Path=lastname, Mode=TwoWay}" Grid.Column="1" Grid.Row="2"/>
+            <TextBox x:ConnectionId='9' VerticalAlignment="Center" x:Name="textmail" Margin="10.19,3.064,0.405,2.768" TextWrapping="Wrap" Text="{Binding Path=Email, Mode=TwoWay}" Grid.Column="1" Grid.Row="3"/>
+            <PasswordBox x:ConnectionId='10' Password="{Binding Path=pasw, Mode=TwoWay}" VerticalAlignment="Center" x:Name="password" Grid.Column="1" Margin="10.19,3.232,0.405,2.601" Grid.Row="4"/>
+            <PasswordBox x:ConnectionId='11'  VerticalAlignment="Center" x:Name="passwordpotvrdi" Margin="10.19,3.399,0.405,3.434" Grid.Column="1" Grid.Row="5"/>
             <ScrollViewer Grid.Column="2" Margin="10,0.73,10,0.434" Grid.RowSpan="5" Grid.Row="1">
                 <RichTextBlock Height="Auto" Width="Auto" Margin="10,0,10,0">
                     <Paragraph>
@@ -49,7 +48,7 @@
                     </Paragraph>
                 </RichTextBlock>
             </ScrollViewer>
-            <CheckBox x:ConnectionId='13'  IsChecked="{Binding Path=CheckBoxIsChecked}"  x:Name="checkBox" Content="I Agree" Grid.Column="2" HorizontalAlignment="Left" Margin="30,0,0,0" Grid.Row="6" VerticalAlignment="Center"/>
+            <CheckBox x:ConnectionId='12'  IsChecked="{Binding Path=CheckBoxIsChecked}"  x:Name="checkBox" Content="I Agree" Grid.Column="2" HorizontalAlignment="Left" Margin="30,0,0,0" Grid.Row="6" VerticalAlignment="Center"/>
         </Grid>
 
     </Grid>

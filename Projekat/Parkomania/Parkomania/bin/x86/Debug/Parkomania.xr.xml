@@ -1,6 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="search" />
+    <RootPropertyPathName Name="findme" />
+    <RootPropertyPathName Name="exit" />
     <RootPropertyPathName Name="CheckBoxIsChecked" />
     <RootPropertyPathName Name="pasw" />
     <RootPropertyPathName Name="Email" />
@@ -126,6 +129,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="PlaceholderText" />
       <RootProperty Name="Items" />
+      <RootProperty Name="Text" />
     </RootType>
     <RootType FullName="System.String" />
     <RootType FullName="Parkomania.Admin" />
@@ -151,6 +155,10 @@
       <RootProperty Name="Icon" />
       <RootProperty Name="Label" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+      <RootProperty Name="Mode" />
+    </RootType>
     <RootType FullName="Parkomania.GlavnaFormaLogin" />
     <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform">
       <RootProperty Name="Rotation" />
@@ -171,10 +179,6 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="Path" />
-      <RootProperty Name="Mode" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RichTextBlock">
       <RootProperty Name="Height" />
@@ -197,10 +201,15 @@
       <RootProperty Name="MinWidth" />
       <RootProperty Name="Items" />
     </RootType>
+    <RootType FullName="Parkomania.PModelxaml">
+      <RootProperty Name="Margin" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Documents.LineBreak" />
     <RootType FullName="Parkomania.ParkingForm" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
       <RootProperty Name="Content" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Image">
       <RootProperty Name="Margin" />
@@ -217,7 +226,6 @@
       <RootProperty Name="Child" />
     </RootType>
     <RootType FullName="Parkomania.ParkingKontrola" />
-    <RootType FullName="Parkomania.PModelxaml" />
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
       <RootProperty Name="Content" />
     </RootType>

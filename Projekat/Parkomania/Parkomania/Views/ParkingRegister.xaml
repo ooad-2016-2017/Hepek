@@ -32,12 +32,12 @@
                     <TextBlock x:Name="textBlock7" HorizontalAlignment="Right" Margin="0,10,10,0" TextWrapping="Wrap" Text="Start time:" VerticalAlignment="Center" Grid.Row="1"/>
                     <TextBlock x:Name="textBlocl8" HorizontalAlignment="Right" Margin="0,10,10,0" TextWrapping="Wrap" Text="End time:" VerticalAlignment="Center" Grid.Row="2"/>
                     <TextBlock x:Name="textBlocl10" HorizontalAlignment="Right" Margin="0,10,10,0" TextWrapping="Wrap" Text="Free places:" VerticalAlignment="Center" Grid.Row="5"/>
-                    <TextBox x:Name="textparkingime" MinWidth="150" HorizontalAlignment="Stretch" Margin="0,10,10,0" Grid.Row="0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.Column="1" />
-                    <TextBox x:Name="textparkap" MinWidth="150" HorizontalAlignment="Stretch" Margin="0,10,10,0" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.Column="1"/>
-                    <TextBox x:Name="textparprice" MinWidth="150" HorizontalAlignment="Stretch" Margin="0,10,10,0" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.Column="1" />
-                    <TextBox x:Name="textparstart" MinWidth="150" HorizontalAlignment="Stretch" Margin="0,10,10,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.Column="1"/>
-                    <TextBox x:Name="textparend" MinWidth="150" HorizontalAlignment="Stretch" Margin="0,10,10,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.Column="1" />
-                    <TextBox x:Name="textparfreep" MinWidth="150" HorizontalAlignment="Stretch" Margin="0,10,10,0" Grid.Row="5" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.Column="1"/>
+                    <TextBox x:Name="textparkingime" MinWidth="150" HorizontalAlignment="Stretch" Margin="0,10,10,0" Grid.Row="0" TextWrapping="Wrap" Text="{Binding Path=pname, Mode=TwoWay}" VerticalAlignment="Center" Grid.Column="1" />
+                    <TextBox x:Name="textparkap" MinWidth="150" HorizontalAlignment="Stretch" Margin="0,10,10,0" Grid.Row="3" TextWrapping="Wrap" Text="{Binding Path=capacity, Mode=TwoWay}" VerticalAlignment="Center" Grid.Column="1"/>
+                    <TextBox x:Name="textparprice" MinWidth="150" HorizontalAlignment="Stretch" Margin="0,10,10,0" Grid.Row="4" TextWrapping="Wrap" Text="{Binding Path=price, Mode=TwoWay}" VerticalAlignment="Center" Grid.Column="1" />
+                    <TextBox x:Name="textparstart" MinWidth="150" HorizontalAlignment="Stretch" Margin="0,10,10,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding Path=stime, Mode=TwoWay}" VerticalAlignment="Center" Grid.Column="1"/>
+                    <TextBox x:Name="textparend" MinWidth="150" HorizontalAlignment="Stretch" Margin="0,10,10,0" Grid.Row="2" TextWrapping="Wrap" Text="{Binding Path=etime, Mode=TwoWay}" VerticalAlignment="Center" Grid.Column="1" />
+                    <TextBox x:Name="textparfreep" MinWidth="150" HorizontalAlignment="Stretch" Margin="0,10,10,0" Grid.Row="5" TextWrapping="Wrap" Text="{Binding Path=freep, Mode=TwoWay}" VerticalAlignment="Center" Grid.Column="1"/>
                 </Grid>
             </PivotItem>
             <PivotItem Header="Location">
@@ -55,7 +55,7 @@
                     </Grid.RowDefinitions>
                     <TextBlock x:Name="textBlock4" HorizontalAlignment="Right" Margin="0,0,0,0" TextWrapping="Wrap" Text="Country:" VerticalAlignment="Center" Grid.ColumnSpan="1"/>
                     <TextBlock x:Name="textBlock3" HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" Text="City:" VerticalAlignment="Center" Grid.Row="1"/>
-                    <TextBox x:Name="textpargrad" MinWidth="150" HorizontalAlignment="Stretch" Margin="10,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.Column="1"/>
+                    <TextBox x:Name="textpargrad" MinWidth="150" HorizontalAlignment="Stretch" Margin="10,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding Path=city, Mode=TwoWay}" VerticalAlignment="Center" Grid.Column="1"/>
                     <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="2" Margin="10" Grid.ColumnSpan="2" VerticalAlignment="Top"/>
                     <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="3" Margin="10" Grid.ColumnSpan="2" VerticalAlignment="Bottom"/>
                     <ComboBox x:Name="comboboxpardrzava" MinWidth="150" HorizontalAlignment="Stretch" Margin="10,0,0,0" Grid.Row="0"  VerticalAlignment="Center" Grid.Column="1" >
@@ -64,7 +64,7 @@
                         <ComboBoxItem  x:Name="i3" Content="Serbia"/>
                     </ComboBox>
                     <Maps:MapControl Grid.ColumnSpan="2" HorizontalAlignment="Center" Margin="0,0,0,0" Grid.Row="2" VerticalAlignment="Center" Grid.RowSpan="2" MapTapped="MapControl_MapTapped"/>
-                    <Button x:Name="button" Content="Register" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="4" VerticalAlignment="Center" Click="button_Click"/>
+                    <Button Command="{Binding Path=addparking}" x:Name="button" Content="Register" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="4" VerticalAlignment="Center" Click="button_Click"/>
                 </Grid>
             </PivotItem>
             <PivotItem Header="Parking layout">

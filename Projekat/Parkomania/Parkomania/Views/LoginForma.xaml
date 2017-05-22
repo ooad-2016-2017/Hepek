@@ -28,7 +28,6 @@
                 <CompositeTransform Rotation="0.145"/>
             </Grid.RenderTransform>
             <Button Command="{Binding Path=confirm}" x:Name="button" Content="Confirm" HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Center" RenderTransformOrigin="0.303,0.303" Grid.Row="7" Grid.Column="2"/>
-            <Button x:Name="button1" Content="Cancel" HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Center" Grid.Row="7" Grid.ColumnSpan="2"/>
             <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="textBlock" Margin="42,0,0,0" TextWrapping="Wrap" Grid.Row="1">
                 <Run Text="  "/>
                 <Run Text="First Name: "/>
