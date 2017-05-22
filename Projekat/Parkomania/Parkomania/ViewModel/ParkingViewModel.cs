@@ -8,6 +8,11 @@ namespace Parkomania.ViewModel
 {
     class ParkingViewModel
     {
+        System parent;
         public Model.Parking parking;
+        public ParkingViewModel(System s)
+        {
+            parent = s;
+        }
     }
 }

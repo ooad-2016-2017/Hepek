@@ -1,0 +1,31 @@
+﻿<UserControl
+    x:Class="Parkomania.Profil"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Parkomania"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+   >
+
+    <Grid Background="#FF84B6B9" >
+        <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Image x:ConnectionId='1' x:Name="image" HorizontalAlignment="Stretch" Margin="5,5,5,5" Grid.Row="0" Grid.RowSpan="3" VerticalAlignment="Stretch"  Source="Assets/LockScreenLogo.png" Grid.ColumnSpan="2"/>
+        <CommandBar Grid.Row="3"  HorizontalAlignment="Center"  Margin="3" VerticalAlignment="Center">
+            <CommandBar.Content>
+                <TextBlock Text="Zlatko Šubara" Margin="10,15,10,10" VerticalAlignment="Center"/>
+            </CommandBar.Content>
+            <CommandBar.SecondaryCommands>
+                <AppBarButton Icon="View" Label="View profile" />
+                <AppBarButton Icon="Setting" Label="Settings" />
+                <AppBarButton Icon="ClosePane" Label="Logout" />
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Grid>
+</UserControl>
+

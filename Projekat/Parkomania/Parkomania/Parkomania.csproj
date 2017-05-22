@@ -92,26 +92,28 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AddEdit.xaml.cs">
+    <Compile Include="Helper\MD5.cs" />
+    <Compile Include="Helper\RelayCommand.cs" />
+    <Compile Include="Views\AddEdit.xaml.cs">
       <DependentUpon>AddEdit.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Admin.xaml.cs">
+    <Compile Include="Views\Admin.xaml.cs">
       <DependentUpon>Admin.xaml</DependentUpon>
     </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="dbContext\Parking.cs" />
-    <Compile Include="ForgotPassword.xaml.cs">
+    <Compile Include="Views\ForgotPassword.xaml.cs">
       <DependentUpon>ForgotPassword.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GlavnaForma.xaml.cs">
+    <Compile Include="Views\GlavnaForma.xaml.cs">
       <DependentUpon>GlavnaForma.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GlavnaFormaLogin.xaml.cs">
+    <Compile Include="Views\GlavnaFormaLogin.xaml.cs">
       <DependentUpon>GlavnaFormaLogin.xaml</DependentUpon>
     </Compile>
-    <Compile Include="LoginForma.xaml.cs">
+    <Compile Include="Views\LoginForma.xaml.cs">
       <DependentUpon>LoginForma.xaml</DependentUpon>
     </Compile>
     <Compile Include="Migrations\20170518215655_InitialMigration.cs" />
@@ -133,30 +135,29 @@
     <Compile Include="Model\ParkingManager.cs" />
     <Compile Include="Model\ParkingModel.cs" />
     <Compile Include="Model\User.cs" />
-    <Compile Include="ParkingForm.xaml.cs">
+    <Compile Include="Views\ParkingForm.xaml.cs">
       <DependentUpon>ParkingForm.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ParkingKontrola.xaml.cs">
+    <Compile Include="Controls\ParkingKontrola.xaml.cs">
       <DependentUpon>ParkingKontrola.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ParkingRegister.xaml.cs">
+    <Compile Include="Views\ParkingRegister.xaml.cs">
       <DependentUpon>ParkingRegister.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PictureConverter.cs" />
-    <Compile Include="PModelxaml.xaml.cs">
+    <Compile Include="Helper\PictureConverter.cs" />
+    <Compile Include="Controls\PModelxaml.xaml.cs">
       <DependentUpon>PModelxaml.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Profil.xaml.cs">
+    <Compile Include="Controls\Profil.xaml.cs">
       <DependentUpon>Profil.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModel\GuestModel.cs" />
-    <Compile Include="ViewModel\NavigationService.cs" />
+    <Compile Include="Helper\NavigationService.cs" />
     <Compile Include="ViewModel\ParkingViewModel.cs" />
     <Compile Include="ViewModel\System.cs" />
-    <Compile Include="ViewModel\test.cs" />
     <Compile Include="ViewModel\UserModel.cs" />
-    <Compile Include="Welcome.xaml.cs">
+    <Compile Include="Views\Welcome.xaml.cs">
       <DependentUpon>Welcome.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -183,51 +184,51 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="AddEdit.xaml">
+    <Page Include="Views\AddEdit.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Admin.xaml">
+    <Page Include="Views\Admin.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="ForgotPassword.xaml">
+    <Page Include="Views\ForgotPassword.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GlavnaForma.xaml">
+    <Page Include="Views\GlavnaForma.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="GlavnaFormaLogin.xaml">
+    <Page Include="Views\GlavnaFormaLogin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="LoginForma.xaml">
+    <Page Include="Views\LoginForma.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ParkingForm.xaml">
+    <Page Include="Views\ParkingForm.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ParkingKontrola.xaml">
+    <Page Include="Controls\ParkingKontrola.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ParkingRegister.xaml">
+    <Page Include="Views\ParkingRegister.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="PModelxaml.xaml">
+    <Page Include="Controls\PModelxaml.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Profil.xaml">
+    <Page Include="Controls\Profil.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Welcome.xaml">
+    <Page Include="Views\Welcome.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

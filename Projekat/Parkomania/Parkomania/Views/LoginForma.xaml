@@ -1,0 +1,56 @@
+﻿<Page
+    x:Class="Parkomania.LoginForma"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Parkomania"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="10,0,0,0">
+        <Grid Margin="11.493,10,8.507,3.973" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+            <Grid.RenderTransform>
+                <CompositeTransform Rotation="0.145"/>
+            </Grid.RenderTransform>
+            <Button Command="{Binding Path=confirm}" x:Name="button" Content="Confirm" HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Center" RenderTransformOrigin="0.303,0.303" Grid.Row="7" Grid.Column="2"/>
+            <Button x:Name="button1" Content="Cancel" HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Center" Grid.Row="7" Grid.ColumnSpan="2"/>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="textBlock" Margin="42,0,0,0" TextWrapping="Wrap" Grid.Row="1">
+                <Run Text="  "/>
+                <Run Text="First Name: "/>
+            </TextBlock>
+            <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Center" Margin="3,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center"  RenderTransformOrigin="0.84,0.541" Grid.Row="5" Text="Confirm Password:"/>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="textBlock_Copy2" Margin="61,0,0,0" TextWrapping="Wrap" Text="Password:" RenderTransformOrigin="0.729,1.005" Grid.Row="4"/>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="textBlock_Copy1" Margin="79,0,0,0" TextWrapping="Wrap" Text="E-Mail:"  RenderTransformOrigin="0.889,0.6" Grid.Row="3"/>
+            <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" x:Name="textBlock_Copy" Margin="52,0,0,0" TextWrapping="Wrap" Text="Last Name:" Grid.Row="2"/>
+            <TextBox  VerticalAlignment= "Center" x:Name="textime" Grid.Column="1" Margin="10.19,2.73,0.405,3.103" Grid.Row="1" TextWrapping="Wrap" Text="{Binding Path=firstname, Mode=TwoWay}"/>
+            <TextBox VerticalAlignment="Center" x:Name="textprezime" Margin="10.19,2.897,0.405,2.936" TextWrapping="Wrap" Text="{Binding Path=lastname, Mode=TwoWay}" Grid.Column="1" Grid.Row="2"/>
+            <TextBox VerticalAlignment="Center" x:Name="textmail" Margin="10.19,3.064,0.405,2.768" TextWrapping="Wrap" Text="{Binding Path=Email, Mode=TwoWay}" Grid.Column="1" Grid.Row="3"/>
+            <PasswordBox Password="{Binding Path=pasw, Mode=TwoWay}" VerticalAlignment="Center" x:Name="password" Grid.Column="1" Margin="10.19,3.232,0.405,2.601" Grid.Row="4"/>
+            <PasswordBox  VerticalAlignment="Center" x:Name="passwordpotvrdi" Margin="10.19,3.399,0.405,3.434" Grid.Column="1" Grid.Row="5"/>
+            <ScrollViewer Grid.Column="2" Margin="10,0.73,10,0.434" Grid.RowSpan="5" Grid.Row="1">
+                <RichTextBlock Height="Auto" Width="Auto" Margin="10,0,10,0">
+                    <Paragraph>
+                        <Run Text="Glavni pjevač Jon Bon Jovi (John Francis Bongiovi) počeo je svirati glasovir i gitaru u trinaestoj godini, uzimajući lekcije kod svog susjeda, Ala Perinelloa. U toj istoj dobi, Bongiovi je osnovao svoj prvi glazbeni sastav, nazvan Raze. Jon se upisao u mušku Katoličku školu St. Joseph High School u Metuchen (New Jersey), ali ju je napustio nakon preklinjanja roditelja; želio je pohađati državnu školu. Krenuo je na nastavu u Sayreville War Memorial High School. U šesnaestoj godini Bon Jovi upoznaje Davida Bryana (rođenog kao David Bryan Rashbaum) i osniva 12-člani sastav s njim pod imenom Atlantic City Expressway. Svirali su u klubovima po New Jerseyju, iako su bili maloljetni. Još uvijek u tinejdžerskim godinama, Bongiovi je svirao u sastavu John Bongiovi and the Wild Ones, svirajući u klubovima New Jerseyja kao što je The Fast Lane i otvarajući nastupe poznatim izvođačima u tom području. Do ljeta 1982., završio je školu i radio skraćeno radno vrijeme, jedan od poslova bio mu je u trgovini cipelama, John se zaposlio u Power Station Studios, diskografskom studiju na Manhattanu čiji je suvlasnik bio njegov rođak, Tony Bongiovi. Bongiovi je snimio nekoliko demo-snimki (uključujući onu koju je produciorao Billy Squier) i poslao ih mnogim diskografskim kućama, ali nije bilo nikakvog rezultata."/>
+                    </Paragraph>
+                </RichTextBlock>
+            </ScrollViewer>
+            <CheckBox  IsChecked="{Binding Path=CheckBoxIsChecked}"  x:Name="checkBox" Content="I Agree" Grid.Column="2" HorizontalAlignment="Left" Margin="30,0,0,0" Grid.Row="6" VerticalAlignment="Center"/>
+        </Grid>
+
+    </Grid>
+</Page>

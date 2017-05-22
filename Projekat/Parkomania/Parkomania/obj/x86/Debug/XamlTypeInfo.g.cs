@@ -137,7 +137,7 @@ namespace Parkomania.Parkomania_XamlTypeInfo
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "Parkomania.Profil";
-            _typeNameTable[4] = "Parkomania.Parking";
+            _typeNameTable[4] = "Parkomania.Admin";
             _typeNameTable[5] = "Parkomania.ForgotPassword";
             _typeNameTable[6] = "Parkomania.GlavnaForma";
             _typeNameTable[7] = "System.Collections.Generic.IList`1<Windows.UI.Xaml.DependencyObject>";
@@ -155,7 +155,7 @@ namespace Parkomania.Parkomania_XamlTypeInfo
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::Parkomania.Profil);
-            _typeTable[4] = typeof(global::Parkomania.Parking);
+            _typeTable[4] = typeof(global::Parkomania.Admin);
             _typeTable[5] = typeof(global::Parkomania.ForgotPassword);
             _typeTable[6] = typeof(global::Parkomania.GlavnaForma);
             _typeTable[7] = typeof(global::System.Collections.Generic.IList<global::Windows.UI.Xaml.DependencyObject>);
@@ -203,7 +203,7 @@ namespace Parkomania.Parkomania_XamlTypeInfo
 
         private object Activate_0_AddEdit() { return new global::Parkomania.AddEdit(); }
         private object Activate_3_Profil() { return new global::Parkomania.Profil(); }
-        private object Activate_4_Parking() { return new global::Parkomania.Parking(); }
+        private object Activate_4_Admin() { return new global::Parkomania.Admin(); }
         private object Activate_5_ForgotPassword() { return new global::Parkomania.ForgotPassword(); }
         private object Activate_6_GlavnaForma() { return new global::Parkomania.GlavnaForma(); }
         private object Activate_9_GlavnaFormaLogin() { return new global::Parkomania.GlavnaFormaLogin(); }
@@ -252,9 +252,9 @@ namespace Parkomania.Parkomania_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 4:   //  Parkomania.Parking
+            case 4:   //  Parkomania.Admin
                 userType = new global::Parkomania.Parkomania_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_Parking;
+                userType.Activator = Activate_4_Admin;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

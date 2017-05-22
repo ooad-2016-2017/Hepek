@@ -9,25 +9,13 @@ using Windows.UI.Xaml.Controls;
 
 namespace Parkomania.ViewModel
 {
-    class GuestModel
+    public class GuestModel
     {
-        public List<Model.Guest> guests;
-        public ICommand LoginGosta { get; set; }
-        public GuestModel()
+        public System Parent { get; set; }
+        public GuestModel(System p)
         {
-            guests = new List<Model.Guest>();
-
-            LoginGosta = new RelayCommand<object>(openGuestForm, check);
-        }
-       public void openGuestForm(object parametar)
-        {
-            NavigationService.Navigate(typeof(GlavnaForma), new test(this));
-        }
-        public bool check(object parametar)
-        {
-            //provjeriti
-            return true;
-        }          
+            this.Parent = p;
+        }         
     }
 }
 

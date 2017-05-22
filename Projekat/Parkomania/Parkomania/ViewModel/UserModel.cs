@@ -8,7 +8,11 @@ namespace Parkomania.ViewModel
 {
     class UserModel
     {
+        System parent;
         public Model.User user;
-
+        public UserModel(System s)
+        {
+            parent = s;
+        }
     }
 }

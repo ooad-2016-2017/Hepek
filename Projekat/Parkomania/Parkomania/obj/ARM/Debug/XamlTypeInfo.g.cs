@@ -144,9 +144,9 @@ namespace Parkomania.Parkomania_XamlTypeInfo
             _typeNameTable[8] = "Windows.UI.Xaml.DependencyObject";
             _typeNameTable[9] = "Parkomania.GlavnaFormaLogin";
             _typeNameTable[10] = "Parkomania.LoginForma";
-            _typeNameTable[11] = "Parkomania.MainPage";
-            _typeNameTable[12] = "Parkomania.ParkingForm";
-            _typeNameTable[13] = "Parkomania.ParkingKontrola";
+            _typeNameTable[11] = "Parkomania.ParkingForm";
+            _typeNameTable[12] = "Parkomania.ParkingKontrola";
+            _typeNameTable[13] = "Parkomania.PModelxaml";
             _typeNameTable[14] = "Parkomania.ParkingRegister";
             _typeNameTable[15] = "Parkomania.Welcome";
 
@@ -162,9 +162,9 @@ namespace Parkomania.Parkomania_XamlTypeInfo
             _typeTable[8] = typeof(global::Windows.UI.Xaml.DependencyObject);
             _typeTable[9] = typeof(global::Parkomania.GlavnaFormaLogin);
             _typeTable[10] = typeof(global::Parkomania.LoginForma);
-            _typeTable[11] = typeof(global::Parkomania.MainPage);
-            _typeTable[12] = typeof(global::Parkomania.ParkingForm);
-            _typeTable[13] = typeof(global::Parkomania.ParkingKontrola);
+            _typeTable[11] = typeof(global::Parkomania.ParkingForm);
+            _typeTable[12] = typeof(global::Parkomania.ParkingKontrola);
+            _typeTable[13] = typeof(global::Parkomania.PModelxaml);
             _typeTable[14] = typeof(global::Parkomania.ParkingRegister);
             _typeTable[15] = typeof(global::Parkomania.Welcome);
         }
@@ -208,9 +208,9 @@ namespace Parkomania.Parkomania_XamlTypeInfo
         private object Activate_6_GlavnaForma() { return new global::Parkomania.GlavnaForma(); }
         private object Activate_9_GlavnaFormaLogin() { return new global::Parkomania.GlavnaFormaLogin(); }
         private object Activate_10_LoginForma() { return new global::Parkomania.LoginForma(); }
-        private object Activate_11_MainPage() { return new global::Parkomania.MainPage(); }
-        private object Activate_12_ParkingForm() { return new global::Parkomania.ParkingForm(); }
-        private object Activate_13_ParkingKontrola() { return new global::Parkomania.ParkingKontrola(); }
+        private object Activate_11_ParkingForm() { return new global::Parkomania.ParkingForm(); }
+        private object Activate_12_ParkingKontrola() { return new global::Parkomania.ParkingKontrola(); }
+        private object Activate_13_PModelxaml() { return new global::Parkomania.PModelxaml(); }
         private object Activate_14_ParkingRegister() { return new global::Parkomania.ParkingRegister(); }
         private object Activate_15_Welcome() { return new global::Parkomania.Welcome(); }
         private void VectorAdd_7_IList(object instance, object item)
@@ -297,23 +297,23 @@ namespace Parkomania.Parkomania_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 11:   //  Parkomania.MainPage
+            case 11:   //  Parkomania.ParkingForm
                 userType = new global::Parkomania.Parkomania_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_11_MainPage;
+                userType.Activator = Activate_11_ParkingForm;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 12:   //  Parkomania.ParkingForm
-                userType = new global::Parkomania.Parkomania_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_12_ParkingForm;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 13:   //  Parkomania.ParkingKontrola
+            case 12:   //  Parkomania.ParkingKontrola
                 userType = new global::Parkomania.Parkomania_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_13_ParkingKontrola;
+                userType.Activator = Activate_12_ParkingKontrola;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 13:   //  Parkomania.PModelxaml
+                userType = new global::Parkomania.Parkomania_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_13_PModelxaml;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

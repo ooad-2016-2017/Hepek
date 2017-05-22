@@ -11,12 +11,7 @@ namespace Parkomania.Model
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
-        public double x;
-        public double y;
-        public Location(double X, double Y)
-        {
-            x = X;
-            y = Y;
-        }
+        public float x { get; set; }
+        public float y { get; set; }
     }
 }

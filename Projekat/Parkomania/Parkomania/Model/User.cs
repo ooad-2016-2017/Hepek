@@ -11,11 +11,7 @@ namespace Parkomania.Model
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
-        public Location location;
-        public User(int id, string fn, string ln, string em, string pass) : base(fn, ln, em, pass)
-        {
-
-        }
+        public int locationid { get; set; }
         public void Reserve(Location l)
         {
 

@@ -1,7 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="CheckBoxIsChecked" />
+    <RootPropertyPathName Name="pasw" />
+    <RootPropertyPathName Name="Email" />
+    <RootPropertyPathName Name="lastname" />
+    <RootPropertyPathName Name="firstname" />
+    <RootPropertyPathName Name="confirm" />
+    <RootPropertyPathName Name="pass" />
+    <RootPropertyPathName Name="email" />
+    <RootPropertyPathName Name="Login" />
     <RootPropertyPathName Name="LoginGosta" />
+    <RootPropertyPathName Name="register" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -78,8 +88,8 @@
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="RequestedTheme" />
       <RootProperty Name="Background" />
-      <RootProperty Name="FontSize" />
       <RootProperty Name="Command" />
+      <RootProperty Name="FontSize" />
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Parkomania.AddEdit" />
@@ -118,7 +128,7 @@
       <RootProperty Name="Items" />
     </RootType>
     <RootType FullName="System.String" />
-    <RootType FullName="Parkomania.Parking" />
+    <RootType FullName="Parkomania.Admin" />
     <RootType FullName="Parkomania.ForgotPassword" />
     <RootType FullName="Windows.UI.Xaml.Controls.Maps.MapControl">
       <RootProperty Name="HorizontalAlignment" />
@@ -146,6 +156,7 @@
       <RootProperty Name="Rotation" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
+      <RootProperty Name="Password" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
@@ -155,10 +166,15 @@
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.CheckBox">
+      <RootProperty Name="IsChecked" />
       <RootProperty Name="Content" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+      <RootProperty Name="Mode" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.RichTextBlock">
       <RootProperty Name="Height" />
@@ -206,9 +222,6 @@
       <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Parkomania.ParkingRegister" />
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="Path" />
-    </RootType>
     <RootType FullName="Parkomania.Welcome" />
   </Roots.RootTypes>
 </Roots>
