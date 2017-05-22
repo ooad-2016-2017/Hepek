@@ -26,12 +26,10 @@
                     </Grid.RowDefinitions>
                     <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Top" Margin="10, 0, 10, 0"/>
                     <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Bottom" Margin="10, 0, 10, 0"/>
-                    <ListView x:Name="listView" Grid.Row ="1" Grid.RowSpan="2" HorizontalAlignment="Stretch" Margin="10,10,0,0" VerticalAlignment="Center" >
-                        <x:String>Zlatko Šubara</x:String>
-                        <x:String>Admir Subašić</x:String>
+                    <ListView x:Name="listView" Grid.Row ="1" Grid.RowSpan="2" HorizontalAlignment="Stretch" Margin="10,10,0,0" VerticalAlignment="Center" ItemsSource="{x:Bind admini}" >
                     </ListView>
                     <AutoSuggestBox HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Center"/>
-                    <Button x:Name="button" Content="Add" HorizontalAlignment="Stretch" Margin="10,0,10,0" Grid.Row="3" VerticalAlignment="Center"/>
+                    <Button x:Name="button" Content="Add" HorizontalAlignment="Stretch" Margin="10,0,10,0" Grid.Row="3" VerticalAlignment="Center" />
                 </Grid>
             </PivotItem>
             <PivotItem Header="Clients">
@@ -44,10 +42,7 @@
                     </Grid.RowDefinitions>
                     <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Top" Margin="10, 0, 10, 0"/>
                     <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="3" Grid.ColumnSpan="2" VerticalAlignment="Bottom" Margin="10, 0, 10, 10"/>
-                    <ListView x:Name="listView1" Grid.Row ="1" Grid.RowSpan="3" HorizontalAlignment="Stretch" Margin="10,10,10,10" VerticalAlignment="Center" >
-                        <x:String>User 1</x:String>
-                        <x:String>User 2</x:String>
-                        <x:String>User 3</x:String>
+                    <ListView x:Name="listView1" Grid.Row ="1" Grid.RowSpan="3" HorizontalAlignment="Stretch" Margin="10,10,10,10" VerticalAlignment="Center" ItemsSource="{x:Bind users}" >
                     </ListView>
                     <AutoSuggestBox HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Center"/>
                 </Grid>
@@ -62,7 +57,7 @@
                     </Grid.RowDefinitions>
                     <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Top" Margin="10, 0, 10, 0"/>
                     <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="3" Grid.ColumnSpan="2" VerticalAlignment="Bottom" Margin="10, 0, 10, 10"/>
-                    <ListView x:Name="listView3" Grid.Row ="1" Grid.RowSpan="3" HorizontalAlignment="Stretch" Margin="10,10,10,10" VerticalAlignment="Center" >
+                    <ListView x:Name="listView3" Grid.Row ="1" Grid.RowSpan="3" HorizontalAlignment="Stretch" Margin="10,10,10,10" VerticalAlignment="Center" ItemsSource="{x:Bind parkinzi}" >
                         <x:String>Parking1</x:String>
                         <x:String>Parking2</x:String>
                         <x:String>Parking3</x:String>

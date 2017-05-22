@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>abd6a478-e9ff-4bf7-8f33-c6e73b565ea3</PackageIdentityName>
     <PackageIdentityPublisher>CN=zlayaa</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\User\Repozitorij\Projekat\Parkomania\Parkomania\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\User\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -25,16 +25,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\User\Repozitorij\Projekat\Parkomania\Parkomania\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\User\Documents\Projekat\Parkomania\Parkomania\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-05-22T00:45:12.334</Modified>
+      <Modified>2017-05-22T23:10:08.513</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\User\Repozitorij\Projekat\Parkomania\Parkomania\bin\x86\Debug\Parkomania.exe">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Projekat\Parkomania\Parkomania\bin\x86\Debug\Parkomania.exe">
       <PackagePath>entrypoint\Parkomania.exe</PackagePath>
-      <Modified>2017-05-22T00:45:10.250</Modified>
+      <Modified>2017-05-22T23:10:01.967</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\User\.nuget\packages\CommonServiceLocator\1.3.0\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll">
       <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
@@ -536,49 +536,49 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2015-07-22T21:11:12.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Repozitorij\Projekat\Parkomania\Parkomania\Assets\logo.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Projekat\Parkomania\Parkomania\Assets\logo.png">
       <PackagePath>Assets\logo.png</PackagePath>
       <Modified>2017-05-22T00:24:12.463</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Repozitorij\Projekat\Parkomania\Parkomania\Assets\parking.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Projekat\Parkomania\Parkomania\Assets\parking.png">
       <PackagePath>Assets\parking.png</PackagePath>
       <Modified>2017-05-22T00:24:12.463</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Repozitorij\Projekat\Parkomania\Parkomania\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Projekat\Parkomania\Parkomania\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2017-05-22T00:24:12.351</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Repozitorij\Projekat\Parkomania\Parkomania\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Projekat\Parkomania\Parkomania\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-05-22T00:24:12.454</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Repozitorij\Projekat\Parkomania\Parkomania\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Projekat\Parkomania\Parkomania\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-05-22T00:24:12.461</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Repozitorij\Projekat\Parkomania\Parkomania\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Projekat\Parkomania\Parkomania\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-05-22T00:24:12.461</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Repozitorij\Projekat\Parkomania\Parkomania\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Projekat\Parkomania\Parkomania\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-05-22T00:24:12.461</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Repozitorij\Projekat\Parkomania\Parkomania\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Projekat\Parkomania\Parkomania\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-05-22T00:24:12.462</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Repozitorij\Projekat\Parkomania\Parkomania\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Projekat\Parkomania\Parkomania\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-05-22T00:24:12.462</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Repozitorij\Projekat\Parkomania\Parkomania\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Projekat\Parkomania\Parkomania\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2017-05-22T00:24:12.724</Modified>
     </AppxPackagedFile>
@@ -590,22 +590,22 @@
       <PackagePath>EntityFramework.Commands.dll</PackagePath>
       <Modified>2015-07-21T17:12:58.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Repozitorij\Projekat\Parkomania\Parkomania\bin\x86\Debug\Parkomania.xr.xml">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Projekat\Parkomania\Parkomania\bin\x86\Debug\Parkomania.xr.xml">
       <PackagePath>Parkomania.xr.xml</PackagePath>
-      <Modified>2017-05-22T00:39:00.459</Modified>
+      <Modified>2017-05-22T23:10:01.609</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-03-25T12:32:25.702</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Repozitorij\Projekat\Parkomania\Parkomania\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Projekat\Parkomania\Parkomania\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-05-22T00:45:11.757</Modified>
+      <Modified>2017-05-22T23:10:07.302</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\User\Repozitorij\Projekat\Parkomania\Parkomania\bin\x86\Debug\Core\Parkomania.exe">
+    <AppxPackagedFile Include="C:\Users\User\Documents\Projekat\Parkomania\Parkomania\bin\x86\Debug\Core\Parkomania.exe">
       <PackagePath>Parkomania.exe</PackagePath>
-      <Modified>2017-05-22T00:45:12.310</Modified>
+      <Modified>2017-05-22T23:10:08.506</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

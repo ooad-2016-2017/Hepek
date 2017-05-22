@@ -58,7 +58,7 @@
                     <TextBox x:Name="textpargrad" MinWidth="150" HorizontalAlignment="Stretch" Margin="10,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="{Binding Path=city, Mode=TwoWay}" VerticalAlignment="Center" Grid.Column="1"/>
                     <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="2" Margin="10" Grid.ColumnSpan="2" VerticalAlignment="Top"/>
                     <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="3" Margin="10" Grid.ColumnSpan="2" VerticalAlignment="Bottom"/>
-                    <ComboBox x:Name="comboboxpardrzava" MinWidth="150" HorizontalAlignment="Stretch" Margin="10,0,0,0" Grid.Row="0"  VerticalAlignment="Center" Grid.Column="1" >
+                    <ComboBox x:Name="comboboxpardrzava" SelectedItem="{Binding Path=country, Mode=TwoWay}" MinWidth="150" HorizontalAlignment="Stretch" Margin="10,0,0,0" Grid.Row="0"  VerticalAlignment="Center" Grid.Column="1" >
                         <ComboBoxItem  x:Name="i1" Content="Bosnia and Herzegovina"/>
                         <ComboBoxItem  x:Name="i2" Content="Croatia"/>
                         <ComboBoxItem  x:Name="i3" Content="Serbia"/>
@@ -67,7 +67,7 @@
                     <Button Command="{Binding Path=addparking}" x:Name="button" Content="Register" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="4" VerticalAlignment="Center" Click="button_Click"/>
                 </Grid>
             </PivotItem>
-            <PivotItem Header="Parking layout">
+            <PivotItem Header="Parking layout" >
                 <Grid>
                     <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="6" Grid.ColumnSpan="2" VerticalAlignment="Top"/>
                     <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="6" Grid.ColumnSpan="2" VerticalAlignment="Bottom"/>

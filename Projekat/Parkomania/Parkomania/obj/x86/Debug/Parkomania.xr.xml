@@ -17,6 +17,7 @@
     <RootPropertyPathName Name="firstname" />
     <RootPropertyPathName Name="confirm" />
     <RootPropertyPathName Name="addparking" />
+    <RootPropertyPathName Name="country" />
     <RootPropertyPathName Name="city" />
     <RootPropertyPathName Name="freep" />
     <RootPropertyPathName Name="etime" />
@@ -128,6 +129,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Items" />
+      <RootProperty Name="ItemsSource" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AutoSuggestBox">
       <RootProperty Name="HorizontalAlignment" />
@@ -138,6 +140,7 @@
       <RootProperty Name="Items" />
     </RootType>
     <RootType FullName="System.String" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
     <RootType FullName="Parkomania.Admin" />
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Path" />
@@ -204,6 +207,7 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
+      <RootProperty Name="SelectedItem" />
       <RootProperty Name="MinWidth" />
       <RootProperty Name="Items" />
     </RootType>
