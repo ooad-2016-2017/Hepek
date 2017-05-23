@@ -9,24 +9,27 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="1*" />
             <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="4*" />
+            <ColumnDefinition Width="4*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
-            <RowDefinition />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*" />
         </Grid.RowDefinitions>
-        <TextBlock x:Name="textBlock" Grid.Column="0" HorizontalAlignment="Right" Margin="10,0,0,0" TextWrapping="Wrap" Text="First name:" VerticalAlignment="Center"/>
-        <TextBlock x:Name="textBlock1" Grid.Column="0" HorizontalAlignment="Right" Margin="10,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Last name:" VerticalAlignment="Center" />
-        <TextBlock x:Name="textBlock2" Grid.Column="0" HorizontalAlignment="Right" Margin="10,0,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Center"/>
-        <TextBox x:Name="textBox" Grid.Column="1" HorizontalAlignment="Stretch" Margin="10,0,10,0" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="textBox1" Grid.Column="1" HorizontalAlignment="Stretch" Margin="10,0,10,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
-        <TextBox x:Name="textBox2" Grid.Column="1" HorizontalAlignment="Stretch" Margin="10,0,10,0" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
-        <Button x:Name="button" Content="Cancel" HorizontalAlignment="Stretch" Margin="10,0,10,0" Grid.Row="3" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
-        <Button x:Name="button1" Content="Save" HorizontalAlignment="Stretch" Margin="10,0,10,0" Grid.Row="3" VerticalAlignment="Center" Grid.Column="3"/>
+        <TextBlock x:Name="textBlock" Grid.Column="0" HorizontalAlignment="Right" Margin="10" TextWrapping="Wrap" Text="First name:" VerticalAlignment="Center"/>
+        <TextBlock x:Name="textBlock1" Grid.Column="0" HorizontalAlignment="Right" Margin="10" Grid.Row="1" TextWrapping="Wrap" Text="Last name:" VerticalAlignment="Center"  />
+        <TextBlock x:Name="textBlock2" Grid.Column="0" HorizontalAlignment="Right" Margin="10" Grid.Row="2" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Center"/>
+        <TextBlock x:Name="textBlock3" Grid.Column="0" HorizontalAlignment="Right" Margin="10" Grid.Row="3" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Center"/>
+        <TextBox x:Name="textBox" Text="{Binding Path=firstNameEdit, Mode=TwoWay}" Grid.Column="1" HorizontalAlignment="Stretch" Margin="10,0,10,0" TextWrapping="Wrap" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="textBox1" Text="{Binding Path=lastNameEdit, Mode=TwoWay}" Grid.Column="1" HorizontalAlignment="Stretch" Margin="10,0,10,0" Grid.Row="1" TextWrapping="Wrap"  VerticalAlignment="Center" Grid.ColumnSpan="2" />
+        <TextBox x:Name="textBox2" Text="{Binding Path=emailEdit, Mode=TwoWay}" Grid.Column="1" HorizontalAlignment="Stretch" Margin="10,0,10,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+        <Button x:Name="button" Command="{Binding Path=cancelEdit}" Content="Cancel" HorizontalAlignment="Stretch" Margin="10,0,10,0" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Grid.ColumnSpan="1" />
+        <Button x:Name="button1" Command="{Binding Path=saveEdit}" Content="Save" HorizontalAlignment="Stretch" Margin="10,0,10,0" Grid.Row="4" VerticalAlignment="Center" Grid.Column="2" />
+        <TextBox x:Name="textBox2_Copy" Text="{Binding Path=passAddEdit, Mode=TwoWay}" Grid.Column="1" HorizontalAlignment="Stretch" Margin="10,56" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Page>

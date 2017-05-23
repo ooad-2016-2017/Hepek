@@ -17,7 +17,6 @@
                 <RowDefinition Height="2*"/>
                 <RowDefinition Height="5*"/>
                 <RowDefinition Height="1*"/>
-                <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*"/>
@@ -37,19 +36,18 @@
                 <LineBreak/>
                 <Run/>
             </TextBlock>
-            <ComboBox x:Name="comboBox" HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Center" Grid.Column="2" Grid.Row="3" Height="auto"/>
-            <TextBox x:Name="textBox" HorizontalAlignment="Stretch" Margin="10,0,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Center" Grid.Row="2" Height="32" Grid.Column="1" Width="auto"/>
-            <TextBox x:Name="textBox1" HorizontalAlignment="Stretch" Margin="10,0,0,0" TextWrapping="Wrap" Text="30" VerticalAlignment="Center" Grid.Row="3" Height="32" Grid.Column="1" Width="auto"/>
+            <ComboBox x:Name="comboBox" HorizontalAlignment="Stretch" SelectedItem="{Binding Path=Valuta, Mode=TwoWay}" Margin="10,0,10,0" VerticalAlignment="Center" Grid.Column="2" Grid.Row="3" Height="auto"/>
+            <TextBox x:Name="textBox" HorizontalAlignment="Stretch" Text="{Binding Path=freeSpaces, Mode=TwoWay}" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="2" Height="32" Grid.Column="1" Width="auto"/>
+            <TextBox x:Name="textBox1" HorizontalAlignment="Stretch" Text="{Binding Path=price, Mode=TwoWay}" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="3" Height="32" Grid.Column="1" Width="auto"/>
             <TextBlock x:Name="textBlock2" HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" VerticalAlignment="Center"  Grid.Row="4" RenderTransformOrigin="-0.274,0.54" SelectionChanged="textBlock2_SelectionChanged">
                 <Run Text="From:"/>
             </TextBlock>
             <TextBlock x:Name="textBlock3" HorizontalAlignment="Right" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="2" Grid.Row="4">
                 <Run Text="Until:"/>
             </TextBlock>
-            <Button x:Name="button" Content="Edit" HorizontalAlignment="Stretch" Margin="10,5,10,5" VerticalAlignment="Stretch" Grid.Row="6" Grid.ColumnSpan="5" Background="#3376E432" />
-            <Button x:Name="button1" Content="Apply" HorizontalAlignment="Stretch" Margin="10,5,10,5" VerticalAlignment="Stretch" Grid.Row="7" Grid.ColumnSpan="5" Background="#3303117F"/>
-            <TextBox x:Name="textBox2" HorizontalAlignment="Stretch" Margin="10,0,0,0" TextWrapping="Wrap" Text="9:00" VerticalAlignment="Center" Grid.Row="4"  Grid.Column="1"/>
-            <TextBox x:Name="textBox3" HorizontalAlignment="Stretch" Margin="10,0,10,0" TextWrapping="Wrap" Text="18:00" VerticalAlignment="Center" Grid.Column="3" Grid.Row="4" />
+            <Button x:Name="button1" Content="Apply"  Command="{Binding Path=apply}" HorizontalAlignment="Stretch" Margin="10,5,10,5" VerticalAlignment="Stretch" Grid.Row="7" Grid.ColumnSpan="5" Background="#3303117F"/>
+            <TextBox x:Name="textBox2" HorizontalAlignment="Stretch"  Margin="10,0,0,0" TextWrapping="Wrap" Text="{Binding Path=from, Mode=TwoWay}" VerticalAlignment="Center" Grid.Row="4"  Grid.Column="1"/>
+            <TextBox x:Name="textBox3" HorizontalAlignment="Stretch" Margin="10,0,10,0" TextWrapping="Wrap" Text="{Binding Path=until, Mode=TwoWay}" VerticalAlignment="Center" Grid.Column="3" Grid.Row="4" />
             <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="1"  Grid.ColumnSpan="4" VerticalAlignment="Top"/>
             <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="4"  Grid.ColumnSpan="4" VerticalAlignment="Bottom"/>
             <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="5"  Grid.ColumnSpan="4" VerticalAlignment="Bottom"/>

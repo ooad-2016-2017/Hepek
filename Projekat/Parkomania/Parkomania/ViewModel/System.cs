@@ -23,7 +23,8 @@ namespace Parkomania.ViewModel
         public static List<Model.User> users;
         public static List<Model.Admin> admins;
         public static List<Model.Account> acc;
-        
+        public static List<Model.Message> Inbox;
+
         public ICommand LoginGosta { get; set; }
         public ICommand Login { get; set; }
         public ICommand register { get; set; }
@@ -34,6 +35,11 @@ namespace Parkomania.ViewModel
         public ICommand send { get; set; }
         public ICommand sendcode { get; set; }
         public ICommand addparking { get; set; }
+        public ICommand cancelAddEdit { get; set; }
+        public ICommand saveEdit { get; set; }
+        public ICommand saveAddEdit { get; set; }
+        public ICommand openAddEdit { get; set; }
+        public ICommand deleteMessage { get; set; }
 
         //welcome
         private string _email;
@@ -274,9 +280,131 @@ namespace Parkomania.ViewModel
                 }
             }
         }
-
         //Admin
+        public void OpenAddEdit(object parametar)
+        {
+            NavigationService.Navigate(typeof(AddEdit), this);
+        }
+        public string autoSuggestAdmin;
+        public string suggestAdmin
+        {
+            get { return autoSuggestAdmin; }
+            set
+            {
+                autoSuggestAdmin = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(suggestAdmin)));
+                }
+            }
+        }
+        public string autoSuggestUser;
+        public string suggestUser
+        {
+            get { return autoSuggestUser; }
+            set
+            {
+                autoSuggestUser = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(suggestUser)));
+                }
+            }
+        }
+        public string autoSuggestParking;
+        public string suggestParking
+        {
+            get { return autoSuggestParking; }
+            set
+            {
+                autoSuggestParking = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(suggestParking)));
+                }
+            }
+        }
+        public string autoSuggestMessage;
+        public string suggestMessage
+        {
+            get { return autoSuggestMessage; }
+            set
+            {
+                autoSuggestMessage = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(suggestMessage)));
+                }
+            }
+        }
+        public void DeleteMessage(object parametar)
+        {
 
+        }
+        //AddEdit
+        public string fnEdit;
+        public string firstNameEdit
+        {
+            get { return fnEdit; }
+            set
+            {
+                fnEdit = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(firstNameEdit)));
+                }
+            }
+        }
+        public string lnEdit;
+        public string lastNameEdit
+        {
+            get { return lnEdit; }
+            set
+            {
+                lnEdit = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(lastNameEdit)));
+                }
+            }
+        }
+        public string emEdit;
+        public string emailEdit
+        {
+            get { return emEdit; }
+            set
+            {
+                emEdit = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(emailEdit)));
+                }
+            }
+        }
+        public string passEdit;
+        public string passAddEdit
+        {
+            get { return passEdit; }
+            set
+            {
+                passEdit = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(passAddEdit)));
+                }
+            }
+        }
+        public void CancelAddEdit(object parametar)
+        {
+            firstNameEdit = "";
+            lastNameEdit = "";
+            emailEdit = "";
+            this.NavigationService.GoBack();
+        }
+        public void SaveAddEdit(object parametar)
+        {
+
+        }
         public System()
         {
             using (var db = new dbContext.Parking())
@@ -296,6 +424,10 @@ namespace Parkomania.ViewModel
             send = new RelayCommand<object>(Send, check);
             sendcode = new RelayCommand<object>(SendCode, check);
             addparking = new RelayCommand<object> (AddParking, check);
+            cancelAddEdit = new RelayCommand<object>(CancelAddEdit, check);
+            saveAddEdit = new RelayCommand<object>(SaveAddEdit, check);
+            openAddEdit = new RelayCommand<object>(OpenAddEdit, check);
+            deleteMessage = new RelayCommand<object>(DeleteMessage, check);
             NavigationService = new NavigationService();
         }
         //ParkingRegister

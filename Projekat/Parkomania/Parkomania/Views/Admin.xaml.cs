@@ -32,17 +32,23 @@ namespace Parkomania
             korsinici = ViewModel.System.users;
             admins = ViewModel.System.admins;
             parkings = ViewModel.System.parkings;
+            poruke = ViewModel.System.Inbox;
             users = new ObservableCollection<string>();
             admini = new ObservableCollection<string>();
-            foreach(Model.Parking p in parkings)
+            messages = new ObservableCollection<string>();
+            foreach (Model.Message m in poruke)
+            {
+                messages.Add(m.text);
+            }
+            foreach (Model.Parking p in parkings)
             {
                 parkinzi.Add(p.Name);
             }
-            foreach(Model.User u in korsinici)
+            foreach (Model.User u in korsinici)
             {
                 users.Add(u.Firstname() + " " + u.Lastname());
             }
-            foreach(Model.Admin a in admins)
+            foreach (Model.Admin a in admins)
             {
                 admini.Add(a.Firstname() + " " + a.Lastname());
             }
@@ -50,8 +56,13 @@ namespace Parkomania
             DataContext = new ViewModel.System();
             NavigationCacheMode = NavigationCacheMode.Required;
         }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            DataContext = (ViewModel.System)e.Parameter;
+        }
         public ObservableCollection<string> admini;
         public ObservableCollection<string> users;
         public ObservableCollection<string> parkinzi;
+        public ObservableCollection<string> messages;
     }
 }

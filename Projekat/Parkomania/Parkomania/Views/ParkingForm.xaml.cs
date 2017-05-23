@@ -25,8 +25,12 @@ namespace Parkomania
         public ParkingForm()
         {
             this.InitializeComponent();
+            NavigationCacheMode = NavigationCacheMode.Required;
         }
-
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            DataContext = (ViewModel.ParkingViewModel)e.Parameter;
+        }
         private void textBlock2_SelectionChanged(object sender, RoutedEventArgs e)
         {
 

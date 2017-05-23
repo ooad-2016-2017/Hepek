@@ -29,7 +29,10 @@ namespace Parkomania
             this.InitializeComponent();
 
         }
-
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            DataContext = (ViewModel.System)e.Parameter;
+        }
         private void button_Click(object sender, RoutedEventArgs e)
         {
             using (var db = new dbContext.Parking())

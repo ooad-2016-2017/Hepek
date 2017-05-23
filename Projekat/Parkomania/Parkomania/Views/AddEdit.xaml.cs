@@ -26,5 +26,9 @@ namespace Parkomania
         {
             this.InitializeComponent();
         }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            DataContext = (ViewModel.System)e.Parameter;
+        }
     }
 }

@@ -28,6 +28,10 @@ namespace Parkomania
             this.DataContext = new ViewModel.System();
             NavigationCacheMode = NavigationCacheMode.Required;
         }
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            DataContext = (ViewModel.System)e.Parameter;
+        }
 
     }
 }

@@ -28,8 +28,8 @@
                     <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Bottom" Margin="10, 0, 10, 0"/>
                     <ListView x:Name="listView" Grid.Row ="1" Grid.RowSpan="2" HorizontalAlignment="Stretch" Margin="10,10,0,0" VerticalAlignment="Center" ItemsSource="{x:Bind admini}" >
                     </ListView>
-                    <AutoSuggestBox HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Center"/>
-                    <Button x:Name="button" Content="Add" HorizontalAlignment="Stretch" Margin="10,0,10,0" Grid.Row="3" VerticalAlignment="Center" />
+                    <AutoSuggestBox HorizontalAlignment="Stretch" Text="{Binding Path=suggestAdmin, Mode=TwoWay}" Margin="10,0,10,0" VerticalAlignment="Center"/>
+                    <Button x:Name="button" Command="{Binding Path=openAddEdit}" Content="Add" HorizontalAlignment="Stretch" Margin="10,0,10,0" Grid.Row="3" VerticalAlignment="Center" />
                 </Grid>
             </PivotItem>
             <PivotItem Header="Clients">
@@ -44,7 +44,7 @@
                     <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="3" Grid.ColumnSpan="2" VerticalAlignment="Bottom" Margin="10, 0, 10, 10"/>
                     <ListView x:Name="listView1" Grid.Row ="1" Grid.RowSpan="3" HorizontalAlignment="Stretch" Margin="10,10,10,10" VerticalAlignment="Center" ItemsSource="{x:Bind users}" >
                     </ListView>
-                    <AutoSuggestBox HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Center"/>
+                    <AutoSuggestBox HorizontalAlignment="Stretch"   Text="{Binding Path=suggestUser, Mode=TwoWay}" Margin="10,0,10,0" VerticalAlignment="Center"/>
                 </Grid>
             </PivotItem>
             <PivotItem Header="Parkings">
@@ -63,7 +63,7 @@
                         <x:String>Parking3</x:String>
                         <x:String>Parking4</x:String>
                     </ListView>
-                    <AutoSuggestBox HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Center"/>
+                    <AutoSuggestBox HorizontalAlignment="Stretch" Text="{Binding Path=suggestParking, Mode=TwoWay}" Margin="10,0,10,0" VerticalAlignment="Center"/>
                 </Grid>
             </PivotItem>
             <PivotItem Header="Inbox">
@@ -76,13 +76,10 @@
                     </Grid.RowDefinitions>
                     <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="1" Grid.ColumnSpan="2" VerticalAlignment="Top" Margin="10, 0, 10, 0"/>
                     <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Bottom" Margin="10, 0, 10, 0"/>
-                    <ListView x:Name="listView2" Grid.Row ="1" Grid.RowSpan="2" HorizontalAlignment="Stretch" Margin="10,10,10,10" VerticalAlignment="Center" >
-                        <x:String>Poruka 1</x:String>
-                        <x:String>Poruka 2</x:String>
-                        <x:String>Poruka 3</x:String>
+                    <ListView x:Name="listView2" Grid.Row ="1" Grid.RowSpan="2" HorizontalAlignment="Stretch" Margin="10,10,10,10" VerticalAlignment="Center" ItemsSource="{x:Bind poruke}" >
                     </ListView>
-                    <AutoSuggestBox HorizontalAlignment="Stretch" Margin="10,0,10,0" VerticalAlignment="Center"/>
-                    <Button x:Name="button1" Content="Delete" HorizontalAlignment="Stretch" Margin="10,0,10,0" Grid.Row="3" VerticalAlignment="Center"/>
+                    <AutoSuggestBox HorizontalAlignment="Stretch" Text="{Binding Path=suggestMessage, Mode=TwoWay}" Margin="10,0,10,0" VerticalAlignment="Center"/>
+                    <Button x:Name="button1" Command="{Binding Path=deleteMessage}" Content="Delete" HorizontalAlignment="Stretch" Margin="10,0,10,0" Grid.Row="3" VerticalAlignment="Center"/>
                 </Grid>
             </PivotItem>
         </Pivot>
