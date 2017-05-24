@@ -40,11 +40,11 @@ namespace Parkomania
             }
             foreach(Model.User u in korsinici)
             {
-                users.Add(u.firstname + " " + u.lastname);
+                users.Add(u.Firstname() + " " + u.Lastname());
             }
             foreach(Model.Admin a in admins)
             {
-                admini.Add(a.firstname + " " + a.lastname);
+                admini.Add(a.Firstname() + " " + a.Lastname());
             }
             this.InitializeComponent();
             DataContext = new ViewModel.System();
@@ -53,8 +53,5 @@ namespace Parkomania
         public ObservableCollection<string> admini;
         public ObservableCollection<string> users;
         public ObservableCollection<string> parkinzi;
-
-
-
     }
 }

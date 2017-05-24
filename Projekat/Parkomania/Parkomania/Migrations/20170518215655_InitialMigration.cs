@@ -32,7 +32,7 @@ namespace ParkomaniaMigrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Parking", x => x.id);
-                    table.ForeignKey("FK_Location", y => y.locationId,"Location","id","");
+                    //table.ForeignKey("FK_Location", y => y.locationId,"Location","id","");
                 });
             migration.CreateTable(
                name: "Location",

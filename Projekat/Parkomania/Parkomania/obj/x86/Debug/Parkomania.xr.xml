@@ -11,6 +11,7 @@
     <RootPropertyPathName Name="exit" />
     <RootPropertyPathName Name="search" />
     <RootPropertyPathName Name="CheckBoxIsChecked" />
+    <RootPropertyPathName Name="rpasw" />
     <RootPropertyPathName Name="pasw" />
     <RootPropertyPathName Name="Email" />
     <RootPropertyPathName Name="lastname" />

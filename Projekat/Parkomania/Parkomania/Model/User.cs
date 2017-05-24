@@ -12,7 +12,7 @@ namespace Parkomania.Model
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
         public int locationid { get; set; }
-        public void Reserve(Location l)
+        public void Reserve(int parkingid)
         {
 
         }

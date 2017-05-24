@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Parkomania.ViewModel
 {
@@ -61,6 +62,7 @@ namespace Parkomania.ViewModel
                 }
             }
         }
+        
         //registerforma
         private string fn;
         private string ln;
@@ -112,6 +114,19 @@ namespace Parkomania.ViewModel
                 if (PropertyChanged != null)
                 {
                     PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(pasw)));
+                }
+            }
+        }
+        private string rpass;
+        public string rpasw
+        {
+            get { return rpass; }
+            set
+            {
+                rpass = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(rpasw)));
                 }
             }
         }
@@ -319,15 +334,15 @@ namespace Parkomania.ViewModel
         public void openLoginForm(object parametar)
         {
             foreach (Model.Account a in acc)
-                if (a.email == _email && a.password == MD5.ComputeMD5(_password))
+                if (a.Email() == _email && a.Password() == MD5.ComputeMD5(_password))
                 {
                     email = "";
                     pass = "";
-                    if (a.acctype == "admin")
+                    if (a.Acctype() == "admin")
                         NavigationService.Navigate(typeof(Admin), this);
-                    else if (a.acctype == "user")
+                    else if (a.Acctype() == "user")
                         NavigationService.Navigate(typeof(GlavnaFormaLogin), new UserModel(this));
-                    else if (a.acctype == "parking")
+                    else if (a.Acctype() == "parking")
                         NavigationService.Navigate(typeof(ParkingForm), new ParkingViewModel(this));
                 }
         }
@@ -339,29 +354,24 @@ namespace Parkomania.ViewModel
         {
             using (var db = new dbContext.Parking())
             {
-                var ac = new Model.Account
-                {
-                    firstname = fn,
-                    lastname = ln,
-                    email = em,
-                    password = MD5.ComputeMD5(pw),
-                    acctype = "user"
-                };
+                var ac = new Model.Account(fn, ln, em, MD5.ComputeMD5(pw), "user");
                 db.account.Add(ac);
                 db.SaveChanges();
 
-                /*var us = new Model.User
+                var us = new Model.User
                 {
                     locationid = 0
                 };
+
                 db.user.Add(us);
-                db.SaveChanges();*/
+                db.SaveChanges();
 
                 firstname = string.Empty;
                 lastname = string.Empty;
                 Email = string.Empty;
                 pasw = string.Empty;
                 cb = false;
+                rpasw = string.Empty;
             }
         }
         public void openRegParking(object parametar)

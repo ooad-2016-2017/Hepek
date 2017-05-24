@@ -40,7 +40,7 @@
             <TextBox x:ConnectionId='8' VerticalAlignment="Center" x:Name="textprezime" Margin="10.19,2.897,0.405,2.936" TextWrapping="Wrap" Text="{Binding Path=lastname, Mode=TwoWay}" Grid.Column="1" Grid.Row="2"/>
             <TextBox x:ConnectionId='9' VerticalAlignment="Center" x:Name="textmail" Margin="10.19,3.064,0.405,2.768" TextWrapping="Wrap" Text="{Binding Path=Email, Mode=TwoWay}" Grid.Column="1" Grid.Row="3"/>
             <PasswordBox x:ConnectionId='10' Password="{Binding Path=pasw, Mode=TwoWay}" VerticalAlignment="Center" x:Name="password" Grid.Column="1" Margin="10.19,3.232,0.405,2.601" Grid.Row="4"/>
-            <PasswordBox x:ConnectionId='11'  VerticalAlignment="Center" x:Name="passwordpotvrdi" Margin="10.19,3.399,0.405,3.434" Grid.Column="1" Grid.Row="5"/>
+            <PasswordBox x:ConnectionId='11'  Password="{Binding Path=rpasw, Mode=TwoWay}" VerticalAlignment="Center" x:Name="passwordpotvrdi" Margin="10.19,3.399,0.405,3.434" Grid.Column="1" Grid.Row="5"/>
             <ScrollViewer Grid.Column="2" Margin="10,0.73,10,0.434" Grid.RowSpan="5" Grid.Row="1">
                 <RichTextBlock Height="Auto" Width="Auto" Margin="10,0,10,0">
                     <Paragraph>

@@ -928,7 +928,6 @@ C:\Users\zlayaa\Desktop\Parkomania\Parkomania\bin\x86\Debug\Views\ParkingRegiste
 C:\Users\zlayaa\Desktop\Parkomania\Parkomania\bin\x86\Debug\Controls\PModelxaml.xbf
 C:\Users\zlayaa\Desktop\Parkomania\Parkomania\bin\x86\Debug\Controls\Profil.xbf
 C:\Users\zlayaa\Desktop\Parkomania\Parkomania\bin\x86\Debug\Views\Welcome.xbf
-C:\Users\zlayaa\Desktop\Parkomania\Parkomania\obj\x86\Debug\Parkomania.csprojResolveAssemblyReference.cache
 C:\Users\zlayaa\Desktop\Parkomania\Parkomania\bin\x86\Debug\Microsoft.Practices.ServiceLocation.dll
 C:\Users\zlayaa\Desktop\Parkomania\Parkomania\bin\x86\Debug\Microsoft.Practices.ServiceLocation.pdb
 C:\Users\zlayaa\Desktop\Parkomania\Parkomania\bin\x86\Debug\Prism.dll
@@ -1222,3 +1221,4 @@ C:\Users\User\Repozitorij\Projekat\Parkomania\Parkomania\obj\x86\Debug\resources
 C:\Users\User\Repozitorij\Projekat\Parkomania\Parkomania\obj\x86\Debug\Prism.Windows.pri.xml
 C:\Users\User\Repozitorij\Projekat\Parkomania\Parkomania\obj\x86\Debug\ProjectArchitectures.txt
 C:\Users\User\Repozitorij\Projekat\Parkomania\Parkomania\obj\x86\Debug\Parkomania.csprojResolveAssemblyReference.cache
+C:\Users\zlayaa\Desktop\Parkomania\Parkomania\obj\x86\Debug\Parkomania.csprojResolveAssemblyReference.cache
