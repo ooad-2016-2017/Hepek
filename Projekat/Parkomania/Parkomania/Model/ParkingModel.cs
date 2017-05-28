@@ -11,12 +11,10 @@ namespace Parkomania.Model
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id;
-        public List<bool> places;
-        public int brojParkingMjesta;
-        public ParkingModel(double l, double w)
+        public int places;
+        public ParkingModel(int x)
         {
-            places = new List<bool>();
-            brojParkingMjesta = 0;
+            places = x;
         }
     }
 }

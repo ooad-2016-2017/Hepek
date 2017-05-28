@@ -24,6 +24,8 @@ namespace Parkomania.ViewModel
         public static List<Model.Admin> admins;
         public static List<Model.Account> acc;
         public static List<Model.Message> Inbox;
+        public static List<Model.ParkingModel> pmodels;
+        public static List<Model.ParkingManager> pmanager;
 
         public ICommand LoginGosta { get; set; }
         public ICommand Login { get; set; }
@@ -175,111 +177,7 @@ namespace Parkomania.ViewModel
                 }
             }
         }
-        //parking register
-        public string drzava;
-        public string country
-        {
-            get { return drzava; }
-            set
-            {
-                drzava = value;
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(country)));
-                }
-            }
-        }
-        public string grad;
-        public string city
-        {
-            get { return grad; }
-            set
-            {
-                grad = value;
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(city)));
-                }
-            }
-        }
-        public string parkingname;
-        public string pname
-        {
-            get { return parkingname; }
-            set
-            {
-                parkingname = value;
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(pname)));
-                }
-            }
-        }
-        public string kapacitet;
-        public string capacity
-        {
-            get { return kapacitet; }
-            set
-            {
-                kapacitet = value;
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(capacity)));
-                }
-            }
-        }
-        public string cijena;
-        public string price
-        {
-            get { return cijena; }
-            set
-            {
-                cijena = value;
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(price)));
-                }
-            }
-        }
-        public string starttime;
-        public string stime
-        {
-            get { return starttime; }
-            set
-            {
-                starttime = value;
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(stime)));
-                }
-            }
-        }
-        public string endtime;
-        public string etime
-        {
-            get { return endtime; }
-            set
-            {
-                endtime = value;
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(etime)));
-                }
-            }
-        }
-        public string freeplaces;
-        public string freep
-        {
-            get { return freeplaces; }
-            set
-            {
-                freeplaces = value;
-                if (PropertyChanged != null)
-                {
-                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(freep)));
-                }
-            }
-        }
+        
         //Admin
         public void OpenAddEdit(object parametar)
         {
@@ -413,6 +311,10 @@ namespace Parkomania.ViewModel
                 //users = db.user.ToList<Model.User>();
                 //admins = db.admin.ToList<Model.Admin>();
                 //acc = db.account.ToList<Model.Account>();
+                //pmodels = db.pmodels.ToList<Model.ParkingModel>();
+                //locations = db.locations.ToList<Model.Location>();
+                //inbox = db.inbox.ToList<Model.Message>();
+                //pmanager = db.pmanager.ToList<Model.ParkingManager>();
             }
             LoginGosta = new RelayCommand<object>(openGuestForm, check);
             Login = new RelayCommand<object>(openLoginForm, check);
@@ -430,10 +332,154 @@ namespace Parkomania.ViewModel
             deleteMessage = new RelayCommand<object>(DeleteMessage, check);
             NavigationService = new NavigationService();
         }
+        //parking register
+        public string drzava;
+        public string country
+        {
+            get { return drzava; }
+            set
+            {
+                drzava = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(country)));
+                }
+            }
+        }
+        public string grad;
+        public string city
+        {
+            get { return grad; }
+            set
+            {
+                grad = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(city)));
+                }
+            }
+        }
+        public string parkingname;
+        public string pname
+        {
+            get { return parkingname; }
+            set
+            {
+                parkingname = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(pname)));
+                }
+            }
+        }
+        public string kapacitet;
+        public string capacity
+        {
+            get { return kapacitet; }
+            set
+            {
+                kapacitet = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(capacity)));
+                }
+            }
+        }
+        public string cijena;
+        public string price
+        {
+            get { return cijena; }
+            set
+            {
+                cijena = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(price)));
+                }
+            }
+        }
+        public string starttime;
+        public string stime
+        {
+            get { return starttime; }
+            set
+            {
+                starttime = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(stime)));
+                }
+            }
+        }
+        public string endtime;
+        public string etime
+        {
+            get { return endtime; }
+            set
+            {
+                endtime = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(etime)));
+                }
+            }
+        }
+        public string freeplaces;
+        public string freep
+        {
+            get { return freeplaces; }
+            set
+            {
+                freeplaces = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(freep)));
+                }
+            }
+        }
+
+        private int brojp = 3;
         //ParkingRegister
         public void AddParking(object parametar)
         {
 
+            using (var db = new dbContext.Parking())
+            {
+                var pm = new Model.ParkingModel(brojp);
+                db.pmodels.Add(pm);
+                db.SaveChanges();
+
+                var lc = new Model.Location
+                {
+                    //x = ?;
+                    //y = ?;
+                };
+                db.location.Add(lc);
+                db.SaveChanges();
+
+                int tmp = 0;
+                foreach (Model.Account ac in acc)
+                    if (ac.Email() == _email)
+                        tmp = ac.id;
+                var pa = new Model.Parking(tmp, parkingname, grad, drzava, lc.id, (float)Double.Parse(cijena), Int32.Parse(starttime), Int32.Parse(endtime), Int32.Parse(kapacitet), Int32.Parse(freeplaces), pm.id,0);
+                db.parking.Add(pa);
+                db.SaveChanges();
+
+                var mess = new Model.Message("Add parking Request...", tmp, DateTime.Now);
+                db.inbox.Add(mess);
+                db.SaveChanges();
+            }
+                
+            
+
+            
+
+            firstname = string.Empty;
+            lastname = string.Empty;
+            Email = string.Empty;
+            pasw = string.Empty;
+            cb = false;
+            rpasw = string.Empty;
         }
         //Forgot password
         public void Send(object parametar)
@@ -492,7 +538,7 @@ namespace Parkomania.ViewModel
 
                 var us = new Model.User
                 {
-                    locationid = 0
+                    accid = ac.id
                 };
 
                 db.user.Add(us);

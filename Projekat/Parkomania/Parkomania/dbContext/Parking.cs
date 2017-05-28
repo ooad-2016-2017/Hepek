@@ -17,6 +17,9 @@ namespace Parkomania.dbContext
         public DbSet<Model.Account> account { get; set; }
         public DbSet<Model.User> user { get; set; }
         public DbSet<Model.Admin> admin { get; set; }
+        public DbSet<Model.ParkingModel> pmodels { get; set; }
+        public DbSet<Model.ParkingManager> pmanager { get; set; }
+        public DbSet<Model.Message> inbox { get; set; }
 
         public Parking()
         {

@@ -1,6 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
   <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="passAddEdit" />
+    <RootPropertyPathName Name="saveEdit" />
+    <RootPropertyPathName Name="cancelEdit" />
+    <RootPropertyPathName Name="emailEdit" />
+    <RootPropertyPathName Name="lastNameEdit" />
+    <RootPropertyPathName Name="firstNameEdit" />
+    <RootPropertyPathName Name="deleteMessage" />
+    <RootPropertyPathName Name="suggestMessage" />
+    <RootPropertyPathName Name="suggestParking" />
+    <RootPropertyPathName Name="suggestUser" />
+    <RootPropertyPathName Name="openAddEdit" />
+    <RootPropertyPathName Name="suggestAdmin" />
     <RootPropertyPathName Name="sendcode" />
     <RootPropertyPathName Name="entercode" />
     <RootPropertyPathName Name="emailforgotpass" />
@@ -17,13 +29,18 @@
     <RootPropertyPathName Name="lastname" />
     <RootPropertyPathName Name="firstname" />
     <RootPropertyPathName Name="confirm" />
+    <RootPropertyPathName Name="until" />
+    <RootPropertyPathName Name="from" />
+    <RootPropertyPathName Name="apply" />
+    <RootPropertyPathName Name="price" />
+    <RootPropertyPathName Name="freeSpaces" />
+    <RootPropertyPathName Name="Valuta" />
     <RootPropertyPathName Name="addparking" />
     <RootPropertyPathName Name="country" />
     <RootPropertyPathName Name="city" />
     <RootPropertyPathName Name="freep" />
     <RootPropertyPathName Name="etime" />
     <RootPropertyPathName Name="stime" />
-    <RootPropertyPathName Name="price" />
     <RootPropertyPathName Name="capacity" />
     <RootPropertyPathName Name="pname" />
     <RootPropertyPathName Name="pass" />
@@ -81,27 +98,31 @@
       <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Text" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="TextWrapping" />
-      <RootProperty Name="Text" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
       <RootProperty Name="Width" />
       <RootProperty Name="MinWidth" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Command" />
       <RootProperty Name="Content" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Command" />
       <RootProperty Name="RequestedTheme" />
       <RootProperty Name="Background" />
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Width" />
       <RootProperty Name="FontSize" />
       <RootEvent Name="Click" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+      <RootProperty Name="Mode" />
     </RootType>
     <RootType FullName="Parkomania.AddEdit" />
     <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
@@ -129,24 +150,20 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Items" />
       <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Items" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AutoSuggestBox">
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Text" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Text" />
       <RootProperty Name="PlaceholderText" />
       <RootProperty Name="Items" />
     </RootType>
-    <RootType FullName="System.String" />
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.BindExtension" />
+    <RootType FullName="System.String" />
     <RootType FullName="Parkomania.Admin" />
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="Path" />
-      <RootProperty Name="Mode" />
-    </RootType>
     <RootType FullName="Parkomania.ForgotPassword" />
     <RootType FullName="Windows.UI.Xaml.Controls.Maps.MapControl">
       <RootProperty Name="HorizontalAlignment" />
@@ -205,10 +222,10 @@
     <RootType FullName="Parkomania.LoginForma" />
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
       <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="SelectedItem" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
-      <RootProperty Name="SelectedItem" />
       <RootProperty Name="MinWidth" />
       <RootProperty Name="Items" />
     </RootType>

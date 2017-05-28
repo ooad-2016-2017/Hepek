@@ -25,7 +25,8 @@ namespace ParkomaniaMigrations
                     capacity = table.Column(type: "INTEGER", nullable: false),
                     freeplaces = table.Column(type: "INTEGER", nullable: false),
                     idInfo = table.Column(type: "INTEGER", nullable: false),
-                    idReserved = table.Column(type: "INTEGER", nullable: false)
+                    idReserved = table.Column(type: "INTEGER", nullable: false),
+                    approved = table.Column(type: "INTEGER", nullable: false)
 
                     
              },
@@ -58,7 +59,7 @@ namespace ParkomaniaMigrations
                    lastname = table.Column(type: "TEXT", nullable: false),
                    email = table.Column(type: "TEXT", nullable: false),
                    password = table.Column(type: "TEXT", nullable: false),
-                   acctype = table.Column(type: "TEXT", nullable: false)
+                   acctype = table.Column(type: "TEXT", nullable: false),
                },
                constraints: table =>
                {
@@ -83,8 +84,9 @@ namespace ParkomaniaMigrations
                columns: table => new
                {
                    id = table.Column(type: "INTEGER", nullable: false),
-                  // .Annotation("Sqlite:Autoincrement", true)
-                  locationid = table.Column(type: "INTEGER", nullable: false)
+                   // .Annotation("Sqlite:Autoincrement", true)
+                   locationid = table.Column(type: "INTEGER", nullable: true),
+                   accid = table.Column(type: "INTEGER", nullable: false)
                },
                constraints: table =>
                {

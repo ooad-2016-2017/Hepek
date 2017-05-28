@@ -29,6 +29,7 @@ namespace ParkomaniaMigrations
                 b.Property<int>("freeplaces");
                 b.Property<int>("idInfo");
                 b.Property<int>("idReserved");
+                b.Property<int>("approved");
 
                 b.Key("id");
             });
@@ -66,6 +67,7 @@ namespace ParkomaniaMigrations
             {
                 b.Property<int>("id").ValueGeneratedOnAdd();
                 b.Property<int>("locationid");
+                b.Property<int>("accid");
                 b.Key("id");
             });
             //----

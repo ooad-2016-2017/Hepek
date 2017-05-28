@@ -126,7 +126,7 @@
     <Compile Include="Model\GPSNavigation.cs" />
     <Compile Include="Model\Guest.cs" />
     <Compile Include="Model\IAdmin.cs" />
-    <Compile Include="Model\Inbox.cs" />
+    <Compile Include="Model\Message.cs" />
     <Compile Include="Model\Information.cs" />
     <Compile Include="Model\IParking.cs" />
     <Compile Include="Model\IUser.cs" />

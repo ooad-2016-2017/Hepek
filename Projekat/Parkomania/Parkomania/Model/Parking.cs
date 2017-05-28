@@ -21,11 +21,12 @@ namespace Parkomania.Model
         public int endTime;
         public int Capacity;
         public int freePlaces;
-        public ParkingModel Model;
+        public int Model;
         public List<Information> Infos;
         public List<bool> Reserved;
+        public int approved;
 
-        public Parking(int a, string n, string city, string country, int pl, float price, int st, int et, int capacity, int freep, ParkingModel m)
+        public Parking(int a, string n, string city, string country, int pl, float price, int st, int et, int capacity, int freep, int m, int app)
         {
             Accid = a;
             Name = n;
@@ -38,6 +39,7 @@ namespace Parkomania.Model
             Capacity = capacity;
             freePlaces = freep;
             Model = m;
+            approved = app;
             Infos = new List<Information>();
             Reserved = new List<bool>();
         }

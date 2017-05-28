@@ -11,6 +11,7 @@ namespace Parkomania.Model
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
+        public int parkingid { get; set; }
         public ParkingManager(string fn, string ln, string em, string pass) : base(fn, ln, em, pass, "parking")
         {
 
