@@ -12,6 +12,8 @@ using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using System.ComponentModel.DataAnnotations.Schema;
 using Windows.UI.Xaml.Controls.Maps;
+using Microsoft.WindowsAzure.MobileServices;
+using Windows.UI.Popups;
 
 namespace Parkomania.ViewModel
 {
@@ -467,7 +469,35 @@ namespace Parkomania.ViewModel
                 var pa = new Model.Parking(tmp, parkingname, grad, drzava, lc.id, (float)Double.Parse(cijena), Int32.Parse(starttime), Int32.Parse(endtime), Int32.Parse(kapacitet), Int32.Parse(freeplaces), pm.id,0);
                 db.parking.Add(pa);
                 db.SaveChanges();
-
+                IMobileServiceTable<AzureTabela.Parking> userTableObj = App.MobileService.GetTable<AzureTabela.Parking>();
+                try
+                {
+                    AzureTabela.Parking par = new AzureTabela.Parking();
+                    par.idp = -1; // ???
+                    par.Accid = tmp;
+                    par.name = parkingname;
+                    par.city = grad;
+                    par.country = drzava;
+                    par.locationid = lc.id;
+                    par.price = (float)Double.Parse(cijena);
+                    par.starttime = Int32.Parse(starttime);
+                    par.endtime = Int32.Parse(endtime);
+                    par.capacity = Int32.Parse(kapacitet);
+                    par.freeplaces = Int32.Parse(freeplaces);
+                    par.modelid = pm.id;
+                    par.approved = 0;
+                    par.idReserved = -1; // ??
+                    par.idInfo = -1; // ??
+                    userTableObj.InsertAsync(par);
+                    MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novi parking.");
+                    msgDialog.ShowAsync();
+                }
+                catch (Exception ex)
+                {
+                    MessageDialog msgDialogError = new MessageDialog("Error : " +
+                    ex.ToString());
+                    msgDialogError.ShowAsync();
+                }
                 var mess = new Model.Message("Add parking Request...", tmp, DateTime.Now);
                 db.inbox.Add(mess);
                 db.SaveChanges();

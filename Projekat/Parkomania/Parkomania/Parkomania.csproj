@@ -92,6 +92,7 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AzureTabela\Parking.cs" />
     <Compile Include="Helper\MD5.cs" />
     <Compile Include="Helper\RelayCommand.cs" />
     <Compile Include="Helper\test.cs" />
