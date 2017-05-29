@@ -11,6 +11,7 @@ using System.Windows.Input;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using System.ComponentModel.DataAnnotations.Schema;
+using Windows.UI.Xaml.Controls.Maps;
 
 namespace Parkomania.ViewModel
 {
@@ -27,6 +28,7 @@ namespace Parkomania.ViewModel
         public static List<Model.ParkingModel> pmodels;
         public static List<Model.ParkingManager> pmanager;
 
+        public MapControl mapa;
         public ICommand LoginGosta { get; set; }
         public ICommand Login { get; set; }
         public ICommand register { get; set; }
@@ -43,6 +45,35 @@ namespace Parkomania.ViewModel
         public ICommand openAddEdit { get; set; }
         public ICommand deleteMessage { get; set; }
 
+        public System()
+        {
+            using (var db = new dbContext.Parking())
+            {
+                //parkings = db.parking.ToList<Model.Parking>();
+                //users = db.user.ToList<Model.User>();
+                //admins = db.admin.ToList<Model.Admin>();
+                //acc = db.account.ToList<Model.Account>();
+                //pmodels = db.pmodels.ToList<Model.ParkingModel>();
+                //locations = db.locations.ToList<Model.Location>();
+                //inbox = db.inbox.ToList<Model.Message>();
+                //pmanager = db.pmanager.ToList<Model.ParkingManager>();
+            }
+            LoginGosta = new RelayCommand<object>(openGuestForm, check);
+            Login = new RelayCommand<object>(openLoginForm, check);
+            register = new RelayCommand<object>(openReg, check);
+            confirm = new RelayCommand<object>(addUser, check);
+            regParking = new RelayCommand<object>(openRegParking, check);
+            forgotpass = new RelayCommand<object>(forgotpassform, check);
+            cancel = new RelayCommand<object>(Cancel, check);
+            send = new RelayCommand<object>(Send, check);
+            sendcode = new RelayCommand<object>(SendCode, check);
+            addparking = new RelayCommand<object>(AddParking, check);
+            cancelAddEdit = new RelayCommand<object>(CancelAddEdit, check);
+            saveAddEdit = new RelayCommand<object>(SaveAddEdit, check);
+            openAddEdit = new RelayCommand<object>(OpenAddEdit, check);
+            deleteMessage = new RelayCommand<object>(DeleteMessage, check);
+            NavigationService = new NavigationService();
+        }
         //welcome
         private string _email;
         private string _password;
@@ -303,35 +334,7 @@ namespace Parkomania.ViewModel
         {
 
         }
-        public System()
-        {
-            using (var db = new dbContext.Parking())
-            {
-                //parkings = db.parking.ToList<Model.Parking>();
-                //users = db.user.ToList<Model.User>();
-                //admins = db.admin.ToList<Model.Admin>();
-                //acc = db.account.ToList<Model.Account>();
-                //pmodels = db.pmodels.ToList<Model.ParkingModel>();
-                //locations = db.locations.ToList<Model.Location>();
-                //inbox = db.inbox.ToList<Model.Message>();
-                //pmanager = db.pmanager.ToList<Model.ParkingManager>();
-            }
-            LoginGosta = new RelayCommand<object>(openGuestForm, check);
-            Login = new RelayCommand<object>(openLoginForm, check);
-            register = new RelayCommand<object>(openReg, check);
-            confirm = new RelayCommand<object>(addUser, check);
-            regParking = new RelayCommand<object>(openRegParking, check);
-            forgotpass = new RelayCommand<object>(forgotpassform, check);
-            cancel = new RelayCommand<object>(Cancel, check);
-            send = new RelayCommand<object>(Send, check);
-            sendcode = new RelayCommand<object>(SendCode, check);
-            addparking = new RelayCommand<object> (AddParking, check);
-            cancelAddEdit = new RelayCommand<object>(CancelAddEdit, check);
-            saveAddEdit = new RelayCommand<object>(SaveAddEdit, check);
-            openAddEdit = new RelayCommand<object>(OpenAddEdit, check);
-            deleteMessage = new RelayCommand<object>(DeleteMessage, check);
-            NavigationService = new NavigationService();
-        }
+       
         //parking register
         public string drzava;
         public string country

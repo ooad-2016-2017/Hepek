@@ -94,6 +94,7 @@
   <ItemGroup>
     <Compile Include="Helper\MD5.cs" />
     <Compile Include="Helper\RelayCommand.cs" />
+    <Compile Include="Helper\test.cs" />
     <Compile Include="Views\AddEdit.xaml.cs">
       <DependentUpon>AddEdit.xaml</DependentUpon>
     </Compile>

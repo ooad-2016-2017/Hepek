@@ -20,11 +20,11 @@
                 <RowDefinition Height="7*"/>
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
-            <Maps:MapControl HorizontalAlignment="Stretch" Margin="10,10,10,10" VerticalAlignment="Stretch" Grid.ColumnSpan="4" Grid.Row="1">
+            <Maps:MapControl x:ConnectionId='1' x:Name="mapa" HorizontalAlignment="Stretch" Margin="10,10,10,10" VerticalAlignment="Stretch" Grid.ColumnSpan="4" Grid.Row="1" Center="{Binding TrenutnaLokacija, Mode=OneWay}">
                 <Maps:MapControl/>
             </Maps:MapControl>
-            <Button x:ConnectionId='1' Command="{Binding Path=exit}" x:Name="button" Content="Exit" HorizontalAlignment="Stretch" Margin="5" Grid.Row="2" VerticalAlignment="Center"/>
-            <Button x:ConnectionId='2' Command="{Binding Path=findme}" x:Name="button1" Content="FindMe!" HorizontalAlignment="Stretch" Margin="5" Grid.Row="2" VerticalAlignment="Center" Grid.Column="1"/>
+            <Button x:ConnectionId='2' Command="{Binding Path=exit}" x:Name="button" Content="Exit" HorizontalAlignment="Stretch" Margin="5" Grid.Row="2" VerticalAlignment="Center"/>
+            <Button x:ConnectionId='3' Command="{Binding Path=findme}" x:Name="button1" Content="FindMe!" HorizontalAlignment="Stretch" Margin="5" Grid.Row="2" VerticalAlignment="Center" Grid.Column="1"/>
             <AutoSuggestBox Text="{Binding Path=search}" HorizontalAlignment="Stretch" Margin="5" VerticalAlignment="Center" Grid.Column="2" Grid.Row="2" PlaceholderText="Search" Grid.ColumnSpan="2"/>
             <CommandBar Margin="10,10,0,0" HorizontalAlignment="Left" Width="auto">
                 <AppBarButton Icon ="Home" Label="Home"/>

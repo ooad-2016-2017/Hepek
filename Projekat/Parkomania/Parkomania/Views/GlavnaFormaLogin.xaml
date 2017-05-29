@@ -20,7 +20,7 @@
                 <RowDefinition Height="7*"/>
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
-            <Maps:MapControl HorizontalAlignment="Stretch" Margin="10,10,10,10" VerticalAlignment="Stretch" Grid.ColumnSpan="4" Grid.Row="1">
+            <Maps:MapControl x:Name="mapa" HorizontalAlignment="Stretch" Margin="10,10,10,10" VerticalAlignment="Stretch" Grid.ColumnSpan="4" Grid.Row="1" Center="{Binding TrenutnaLokacija, Mode=OneWay}">
                 <Maps:MapControl/>
             </Maps:MapControl>
             <Button Command="{Binding Path=exit}" x:Name="button" Content="Exit" HorizontalAlignment="Stretch" Margin="5" Grid.Row="2" VerticalAlignment="Center"/>

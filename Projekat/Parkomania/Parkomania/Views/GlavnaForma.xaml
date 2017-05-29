@@ -22,7 +22,7 @@
             </Grid.RowDefinitions>
             <Button x:Name="button" Command="{Binding Path=exit}" Content="Exit" HorizontalAlignment="Stretch" Margin="5,0,5,0" Grid.Row="1" VerticalAlignment="Center"/>
             <Button x:Name="button1" Command="{Binding Path=findme}" Content="FindMe!" HorizontalAlignment="Stretch" Margin="5,0,5,0" Grid.Row="1" VerticalAlignment="Center" Grid.Column="2"/>
-            <Maps:MapControl HorizontalAlignment="Stretch" Margin="10,10,10,10" Grid.ColumnSpan="4" VerticalAlignment="Stretch"/>
+            <Maps:MapControl x:Name="mapa" HorizontalAlignment="Stretch" Margin="10,10,10,10" Grid.ColumnSpan="4" VerticalAlignment="Stretch" Center="{Binding TrenutnaLokacija, Mode=OneWay}"/>
             <AutoSuggestBox Text="{Binding Path=searchparkingguest, Mode=TwoWay}" Grid.Column="3" HorizontalAlignment="Stretch" Margin="10,0,10,0" Grid.Row="1" VerticalAlignment="Center" PlaceholderText="Search">
                 <AutoSuggestBox VerticalAlignment="Center" HorizontalAlignment="Stretch"/>
             </AutoSuggestBox>

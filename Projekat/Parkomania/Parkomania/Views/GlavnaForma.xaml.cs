@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Parkomania.Helper;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -6,8 +7,10 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Core;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
+using Windows.UI.Xaml.Controls.Maps;
 using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
@@ -27,9 +30,13 @@ namespace Parkomania
         {
             this.InitializeComponent();
         }
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
+            mapa.Style = MapStyle.Aerial3DWithRoads;
+            mapa.ZoomLevel = 20;
+            test.gmapa = mapa;
             DataContext = (ViewModel.GuestModel)e.Parameter;
+            NavigationCacheMode = NavigationCacheMode.Required;
         }
         private void ThisPage_BackRequested(object sender, BackRequestedEventArgs e)
         {

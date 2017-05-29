@@ -26,7 +26,10 @@
             <RowDefinition  />
             <RowDefinition  />
         </Grid.RowDefinitions>
-        <Image x:ConnectionId='1' x:Name="image" Grid.Row="0" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" Margin="10,10,10,5" VerticalAlignment="Stretch" Source="Assets/logo.png" Grid.RowSpan="4"/>
+        <Image x:ConnectionId='1' x:Name="image" Grid.Row="0" Grid.ColumnSpan="3" HorizontalAlignment="Stretch" Margin="10,10,10,5" VerticalAlignment="Stretch"  Grid.RowSpan="4">
+            <Image.Source>
+                <BitmapImage DecodePixelWidth="200" UriSource="Assets/logo.png"/>
+            </Image.Source> </Image>
         <Button x:ConnectionId='2' x:Name="button" Command="{Binding Path=regParking}" Content="Want to register a parking?" HorizontalAlignment="Stretch" Margin="10,5,10,5" Grid.Row="10" VerticalAlignment="Stretch" Grid.ColumnSpan="3" Background="#33F61010"/>
         <Button x:ConnectionId='3' x:Name="button1" Command="{Binding Path=register}" Content="Don't have account yet? Sign up now!" HorizontalAlignment="Stretch" Margin="10,5,10,5" Grid.Row="9" VerticalAlignment="Stretch" Grid.ColumnSpan="3" Background="#331BF10D"/>
         <Button x:ConnectionId='4' x:Name="button2" Content="Forgot password?" Command="{Binding Path=forgotpass}" HorizontalAlignment="Stretch" Margin="10,5,10,5" Grid.Row="8" VerticalAlignment="Stretch" Grid.ColumnSpan="3" Background="#330FD7EB"/>
