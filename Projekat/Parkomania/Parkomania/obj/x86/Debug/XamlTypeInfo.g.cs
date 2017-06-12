@@ -210,7 +210,6 @@ namespace Parkomania.Parkomania_XamlTypeInfo
         private object Activate_10_LoginForma() { return new global::Parkomania.LoginForma(); }
         private object Activate_11_PModelxaml() { return new global::Parkomania.PModelxaml(); }
         private object Activate_12_ParkingForm() { return new global::Parkomania.ParkingForm(); }
-        private object Activate_13_ParkingKontrola() { return new global::Parkomania.ParkingKontrola(); }
         private object Activate_14_ParkingRegister() { return new global::Parkomania.ParkingRegister(); }
         private object Activate_15_Welcome() { return new global::Parkomania.Welcome(); }
         private void VectorAdd_7_IList(object instance, object item)
@@ -313,7 +312,6 @@ namespace Parkomania.Parkomania_XamlTypeInfo
 
             case 13:   //  Parkomania.ParkingKontrola
                 userType = new global::Parkomania.Parkomania_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_13_ParkingKontrola;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

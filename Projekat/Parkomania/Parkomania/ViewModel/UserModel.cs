@@ -54,6 +54,7 @@ namespace Parkomania.ViewModel
             parent = s;
             exit = new RelayCommand<object>(Exit, check);
             findme = new RelayCommand<object>(findMe, check);
+            popuniMapu();
         }
         public bool check(object parametar)
         {
@@ -100,6 +101,28 @@ namespace Parkomania.ViewModel
         protected void OnNotifyPropertyChanged([CallerMemberName] string memberName = "")
         {
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(memberName));
+        }
+        public void popuniMapu()
+        {
+            mapa = test.mapa;
+            foreach(Model.Parking p in System.parkings)
+            {
+                foreach (Model.Location l in System.locations)
+                {
+                    if(l.id == p.pLocation)
+                    {
+                        BasicGeoposition snPosition = new BasicGeoposition() { Latitude = l.x, Longitude = l.y };
+                        var pk = new ParkingKontrola(p.Name);
+                        this.mapa.Children.Add(pk);
+
+                        var position = new Geopoint(snPosition);
+                        MapControl.SetLocation(pk, position);
+
+                        MapControl.SetNormalizedAnchorPoint(pk, new Point(0.5, 0.5));
+                    }
+                }
+                
+            }
         }
     }
 }

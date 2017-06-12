@@ -18,14 +18,13 @@ namespace ParkomaniaMigrations
                     name = table.Column(type: "TEXT", nullable: false),
                     city = table.Column(type: "TEXT", nullable: false),
                     country = table.Column(type: "TEXT", nullable: false),
-                    locationId = table.Column(type: "INTEGER", nullable: false),
+                    pLocation = table.Column(type: "INTEGER", nullable: false),
                     price = table.Column(type: "REAL", nullable: false),
                     starttime = table.Column(type: "INTEGER", nullable: false),
                     endtime = table.Column(type: "INTEGER", nullable: false),
                     capacity = table.Column(type: "INTEGER", nullable: false),
                     freeplaces = table.Column(type: "INTEGER", nullable: false),
-                    idInfo = table.Column(type: "INTEGER", nullable: false),
-                    idReserved = table.Column(type: "INTEGER", nullable: false),
+                    model = table.Column(type: "INTEGER", nullable: false),
                     approved = table.Column(type: "INTEGER", nullable: false)
 
                     
@@ -72,7 +71,7 @@ namespace ParkomaniaMigrations
               {
                   id = table.Column(type: "INTEGER", nullable: false),
                    // .Annotation("Sqlite:Autoincrement", true)
-                  places = table.Column(type: "TEXT", nullable: false), 
+                  places = table.Column(type: "INTEGER", nullable: false), 
               },
               constraints: table =>
               {

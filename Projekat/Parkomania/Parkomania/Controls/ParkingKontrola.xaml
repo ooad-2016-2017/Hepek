@@ -17,8 +17,8 @@
             <RowDefinition Height="5*"/>
             <RowDefinition Height="1*"/>
         </Grid.RowDefinitions>
-        <Image x:Name="image" Margin="10,10,10,10" VerticalAlignment="Center" Source="Assets/parking.png" Stretch="Fill" HorizontalAlignment="Stretch" Grid.ColumnSpan="2"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Ime parkinga" VerticalAlignment="Center" Width="auto" Grid.Row="1"/>
+        <Image x:Name="image" Margin="10,10,10,10" VerticalAlignment="Center" Source="ms-appx:///Assets/parking.png" Stretch="Fill" HorizontalAlignment="Stretch" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="ime" HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Ime parkinga" VerticalAlignment="Center" Width="auto" Grid.Row="1"/>
         <Button x:Name="button" Content=".   .   ." HorizontalAlignment="Right" Margin="0,9,10,9" Grid.Row="1" VerticalAlignment="Center" Grid.Column="1" Width="auto" Click="button_Click"/>
         <Popup Name = "test" Margin="10,10,10,10" Grid.ColumnSpan="2" IsOpen="False" IsLightDismissEnabled="True"  >
             <Grid Background="#FFE5E5E5" Height="228" Width="332">

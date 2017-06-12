@@ -1512,3 +1512,12 @@ C:\Users\zlayaa\Desktop\Parkomania\Parkomania\obj\x86\Debug\resources.en.resfile
 C:\Users\zlayaa\Desktop\Parkomania\Parkomania\obj\x86\Debug\Microsoft.WindowsAzure.Mobile.Ext.pri.xml
 C:\Users\zlayaa\Desktop\Parkomania\Parkomania\obj\x86\Debug\Prism.Windows.pri.xml
 C:\Users\zlayaa\Desktop\Parkomania\Parkomania\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Admir\Documents\Projekat\Parkomania\Parkomania\bin\x86\Debug\EASendMailRT.winmd
+C:\Users\Admir\Documents\Projekat\Parkomania\Parkomania\bin\x86\Debug\Microsoft.WindowsAzure.Mobile.Ext.dll
+C:\Users\Admir\Documents\Projekat\Parkomania\Parkomania\bin\x86\Debug\Microsoft.WindowsAzure.Mobile.dll
+C:\Users\Admir\Documents\Projekat\Parkomania\Parkomania\bin\x86\Debug\System.Net.Http.Extensions.dll
+C:\Users\Admir\Documents\Projekat\Parkomania\Parkomania\bin\x86\Debug\System.Net.Http.Primitives.dll
+C:\Users\Admir\Documents\Projekat\Parkomania\Parkomania\bin\x86\Debug\Newtonsoft.Json.dll
+C:\Users\Admir\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\Parkomania.csprojResolveAssemblyReference.cache
+C:\Users\Admir\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\Microsoft.WindowsAzure.Mobile\en-US\Microsoft.WindowsAzure.MobileServices.Resources.resw
+C:\Users\Admir\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\Microsoft.WindowsAzure.Mobile.Ext.pri.xml

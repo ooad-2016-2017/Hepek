@@ -34,9 +34,11 @@ namespace Parkomania
         {
             this.InitializeComponent();
             this.Suspending += OnSuspending;
+            
             using (var db = new dbContext.Parking())
             {
                 db.Database.ApplyMigrations();
+                Helper.DefaultPodaci.Initialize(db);
             }
         }
 

@@ -21,14 +21,13 @@ namespace ParkomaniaMigrations
                 b.Property<int>("accId");
                 b.Property<string>("name");
                 b.Property<string>("city");
-                b.Property<int>("locationId");
+                b.Property<int>("pLocation");
                 b.Property<float>("price");
                 b.Property<int>("starttime");
                 b.Property<int>("endtime");
                 b.Property<int>("capacity");
                 b.Property<int>("freeplaces");
-                b.Property<int>("idInfo");
-                b.Property<int>("idReserved");
+                b.Property<int>("model");
                 b.Property<int>("approved");
 
                 b.Key("id");
@@ -59,7 +58,7 @@ namespace ParkomaniaMigrations
             builder.Entity("Parkomania.Model.ParkingModel", b =>
             {
                 b.Property<int>("id").ValueGeneratedOnAdd();
-                b.Property<string>("places");
+                b.Property<int>("places");
                 b.Key("id");
             });
             //----

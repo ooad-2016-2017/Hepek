@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="Parkomania.AddEdit"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Parkomania"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="4*" />
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*" />
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*" />
+        </Grid.RowDefinitions>
+        <TextBlock x:ConnectionId='1' x:Name="textBlock" Grid.Column="0" HorizontalAlignment="Right" Margin="10" TextWrapping="Wrap" Text="First name:" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='2' x:Name="textBlock1" Grid.Column="0" HorizontalAlignment="Right" Margin="10" Grid.Row="1" TextWrapping="Wrap" Text="Last name:" VerticalAlignment="Center"  />
+        <TextBlock x:ConnectionId='3' x:Name="textBlock2" Grid.Column="0" HorizontalAlignment="Right" Margin="10" Grid.Row="2" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Center"/>
+        <TextBlock x:ConnectionId='4' x:Name="textBlock3" Grid.Column="0" HorizontalAlignment="Right" Margin="10" Grid.Row="3" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Center"/>
+        <TextBox x:ConnectionId='5' x:Name="textBox" Text="{Binding Path=firstNameEdit, Mode=TwoWay}" Grid.Column="1" HorizontalAlignment="Stretch" Margin="10,0,10,0" TextWrapping="Wrap" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+        <TextBox x:ConnectionId='6' x:Name="textBox1" Text="{Binding Path=lastNameEdit, Mode=TwoWay}" Grid.Column="1" HorizontalAlignment="Stretch" Margin="10,0,10,0" Grid.Row="1" TextWrapping="Wrap"  VerticalAlignment="Center" Grid.ColumnSpan="2" />
+        <TextBox x:ConnectionId='7' x:Name="textBox2" Text="{Binding Path=emailEdit, Mode=TwoWay}" Grid.Column="1" HorizontalAlignment="Stretch" Margin="10,0,10,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+        <Button x:ConnectionId='8' x:Name="button" Command="{Binding Path=cancelEdit}" Content="Cancel" HorizontalAlignment="Stretch" Margin="10,0,10,0" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Grid.ColumnSpan="1" />
+        <Button x:ConnectionId='9' x:Name="button1" Command="{Binding Path=saveEdit}" Content="Save" HorizontalAlignment="Stretch" Margin="10,0,10,0" Grid.Row="4" VerticalAlignment="Center" Grid.Column="2" />
+        <TextBox x:ConnectionId='10' x:Name="textBox2_Copy" Text="{Binding Path=passAddEdit, Mode=TwoWay}" Grid.Column="1" HorizontalAlignment="Stretch" Margin="10,56" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Center" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Page>
+

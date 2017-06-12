@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Parkomania.Model
 {
-    public class User : Account
+    public class User
     {
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }

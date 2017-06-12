@@ -14,6 +14,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using Windows.UI.Xaml.Controls.Maps;
 using Microsoft.WindowsAzure.MobileServices;
 using Windows.UI.Popups;
+using EASendMailRT;
 
 namespace Parkomania.ViewModel
 {
@@ -29,6 +30,7 @@ namespace Parkomania.ViewModel
         public static List<Model.Message> Inbox;
         public static List<Model.ParkingModel> pmodels;
         public static List<Model.ParkingManager> pmanager;
+        public static List<Model.Location> locations;
 
         public MapControl mapa;
         public ICommand LoginGosta { get; set; }
@@ -51,14 +53,14 @@ namespace Parkomania.ViewModel
         {
             using (var db = new dbContext.Parking())
             {
-                //parkings = db.parking.ToList<Model.Parking>();
-                //users = db.user.ToList<Model.User>();
+                parkings = db.parking.ToList<Model.Parking>();
+                users = db.user.ToList<Model.User>();
                 //admins = db.admin.ToList<Model.Admin>();
-                //acc = db.account.ToList<Model.Account>();
+                acc = db.account.ToList<Model.Account>();
                 //pmodels = db.pmodels.ToList<Model.ParkingModel>();
-                //locations = db.locations.ToList<Model.Location>();
+                locations = db.location.ToList<Model.Location>();
                 //inbox = db.inbox.ToList<Model.Message>();
-                //pmanager = db.pmanager.ToList<Model.ParkingManager>();
+                pmanager = db.pmanager.ToList<Model.ParkingManager>();
             }
             LoginGosta = new RelayCommand<object>(openGuestForm, check);
             Login = new RelayCommand<object>(openLoginForm, check);
@@ -444,7 +446,7 @@ namespace Parkomania.ViewModel
         }
 
         private int brojp = 3;
-        //ParkingRegister
+        //ParkingRegister 
         public void AddParking(object parametar)
         {
 
@@ -461,7 +463,7 @@ namespace Parkomania.ViewModel
                 };
                 db.location.Add(lc);
                 db.SaveChanges();
-
+               
                 int tmp = 0;
                 foreach (Model.Account ac in acc)
                     if (ac.Email() == _email)
@@ -515,10 +517,11 @@ namespace Parkomania.ViewModel
             rpasw = string.Empty;
         }
         //Forgot password
-        public void Send(object parametar)
+        public async void Send(object parametar)
         {
-
+            await Send_Email();
         }
+        
         public void SendCode(object parametar)
         {
 
@@ -563,6 +566,7 @@ namespace Parkomania.ViewModel
         }
         public void addUser(object parametar)
         {
+            //asdasdasdasda
             using (var db = new dbContext.Parking())
             {
                 var ac = new Model.Account(fn, ln, em, MD5.ComputeMD5(pw), "user");
@@ -590,6 +594,49 @@ namespace Parkomania.ViewModel
             email = "";
             pass = "";
             NavigationService.Navigate(typeof(ParkingRegister), this);
+        }
+        private async Task Send_Email()
+        {
+            String Result = "";
+            try
+            {
+                SmtpMail oMail = new SmtpMail("TryIt");
+                SmtpClient oSmtp = new SmtpClient();
+
+                // Set sender email address, please change it to yours
+                oMail.From = new MailAddress("admir2404@hotmail.com");
+
+                // Add recipient email address, please change it to yours
+                oMail.To.Add(new MailAddress("zlayaa@outlook.com"));
+
+                // Set email subject and email body text
+                oMail.Subject = "test email from C# XAML project";
+                oMail.TextBody = "this is a test email sent from Windows Store App, do not reply";
+                // Your SMTP server address
+                SmtpServer oServer = new SmtpServer("smpt.live.com");
+
+                // User and password for SMTP authentication
+                oServer.User = "admir2404@hotmail.com"; 
+                oServer.Password = "password";
+                // If your SMTP server requires TLS connection on 25 port, please add this line
+                // oServer.ConnectType = SmtpConnectType.ConnectSSLAuto;
+                // If your SMTP server requires SSL connection on 465 port, please add this line
+                oServer.Port = 587;
+                oServer.ConnectType = SmtpConnectType.ConnectSSLAuto;
+
+                await oSmtp.SendMailAsync(oServer, oMail);
+                Result = "Email was sent successfully!";
+            }
+            catch (Exception ep)
+            {
+                Result = String.Format("Failed to send email with the following error: {0}", ep.Message);
+            }
+
+            // Display Result by Diaglog box
+            Windows.UI.Popups.MessageDialog dlg = new
+                Windows.UI.Popups.MessageDialog(Result);
+
+            await dlg.ShowAsync();
         }
     }
 }

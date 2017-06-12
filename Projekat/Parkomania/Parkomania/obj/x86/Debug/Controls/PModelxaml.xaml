@@ -1,0 +1,57 @@
+﻿<UserControl
+    x:Class="Parkomania.PModelxaml"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Parkomania"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <Grid Background="#FF696565">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Button x:ConnectionId='1' x:Name="button" Content="" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Background="DarkGray"  />
+        <Button x:ConnectionId='2' x:Name="b1" Content="P" HorizontalAlignment="Center"  VerticalAlignment="Center" Grid.Column="1" />
+        <Button x:ConnectionId='3' x:Name="b2" Content="P" Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center" />
+        <Button x:ConnectionId='4' x:Name="b3" Content="P" Grid.Column="3" HorizontalAlignment="Center"  VerticalAlignment="Center" />
+        <Button x:ConnectionId='5' x:Name="button4" Content="" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Background="DarkGray"  Grid.Row="4"  />
+        <Button x:ConnectionId='6' x:Name="b4" Content="P" Grid.Column="1" HorizontalAlignment="Center"  VerticalAlignment="Center" Grid.Row="4"  />
+        <Button x:ConnectionId='7' x:Name="b5" Content="P" Grid.Column="2" HorizontalAlignment="Center"  VerticalAlignment="Center" Grid.Row="4"  />
+        <Button x:ConnectionId='8' x:Name="b6" Content="P" Grid.Column="3" HorizontalAlignment="Center"  VerticalAlignment="Center" Grid.Row="4"  />
+        <Button x:ConnectionId='9' x:Name="button8" Content="P" HorizontalAlignment="Center"  VerticalAlignment="Center" Grid.Row="1" Margin="24,18,27,10"  />
+        <Button x:ConnectionId='10' x:Name="button9" Content="" Grid.Column="2" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" Grid.Row="2"  Background="#FF36638B"/>
+        <Button x:ConnectionId='11' x:Name="button10" Content="+" Grid.Column="4" HorizontalAlignment="Stretch" Grid.Row="0" VerticalAlignment="Stretch" Grid.RowSpan="2" FontSize="26" Background="#FFAFD137"                       />
+        <Button x:ConnectionId='12' x:Name="button11" Content="-" Grid.Column="4" HorizontalAlignment="Stretch"  Grid.Row="3" Grid.RowSpan="3" VerticalAlignment="Stretch" FontSize="26" Background="#FFAFD137"                       />
+        <Rectangle HorizontalAlignment="Stretch" Fill="White" Height="3" Grid.Row="0" Grid.ColumnSpan="4" VerticalAlignment="Top"/>
+        <Rectangle HorizontalAlignment="Stretch" Fill="White" Height="3" Grid.Row="4" Grid.ColumnSpan="4" VerticalAlignment="Bottom"/>
+        <Rectangle HorizontalAlignment="Left" Fill="White" Width="3" Grid.RowSpan="5" Grid.Column="0"  VerticalAlignment="Stretch"/>
+        <Rectangle HorizontalAlignment="Right" Fill="White" Width="3" Grid.Row="3" Grid.RowSpan="2" Grid.Column="3"  VerticalAlignment="Stretch"/>
+        <Rectangle HorizontalAlignment="Right" Fill="White" Width="3" Grid.RowSpan="2" Grid.Column="3"  VerticalAlignment="Stretch"/>
+        <Rectangle HorizontalAlignment="Right" Fill="White" Width="3" Grid.Row="3" Grid.RowSpan="2" Grid.Column="3"  VerticalAlignment="Stretch"/>
+        <Rectangle HorizontalAlignment="Stretch" Fill="White" Height="3" Grid.Row="2" Grid.Column="4" VerticalAlignment="Top"/>
+        <Rectangle HorizontalAlignment="Stretch" Fill="White" Height="3" Grid.Row="2" Grid.Column="4" VerticalAlignment="Bottom"/>
+        <Rectangle HorizontalAlignment="Stretch" Fill="White" Height="3" Grid.Row="2" Grid.Column="0" VerticalAlignment="Top"/>
+        <Rectangle HorizontalAlignment="Stretch" Fill="White" Height="3" Grid.Row="2" Grid.Column="0" VerticalAlignment="Bottom"/>
+        <Button x:ConnectionId='13' x:Name="button12" Content="P" HorizontalAlignment="Center"  Grid.Row="2" VerticalAlignment="Center"/>
+        <Button x:ConnectionId='14' x:Name="button13" Content="P" HorizontalAlignment="Center"  Grid.Row="3" VerticalAlignment="Center"/>
+        <Rectangle x:ConnectionId='15' x:Name ="r4l" HorizontalAlignment="Left" Fill="White" Width="3" Grid.Row="4"  Grid.Column="2"  VerticalAlignment="Stretch"/>
+        <Rectangle x:ConnectionId='16' x:Name ="r4d" HorizontalAlignment="Right" Fill="White" Width="3" Grid.Row="4" Grid.Column="2"  VerticalAlignment="Stretch"/>
+        <Rectangle x:ConnectionId='17' x:Name ="r0l" HorizontalAlignment="Left" Fill="White" Width="3" Grid.Row="0"  Grid.Column="2"  VerticalAlignment="Stretch"/>
+        <Rectangle x:ConnectionId='18' x:Name ="r0d" HorizontalAlignment="Right" Fill="White" Width="3" Grid.Row="0" Grid.Column="2"  VerticalAlignment="Stretch"/>
+    </Grid>
+</UserControl>
+

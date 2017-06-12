@@ -19,9 +19,10 @@ namespace Parkomania
 {
     public sealed partial class ParkingKontrola : UserControl
     {
-        public ParkingKontrola()
+        public ParkingKontrola(String x)
         {
             this.InitializeComponent();
+            ime.Text = x;
         }
 
         private void image_ImageFailed(object sender, ExceptionRoutedEventArgs e)

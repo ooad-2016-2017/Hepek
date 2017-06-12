@@ -27,7 +27,7 @@ namespace Parkomania.dbContext
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string putanjaBaze = "Ooadbaza.db";
+            string putanjaBaze = "Ooadbaza2.db";
             try
             {
                 putanjaBaze = Path.Combine(ApplicationData.Current.LocalFolder.Path,putanjaBaze);

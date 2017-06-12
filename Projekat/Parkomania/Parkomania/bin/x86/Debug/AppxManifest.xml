@@ -34,8 +34,31 @@
   </Applications>
   <Capabilities>
     <Capability Name="internetClient" />
+    <Capability Name="internetClientServer" />
     <DeviceCapability Name="location" />
   </Capabilities>
+  <Extensions>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>CLRHost.dll</Path>
+        <ActivatableClass ActivatableClassId="EASendMailRT.Certificate" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="EASendMailRT.AddressCollection" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="EASendMailRT.SmtpMail" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="EASendMailRT.SmtpClient" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="EASendMailRT.MimePartCollection" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="EASendMailRT.SimpleJsonParser" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="EASendMailRT.SmtpRcptErrorEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="EASendMailRT.HeaderItem" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="EASendMailRT.SmtpStatusEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="EASendMailRT.SmtpServer" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="EASendMailRT.Attachment" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="EASendMailRT.MailAddress" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="EASendMailRT.HeaderCollection" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="EASendMailRT.SmtpDataStreamEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="EASendMailRT.MimePart" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+  </Extensions>
   <build:Metadata>
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />
     <build:Item Name="VisualStudio" Version="14.0" />

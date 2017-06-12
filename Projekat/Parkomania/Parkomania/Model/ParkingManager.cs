@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 
 namespace Parkomania.Model
 {
-    public class ParkingManager : Account
-    {
+    public class ParkingManager { 
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int id { get; set; }
         public int parkingid { get; set; }
-        public ParkingManager(string fn, string ln, string em, string pass) : base(fn, ln, em, pass, "parking")
+        public ParkingManager(int pid)
         {
-
+            parkingid = pid;
         }
         public Parking myParking;
+        public ParkingManager() { }
         public void sendMessage(string txt)
         {
 

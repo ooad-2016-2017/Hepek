@@ -23,34 +23,35 @@ namespace Parkomania
     /// </summary>
     public sealed partial class Admin : Page
     {
-        List<Model.Admin> admins;
-        List<Model.User> korsinici;
+        List<Model.Account> koradmini;
         List<Model.Parking> parkings;
         List<Model.Message> poruke;
         public Admin()
         {
-            korsinici = ViewModel.System.users;
-            admins = ViewModel.System.admins;
+            koradmini = ViewModel.System.acc;
             parkings = ViewModel.System.parkings;
             poruke = ViewModel.System.Inbox;
             users = new ObservableCollection<string>();
             admini = new ObservableCollection<string>();
             messages = new ObservableCollection<string>();
-            foreach (Model.Message m in poruke)
-            {
-                messages.Add(m.text);
-            }
+            parkinzi = new ObservableCollection<string>();
+           // foreach (Model.Message m in poruke)
+           // {
+           //     messages.Add(m.text);
+           // }
             foreach (Model.Parking p in parkings)
             {
                 parkinzi.Add(p.Name);
             }
-            foreach (Model.User u in korsinici)
+            foreach (Model.Account u in koradmini)
             {
-                users.Add(u.Firstname() + " " + u.Lastname());
+                if(u.Acctype().Equals("user"))
+                    users.Add(u.Firstname() + " " + u.Lastname());
             }
-            foreach (Model.Admin a in admins)
+            foreach (Model.Account a in koradmini)
             {
-                admini.Add(a.Firstname() + " " + a.Lastname());
+                if (a.Acctype().Equals("admin")) 
+                    admini.Add(a.Firstname() + " " + a.Lastname());
             }
             this.InitializeComponent();
             DataContext = new ViewModel.System();

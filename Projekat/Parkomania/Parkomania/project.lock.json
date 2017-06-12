@@ -12,6 +12,15 @@
           "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
         }
       },
+      "EASendMail/7.3.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/EASendMailRT.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/EASendMailRT.winmd": {}
+        }
+      },
       "EntityFramework.Commands/7.0.0-beta6": {
         "type": "package",
         "dependencies": {
@@ -109,9 +118,6 @@
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "6.0.4"
         },
-        "frameworkAssemblies": [
-          "System.Net.Http"
-        ],
         "compile": {
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
@@ -137,10 +143,7 @@
         "type": "package"
       },
       "Microsoft.CodeAnalysis.Analyzers/1.0.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System"
-        ]
+        "type": "package"
       },
       "Microsoft.CodeAnalysis.Common/1.0.0": {
         "type": "package",
@@ -2326,6 +2329,15 @@
           "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
         }
       },
+      "EASendMail/7.3.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/EASendMailRT.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/EASendMailRT.winmd": {}
+        }
+      },
       "EntityFramework.Commands/7.0.0-beta6": {
         "type": "package",
         "dependencies": {
@@ -2423,9 +2435,6 @@
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "6.0.4"
         },
-        "frameworkAssemblies": [
-          "System.Net.Http"
-        ],
         "compile": {
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
@@ -2451,10 +2460,7 @@
         "type": "package"
       },
       "Microsoft.CodeAnalysis.Analyzers/1.0.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System"
-        ]
+        "type": "package"
       },
       "Microsoft.CodeAnalysis.Common/1.0.0": {
         "type": "package",
@@ -4487,6 +4493,15 @@
           "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
         }
       },
+      "EASendMail/7.3.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/EASendMailRT.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/EASendMailRT.winmd": {}
+        }
+      },
       "EntityFramework.Commands/7.0.0-beta6": {
         "type": "package",
         "dependencies": {
@@ -4584,9 +4599,6 @@
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "6.0.4"
         },
-        "frameworkAssemblies": [
-          "System.Net.Http"
-        ],
         "compile": {
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
@@ -4612,10 +4624,7 @@
         "type": "package"
       },
       "Microsoft.CodeAnalysis.Analyzers/1.0.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System"
-        ]
+        "type": "package"
       },
       "Microsoft.CodeAnalysis.Common/1.0.0": {
         "type": "package",
@@ -6626,6 +6635,15 @@
           "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
         }
       },
+      "EASendMail/7.3.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/EASendMailRT.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/EASendMailRT.winmd": {}
+        }
+      },
       "EntityFramework.Commands/7.0.0-beta6": {
         "type": "package",
         "dependencies": {
@@ -6723,9 +6741,6 @@
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "6.0.4"
         },
-        "frameworkAssemblies": [
-          "System.Net.Http"
-        ],
         "compile": {
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
@@ -6751,10 +6766,7 @@
         "type": "package"
       },
       "Microsoft.CodeAnalysis.Analyzers/1.0.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System"
-        ]
+        "type": "package"
       },
       "Microsoft.CodeAnalysis.Common/1.0.0": {
         "type": "package",
@@ -8787,6 +8799,15 @@
           "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
         }
       },
+      "EASendMail/7.3.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/EASendMailRT.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/EASendMailRT.winmd": {}
+        }
+      },
       "EntityFramework.Commands/7.0.0-beta6": {
         "type": "package",
         "dependencies": {
@@ -8884,9 +8905,6 @@
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "6.0.4"
         },
-        "frameworkAssemblies": [
-          "System.Net.Http"
-        ],
         "compile": {
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
@@ -8912,10 +8930,7 @@
         "type": "package"
       },
       "Microsoft.CodeAnalysis.Analyzers/1.0.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System"
-        ]
+        "type": "package"
       },
       "Microsoft.CodeAnalysis.Common/1.0.0": {
         "type": "package",
@@ -10926,6 +10941,15 @@
           "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
         }
       },
+      "EASendMail/7.3.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/EASendMailRT.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/EASendMailRT.winmd": {}
+        }
+      },
       "EntityFramework.Commands/7.0.0-beta6": {
         "type": "package",
         "dependencies": {
@@ -11023,9 +11047,6 @@
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "6.0.4"
         },
-        "frameworkAssemblies": [
-          "System.Net.Http"
-        ],
         "compile": {
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
@@ -11051,10 +11072,7 @@
         "type": "package"
       },
       "Microsoft.CodeAnalysis.Analyzers/1.0.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System"
-        ]
+        "type": "package"
       },
       "Microsoft.CodeAnalysis.Common/1.0.0": {
         "type": "package",
@@ -13087,6 +13105,15 @@
           "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll": {}
         }
       },
+      "EASendMail/7.3.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/uap10.0/EASendMailRT.winmd": {}
+        },
+        "runtime": {
+          "lib/uap10.0/EASendMailRT.winmd": {}
+        }
+      },
       "EntityFramework.Commands/7.0.0-beta6": {
         "type": "package",
         "dependencies": {
@@ -13184,9 +13211,6 @@
           "Microsoft.Net.Http": "2.2.29",
           "Newtonsoft.Json": "6.0.4"
         },
-        "frameworkAssemblies": [
-          "System.Net.Http"
-        ],
         "compile": {
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.Ext.dll": {},
           "lib/netcore45/Microsoft.WindowsAzure.Mobile.dll": {}
@@ -13212,10 +13236,7 @@
         "type": "package"
       },
       "Microsoft.CodeAnalysis.Analyzers/1.0.0": {
-        "type": "package",
-        "frameworkAssemblies": [
-          "System"
-        ]
+        "type": "package"
       },
       "Microsoft.CodeAnalysis.Common/1.0.0": {
         "type": "package",
@@ -15227,6 +15248,22 @@
         "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.XML",
         "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.dll",
         "lib/portable-net4+sl5+netcore45+wpa81+wp8/Microsoft.Practices.ServiceLocation.pdb"
+      ]
+    },
+    "EASendMail/7.3.1.2": {
+      "sha512": "GKAN6FgMaEQXM6l9RVIum8H9siy9hXsp9UwTI2kAruRDmiVfhE4+BIeWzOMsqorEhE9DHrNEqLEvnM/oJ4fVKA==",
+      "type": "package",
+      "path": "EASendMail/7.3.1.2",
+      "files": [
+        "EASendMail.7.3.1.2.nupkg.sha512",
+        "EASendMail.nuspec",
+        "lib/net11/EASendMail.dll",
+        "lib/net20/EASendMail20.dll",
+        "lib/net35/EASendMail35.dll",
+        "lib/net40/EASendMail40.dll",
+        "lib/net45/EASendMail45.dll",
+        "lib/uap10.0/EASendMailRT.winmd",
+        "tools/install.ps1"
       ]
     },
     "EntityFramework.Commands/7.0.0-beta6": {
@@ -18773,6 +18810,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
+      "EASendMail >= 7.3.1.2",
       "EntityFramework.Commands >= 7.0.0-beta6",
       "EntityFramework.SQLite >= 7.0.0-beta6",
       "Microsoft.Azure.Mobile.Client >= 3.1.0",
@@ -18783,5 +18821,7 @@
       "Prism.Windows >= 6.3.0"
     ],
     "UAP,Version=v10.0": []
-  }
+  },
+  "tools": {},
+  "projectFileToolGroups": {}
 }
