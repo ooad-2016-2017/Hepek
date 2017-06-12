@@ -54,7 +54,7 @@ namespace Parkomania.ViewModel
             parent = s;
             exit = new RelayCommand<object>(Exit, check);
             findme = new RelayCommand<object>(findMe, check);
-            popuniMapu();
+            //popuniMapu();
         }
         public bool check(object parametar)
         {
@@ -94,6 +94,7 @@ namespace Parkomania.ViewModel
             mapIcon1.Title = "I'm here!";
             mapIcon1.ZIndex = 0;
             mapa = test.mapa;
+            popuniMapu();
             mapa.MapElements.Add(mapIcon1);
             mapa.Center = trenutnaLokacija;
             mapa.ZoomLevel = 14;
@@ -104,7 +105,6 @@ namespace Parkomania.ViewModel
         }
         public void popuniMapu()
         {
-            mapa = test.mapa;
             foreach(Model.Parking p in System.parkings)
             {
                 foreach (Model.Location l in System.locations)
@@ -113,11 +113,10 @@ namespace Parkomania.ViewModel
                     {
                         BasicGeoposition snPosition = new BasicGeoposition() { Latitude = l.x, Longitude = l.y };
                         var pk = new ParkingKontrola(p.Name);
-                        this.mapa.Children.Add(pk);
+                        mapa.Children.Add(pk);
 
                         var position = new Geopoint(snPosition);
                         MapControl.SetLocation(pk, position);
-
                         MapControl.SetNormalizedAnchorPoint(pk, new Point(0.5, 0.5));
                     }
                 }

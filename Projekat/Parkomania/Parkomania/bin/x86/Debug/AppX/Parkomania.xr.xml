@@ -35,6 +35,7 @@
     <RootPropertyPathName Name="apply" />
     <RootPropertyPathName Name="price" />
     <RootPropertyPathName Name="freeSpaces" />
+    <RootPropertyPathName Name="selectedvaluepath" />
     <RootPropertyPathName Name="Valuta" />
     <RootPropertyPathName Name="addparking" />
     <RootPropertyPathName Name="country" />
@@ -223,13 +224,14 @@
     </RootType>
     <RootType FullName="Parkomania.LoginForma" />
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="SelectedValuePath" />
       <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="SelectedItem" />
       <RootProperty Name="Margin" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Height" />
-      <RootProperty Name="MinWidth" />
       <RootProperty Name="Items" />
+      <RootProperty Name="SelectedItem" />
+      <RootProperty Name="MinWidth" />
     </RootType>
     <RootType FullName="Parkomania.PModelxaml">
       <RootProperty Name="Margin" />

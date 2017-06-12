@@ -45,6 +45,7 @@ namespace Parkomania.ViewModel
         public ICommand addparking { get; set; }
         public ICommand cancelAddEdit { get; set; }
         public ICommand saveEdit { get; set; }
+        public ICommand cancelEdit { get; set; }
         public ICommand saveAddEdit { get; set; }
         public ICommand openAddEdit { get; set; }
         public ICommand deleteMessage { get; set; }
@@ -76,6 +77,7 @@ namespace Parkomania.ViewModel
             saveAddEdit = new RelayCommand<object>(SaveAddEdit, check);
             openAddEdit = new RelayCommand<object>(OpenAddEdit, check);
             deleteMessage = new RelayCommand<object>(DeleteMessage, check);
+            cancelEdit = new RelayCommand<object>(Cancel, check);
             NavigationService = new NavigationService();
         }
         //welcome
@@ -545,11 +547,13 @@ namespace Parkomania.ViewModel
         {
             return true;
         }
+        public string e;
         public void openLoginForm(object parametar)
         {
             foreach (Model.Account a in acc)
                 if (a.Email() == _email && a.Password() == MD5.ComputeMD5(_password))
                 {
+                    e = email;
                     email = "";
                     pass = "";
                     if (a.Acctype() == "admin")
@@ -566,7 +570,6 @@ namespace Parkomania.ViewModel
         }
         public void addUser(object parametar)
         {
-            //asdasdasdasda
             using (var db = new dbContext.Parking())
             {
                 var ac = new Model.Account(fn, ln, em, MD5.ComputeMD5(pw), "user");

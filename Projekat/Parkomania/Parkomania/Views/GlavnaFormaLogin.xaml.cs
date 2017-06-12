@@ -28,9 +28,11 @@ namespace Parkomania
         public GlavnaFormaLogin()
         {
             this.InitializeComponent();
-           
+            mapa.Style = MapStyle.Aerial3DWithRoads;
+            mapa.ZoomLevel = 20;
+            test.mapa = mapa;
         }
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
             mapa.Style = MapStyle.Aerial3DWithRoads;
             mapa.ZoomLevel = 20;

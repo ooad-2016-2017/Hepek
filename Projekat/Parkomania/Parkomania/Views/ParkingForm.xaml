@@ -36,7 +36,9 @@
                 <LineBreak/>
                 <Run/>
             </TextBlock>
-            <ComboBox x:Name="comboBox" HorizontalAlignment="Stretch" SelectedItem="{Binding Path=Valuta, Mode=TwoWay}" Margin="10,0,10,0" VerticalAlignment="Center" Grid.Column="2" Grid.Row="3" Height="auto"/>
+            <ComboBox x:Name="comboBox" SelectedValuePath="{Binding Path=selectedvaluepath, Mode=TwoWay}" HorizontalAlignment="Stretch"  Margin="10,0,10,0" VerticalAlignment="Center" Grid.Column="2" Grid.Row="3" Height="auto">
+                <TextBlock Text="{Binding Path=Valuta, Mode=TwoWay}"/>
+            </ComboBox>
             <TextBox x:Name="textBox" HorizontalAlignment="Stretch" Text="{Binding Path=freeSpaces, Mode=TwoWay}" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="2" Height="32" Grid.Column="1" Width="auto"/>
             <TextBox x:Name="textBox1" HorizontalAlignment="Stretch" Text="{Binding Path=price, Mode=TwoWay}" Margin="10,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Row="3" Height="32" Grid.Column="1" Width="auto"/>
             <TextBlock x:Name="textBlock2" HorizontalAlignment="Right" Margin="0" TextWrapping="Wrap" VerticalAlignment="Center"  Grid.Row="4" RenderTransformOrigin="-0.274,0.54" SelectionChanged="textBlock2_SelectionChanged">
@@ -51,7 +53,7 @@
             <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="1"  Grid.ColumnSpan="4" VerticalAlignment="Top"/>
             <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="4"  Grid.ColumnSpan="4" VerticalAlignment="Bottom"/>
             <Rectangle HorizontalAlignment="Stretch" Fill="Blue" Height="4" Grid.Row="5"  Grid.ColumnSpan="4" VerticalAlignment="Bottom"/>
-            <local:PModelxaml Grid.Row="5" Grid.ColumnSpan="4" Margin="5,5,5,5"/>
+            <local:PModelxaml Grid.Row="5" Grid.ColumnSpan="4" Margin="5,5,5,5" />
         </Grid>
     </Grid>
 </Page>

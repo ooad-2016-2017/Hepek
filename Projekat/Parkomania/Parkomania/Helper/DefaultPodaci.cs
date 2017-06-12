@@ -24,7 +24,7 @@ namespace Parkomania.Helper
             if (!context.account.Any())
             {
                 context.account.AddRange(
-                new Model.Account("Niko","Nikic","test@test.com","202cb962ac59075b964b07152d234b70","pakring"),
+                new Model.Account("Niko","Nikic","test@test.com","202cb962ac59075b964b07152d234b70","parking"),
                 new Model.Account("Nikolija", "Nikolic", "nikolija@test.com", "202cb962ac59075b964b07152d234b70", "user"),
                 new Model.Account("Himzo", "Polovina", "hpolovina1@test.com", "202cb962ac59075b964b07152d234b70", "admin"));
                 context.SaveChanges();

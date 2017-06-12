@@ -1,4 +1,5 @@
-﻿using Parkomania.Helper;
+﻿using Microsoft.Data.Entity;
+using Parkomania.Helper;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -18,6 +19,7 @@ namespace Parkomania.ViewModel
         public ParkingViewModel(System s)
         {
             parent = s;
+            ispisiPodatke();
         }
         public ParkingViewModel()
         {
@@ -30,7 +32,24 @@ namespace Parkomania.ViewModel
         }
         public void Apply(object parametar)
         {
+            using (var db = new dbContext.Parking())
+            {
+                foreach (Model.Account a in db.account)
+                 if (a.Email() == parent.e)
+                    foreach (Model.Parking p in db.parking)
+                        if (p.Accid == a.id)
+                        {
+                            p.freePlaces = Int32.Parse(freeS);
+                            p.Price = Int32.Parse(pr);
+                            p.startTime = Int32.Parse(fr);
+                            p.endTime = Int32.Parse(un);
 
+                            db.Entry(p).State = EntityState.Modified;
+                            db.SaveChanges();
+                           return;
+                          }
+                            
+            }
         }
         public string Val;
         public string Valuta
@@ -42,6 +61,19 @@ namespace Parkomania.ViewModel
                 if (PropertyChanged != null)
                 {
                     PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(Valuta)));
+                }
+            }
+        }
+        public string t;
+        public string selectedvaluepath
+        {
+            get { return t; }
+            set
+            {
+                t = value;
+                if (PropertyChanged != null)
+                {
+                    PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(selectedvaluepath)));
                 }
             }
         }
@@ -96,6 +128,22 @@ namespace Parkomania.ViewModel
                     PropertyChanged.Invoke(this, new PropertyChangedEventArgs(nameof(until)));
                 }
             }
+        }
+        public void ispisiPodatke()
+        {
+            foreach(Model.Account a in System.acc)
+                if (a.Email() == parent.e)
+                    foreach (Model.Parking p in System.parkings)
+                        if (p.Accid == a.id)
+                        {
+                            freeS = p.freePlaces.ToString();
+                            pr = p.Price.ToString();
+                            fr = p.startTime.ToString();
+                            un = p.endTime.ToString();
+                            Valuta = "KM";
+                            t = Valuta;
+                            return;
+                        }
         }
     }
 }

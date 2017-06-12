@@ -1521,3 +1521,4 @@ C:\Users\Admir\Documents\Projekat\Parkomania\Parkomania\bin\x86\Debug\Newtonsoft
 C:\Users\Admir\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\Parkomania.csprojResolveAssemblyReference.cache
 C:\Users\Admir\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\Microsoft.WindowsAzure.Mobile\en-US\Microsoft.WindowsAzure.MobileServices.Resources.resw
 C:\Users\Admir\Documents\Projekat\Parkomania\Parkomania\obj\x86\Debug\Microsoft.WindowsAzure.Mobile.Ext.pri.xml
+C:\Users\zlayaa\Desktop\Parkomania\Parkomania\bin\x86\Debug\EASendMailRT.winmd
