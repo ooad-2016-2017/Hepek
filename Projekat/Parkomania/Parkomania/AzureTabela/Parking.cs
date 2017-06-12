@@ -8,20 +8,34 @@ namespace Parkomania.AzureTabela
 {
     class Parking
     {
-        public int idp { get; set; }
+        public string id { get; set; }
         public int Accid { get; set; }
-        public string name { get; set; }
-        public string city { get; set; }
-        public string country { get; set; }
-        public int locationid { get; set; }
-        public float price { get; set; }
-        public int starttime { get; set; }
-        public int endtime { get; set; }
-        public int capacity { get; set; }
-        public int freeplaces { get; set; }
-        public int idInfo { get; set; }
-        public int idReserved { get; set; }
-        public int modelid { get; set; }
+        public string Name { get; set; }
+        public string City { get; set; }
+        public string Country { get; set; }
+        public int pLocation { get; set; }
+        public float Price { get; set; }
+        public int startTime { get; set; }
+        public int endTime { get; set; }
+        public int Capacity { get; set; }
+        public int freePlaces { get; set; }
+        public int Model { get; set; }
         public int approved { get; set; }
+        public Parking() { }
+        public Parking(int a, string n, string city, string country, int pl, float price, int st, int et, int capacity, int freep, int m, int app)
+        {
+            Accid = a;
+            Name = n;
+            City = city;
+            Country = country;
+            pLocation = pl;
+            Price = price;
+            startTime = st;
+            endTime = et;
+            Capacity = capacity;
+            freePlaces = freep;
+            Model = m;
+            approved = app;
+        }
     }
 }

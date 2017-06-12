@@ -112,7 +112,7 @@ namespace Parkomania.ViewModel
                     if(l.id == p.pLocation)
                     {
                         BasicGeoposition snPosition = new BasicGeoposition() { Latitude = l.x, Longitude = l.y };
-                        var pk = new ParkingKontrola(p.Name);
+                        var pk = new ParkingKontrola(p.Name, p.Capacity.ToString(), p.freePlaces.ToString());
                         mapa.Children.Add(pk);
 
                         var position = new Geopoint(snPosition);

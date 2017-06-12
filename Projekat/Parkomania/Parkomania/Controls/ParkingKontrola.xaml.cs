@@ -19,12 +19,19 @@ namespace Parkomania
 {
     public sealed partial class ParkingKontrola : UserControl
     {
-        public ParkingKontrola(String x)
+
+        private bool dalije = false;
+        public ParkingKontrola(string x, string y, string z)
         {
             this.InitializeComponent();
             ime.Text = x;
+            textBlock1.Text = y;
+            textBlock2.Text = z;
         }
-
+        public ParkingKontrola()
+        {
+            this.InitializeComponent();
+        }
         private void image_ImageFailed(object sender, ExceptionRoutedEventArgs e)
         {
 
@@ -32,8 +39,18 @@ namespace Parkomania
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            test.Height = Window.Current.Bounds.Height;
-            test.IsOpen = true;
+            if (!dalije)
+            {
+                //test.Height = Window.Current.Bounds.Height;
+                dalije = true;
+                test.IsOpen = true;
+
+            }
+            else
+            {
+                dalije = false;
+                test.IsOpen = false;
+            }
         }
     }
 }

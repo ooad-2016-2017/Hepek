@@ -477,29 +477,25 @@ namespace Parkomania.ViewModel
                 try
                 {
                     AzureTabela.Parking par = new AzureTabela.Parking();
-                    par.idp = -1; // ???
                     par.Accid = tmp;
-                    par.name = parkingname;
-                    par.city = grad;
-                    par.country = drzava;
-                    par.locationid = lc.id;
-                    par.price = (float)Double.Parse(cijena);
-                    par.starttime = Int32.Parse(starttime);
-                    par.endtime = Int32.Parse(endtime);
-                    par.capacity = Int32.Parse(kapacitet);
-                    par.freeplaces = Int32.Parse(freeplaces);
-                    par.modelid = pm.id;
+                    par.Name = parkingname;
+                    par.City = grad;
+                    par.Country = drzava;
+                    par.pLocation = lc.id;
+                    par.Price = (float)Double.Parse(cijena);
+                    par.startTime = Int32.Parse(starttime);
+                    par.endTime = Int32.Parse(endtime);
+                    par.Capacity = Int32.Parse(kapacitet);
+                    par.freePlaces = Int32.Parse(freeplaces);
+                    par.Model = pm.id;
                     par.approved = 0;
-                    par.idReserved = -1; // ??
-                    par.idInfo = -1; // ??
                     userTableObj.InsertAsync(par);
                     MessageDialog msgDialog = new MessageDialog("Uspješno ste unijeli novi parking.");
                     msgDialog.ShowAsync();
                 }
                 catch (Exception ex)
                 {
-                    MessageDialog msgDialogError = new MessageDialog("Error : " +
-                    ex.ToString());
+                    MessageDialog msgDialogError = new MessageDialog("Error : " + ex.ToString());
                     msgDialogError.ShowAsync();
                 }
                 var mess = new Model.Message("Add parking Request...", tmp, DateTime.Now);

@@ -43,7 +43,7 @@ namespace Parkomania.ViewModel
         public GuestModel(System p)
         {
             this.Parent = p;
-            
+
             exit = new RelayCommand<object>(closeGuestForm, Check);
             findme = new RelayCommand<object>(findMeGps, Check);
         }
@@ -82,7 +82,8 @@ namespace Parkomania.ViewModel
 
             MapIcon mapIcon = new MapIcon();
             BasicGeoposition snPosition = new BasicGeoposition()
-            {   Latitude = trenutnaLokacija.Position.Latitude,
+            {
+                Latitude = trenutnaLokacija.Position.Latitude,
                 Longitude = trenutnaLokacija.Position.Longitude
             };
             mapIcon.Location = new Geopoint(snPosition);
@@ -90,6 +91,7 @@ namespace Parkomania.ViewModel
             mapIcon.Title = "I'm here!";
             mapIcon.ZIndex = 0;
             mapa = test.gmapa;
+            popuniMapu();
             mapa.MapElements.Add(mapIcon);
             mapa.Center = trenutnaLokacija;
             mapa.ZoomLevel = 14;
@@ -107,7 +109,28 @@ namespace Parkomania.ViewModel
         {
             Parent.NavigationService.GoBack();
         }
-    }
+        public void popuniMapu()
+        {
+            mapa = test.gmapa;
+            foreach (Model.Parking p in System.parkings)
+            {
+                foreach (Model.Location l in System.locations)
+                {
+                    if (l.id == p.pLocation)
+                    {
+                        BasicGeoposition snPosition = new BasicGeoposition() { Latitude = l.x, Longitude = l.y };
+                        var pk = new ParkingKontrola(p.Name, p.Capacity.ToString(), p.freePlaces.ToString());
+                        this.mapa.Children.Add(pk);
 
+                        var position = new Geopoint(snPosition);
+                        MapControl.SetLocation(pk, position);
+
+                        MapControl.SetNormalizedAnchorPoint(pk, new Point(0.5, 0.5));
+                    }
+                }
+
+            }
+        }
+    }
 }
 

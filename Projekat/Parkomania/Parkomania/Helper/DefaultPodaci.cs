@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Microsoft.WindowsAzure.MobileServices;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Popups;
 
 namespace Parkomania.Helper
 {
@@ -39,6 +41,19 @@ namespace Parkomania.Helper
             {
                 context.parking.AddRange(
                 new Model.Parking(1,"Test","Sarajevo","Bosna i Hercegovina",1,1f,7,20,6,6,1,1));
+                IMobileServiceTable<AzureTabela.Parking> userTableObj = App.MobileService.GetTable<AzureTabela.Parking>();
+                AzureTabela.Parking p = new AzureTabela.Parking(1, "Test", "Sarajevo", "Bosna i Hercegovina", 1, 1f, 7, 20, 6, 6, 1, 1);
+                try
+                {
+                    userTableObj.InsertAsync(p);
+                    MessageDialog msgDialog = new MessageDialog("Uspješno.");                    msgDialog.ShowAsync();
+                }
+                catch (Exception ex)
+                {
+                    MessageDialog msgDialogError = new MessageDialog("Error : " + ex.ToString());
+                    msgDialogError.ShowAsync();
+                }
+
                 context.SaveChanges();
             }
             if (!context.pmanager.Any())
